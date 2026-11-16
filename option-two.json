@@ -1,0 +1,2315 @@
+{
+  "metadados": {
+    "titulo": "Simulado SEFAZ-SC 2026 — Auditor Estadual de Finanças Públicas – Ciências da Computação",
+    "tipo": "Simulado autoral",
+    "codigo_cargo": "B02",
+    "edital": "01/2026",
+    "edital_url": "https://www.concursosfcc.com.br/concursos/sefsc126/sefsc126_edital_de_abertura_final_publicar.pdf",
+    "data_de_referencia_legislativa": "2026-09-01",
+    "ordem_das_alternativas": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "instrucao": "Assinale uma única alternativa por questão.",
+    "provas": [
+      {
+        "nome": "Conhecimentos Gerais",
+        "total_questoes": 80,
+        "duracao_minutos": 240,
+        "peso": 1
+      },
+      {
+        "nome": "Conhecimentos Específicos",
+        "total_questoes": 100,
+        "duracao_minutos": 300,
+        "peso": 2
+      }
+    ],
+    "criterio_de_distribuicao": "Definida para este simulado"
+  },
+  "textos_base": [],
+  "conhecimentos_gerais": [
+    {
+      "disciplina": "Língua Portuguesa",
+      "questoes": [
+        {
+          "numero": 1,
+          "enunciado": "Leia: “O painel reduziu o tempo de conferência, mas o ganho decisivo veio da padronização das fontes. Antes, cada unidade chamava de ‘despesa executada’ uma etapa diferente.” Qual conclusão o trecho sustenta?",
+          "alternativas": [
+            "O painel tornou dispensável a definição dos indicadores.",
+            "A troca de software explica sozinha o ganho obtido.",
+            "Antes do painel, as unidades não acompanhavam suas despesas.",
+            "A comparação entre unidades exigiu harmonizar o significado dos indicadores.",
+            "A padronização eliminou a necessidade de conferência."
+          ]
+        },
+        {
+          "numero": 2,
+          "enunciado": "Em “Embora os valores coincidissem, o auditor solicitou nova conciliação”, a oração inicial exprime",
+          "alternativas": [
+            "causa.",
+            "condição.",
+            "consequência.",
+            "proporção.",
+            "concessão."
+          ]
+        },
+        {
+          "numero": 3,
+          "enunciado": "Assinale a frase em que os dois acentos graves estão corretamente empregados.",
+          "alternativas": [
+            "O relatório foi entregue à cada gerente e juntado à pasta do processo.",
+            "O relatório foi encaminhado à diretoria e submetido à apreciação do conselho.",
+            "A comissão passou à revisar os autos e voltou à sala de reuniões.",
+            "A minuta foi remetida à ela e distribuída à equipe técnica.",
+            "A unidade retornou à emitir pareceres e enviou cópias à autoridade."
+          ]
+        },
+        {
+          "numero": 4,
+          "enunciado": "A frase escrita de acordo com a norma-padrão de concordância é",
+          "alternativas": [
+            "Houveram divergências, e ainda faltam dois demonstrativos.",
+            "Houve divergências, e ainda faltam dois demonstrativos.",
+            "Fazem três meses que a revisão começou.",
+            "Deverão haver novos protocolos neste semestre.",
+            "Existe, no processo, razões para nova conferência."
+          ]
+        },
+        {
+          "numero": 5,
+          "enunciado": "Em “Os analistas que validaram a base assinaram o termo”, a ausência de vírgulas em torno de “que validaram a base” indica que",
+          "alternativas": [
+            "todos os analistas da instituição assinaram o termo.",
+            "a assinatura ocorreu antes da validação.",
+            "a validação delimita o grupo de analistas referido como signatário.",
+            "a validação é apresentada como explicação aplicável a todos os analistas.",
+            "o pronome “que” introduz uma pergunta indireta."
+          ]
+        },
+        {
+          "numero": 6,
+          "enunciado": "A transposição de “A equipe havia conciliado as contas” para a voz passiva analítica produz",
+          "alternativas": [
+            "As contas foram conciliadas pela equipe.",
+            "As contas eram conciliadas pela equipe.",
+            "As contas haviam sido conciliadas pela equipe.",
+            "As contas teriam sido conciliadas pela equipe.",
+            "As contas haviam conciliado a equipe."
+          ]
+        },
+        {
+          "numero": 7,
+          "enunciado": "Assinale a redação em conformidade com a regência da norma-padrão.",
+          "alternativas": [
+            "A equipe assistiu à apresentação e obedeceu às instruções.",
+            "A equipe assistiu à apresentação e obedeceu o regulamento.",
+            "A equipe preferiu mais a minuta nova do que a anterior.",
+            "A equipe aspirava um posto de chefia.",
+            "A equipe chegou no auditório e aludiu os resultados."
+          ]
+        },
+        {
+          "numero": 8,
+          "enunciado": "Em “A diretora afirmou: ‘Revisarei os dados amanhã’”, a passagem para discurso indireto, em relato posterior com o verbo introdutório no passado, resulta em",
+          "alternativas": [
+            "A diretora afirmou que revisara os dados na véspera.",
+            "A diretora afirmou que revisou os dados naquele dia.",
+            "A diretora afirmou que revisaria os dados no dia anterior.",
+            "A diretora afirmou que revisaria os dados no dia seguinte.",
+            "A diretora afirmou que teria revisado os dados na véspera."
+          ]
+        },
+        {
+          "numero": 9,
+          "enunciado": "No fragmento “Os números gritaram na mesa silenciosa da comissão”, o verbo “gritaram”, atribuído aos números, exemplifica",
+          "alternativas": [
+            "eufemismo.",
+            "personificação.",
+            "pleonasmo.",
+            "catacrese.",
+            "metonímia de autor pela obra."
+          ]
+        },
+        {
+          "numero": 10,
+          "enunciado": "Qual redação é mais adequada ao corpo de um ofício que solicita um demonstrativo até 30 de setembro?",
+          "alternativas": [
+            "Venho mui respeitosamente lembrar o pessoal daquele negócio para o dia 30.",
+            "Solicitamos que seja providenciado oportunamente o devido documento.",
+            "No contexto das providências cabíveis, cumpre consignar que o expediente urge.",
+            "Solicito o envio do demonstrativo de execução até 30 de setembro.",
+            "Seria bacana receber o demonstrativo lá pelo fim do mês."
+          ]
+        },
+        {
+          "numero": 11,
+          "enunciado": "A frase que respeita a colocação pronominal na norma-padrão é",
+          "alternativas": [
+            "Não identificaram-se divergências no lote.",
+            "Quem encarregou-se da revisão?",
+            "Jamais admitiria-se um total sem conferência.",
+            "Os valores que confirmaram-se foram publicados.",
+            "Não se identificaram divergências no lote."
+          ]
+        },
+        {
+          "numero": 12,
+          "enunciado": "Assinale a alternativa em que todos os vocábulos estão corretamente grafados e acentuados.",
+          "alternativas": [
+            "Rubrica, auditoria, hífen e órgão.",
+            "Rúbrica, auditória, hifen e órgão.",
+            "Rúbrica, auditoria, hífen e orgão.",
+            "Rubrica, auditória, hífen e orgão.",
+            "Rubrica, auditoria, hifen e orgão."
+          ]
+        },
+        {
+          "numero": 13,
+          "enunciado": "O vocábulo “reprocessamento” relaciona-se a “processamento” pela adição de um elemento que indica repetição. Esse processo é",
+          "alternativas": [
+            "derivação prefixal.",
+            "composição por aglutinação.",
+            "derivação regressiva.",
+            "composição por justaposição.",
+            "conversão de adjetivo em substantivo."
+          ]
+        },
+        {
+          "numero": 14,
+          "enunciado": "Assinale a construção em que há correlação temporal adequada à condição contrafactual passada.",
+          "alternativas": [
+            "Se a equipe receber os dados a tempo, teria publicado o boletim ontem.",
+            "Se a equipe tivesse recebido os dados a tempo, publicava o boletim amanhã.",
+            "Se a equipe receber os dados a tempo, publicara o boletim ontem.",
+            "Se a equipe recebera os dados a tempo, publicaria o boletim ontem.",
+            "Se a equipe tivesse recebido os dados a tempo, teria publicado o boletim ontem."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Matemática Financeira, Estatística e Raciocínio Lógico",
+      "questoes": [
+        {
+          "numero": 15,
+          "enunciado": "Um capital de R$ 8.000 rende juros simples de 1,5% ao mês por cinco meses. Qual é o montante?",
+          "alternativas": [
+            "R$ 8.600,00.",
+            "R$ 8.120,00.",
+            "R$ 8.480,00.",
+            "R$ 8.618,27.",
+            "R$ 9.200,00."
+          ]
+        },
+        {
+          "numero": 16,
+          "enunciado": "Uma aplicação remunera 2% efetivos ao mês, com juros compostos. Qual é a taxa efetiva trimestral equivalente?",
+          "alternativas": [
+            "6%.",
+            "6,12% exatos.",
+            "6,8%.",
+            "8,24%.",
+            "6,1208%."
+          ]
+        },
+        {
+          "numero": 17,
+          "enunciado": "Uma aplicação teve rendimento nominal de 15,5% e inflação de 5% no mesmo período. Qual foi o rendimento real efetivo?",
+          "alternativas": [
+            "10,5%.",
+            "10%.",
+            "11%.",
+            "10,25%.",
+            "9,5%."
+          ]
+        },
+        {
+          "numero": 18,
+          "enunciado": "Um título de valor nominal R$ 12.000 é antecipado em três meses à taxa de desconto comercial simples de 2% ao mês. Qual é o valor recebido?",
+          "alternativas": [
+            "R$ 11.320,75.",
+            "R$ 11.280.",
+            "R$ 11.520.",
+            "R$ 11.760.",
+            "R$ 12.720."
+          ]
+        },
+        {
+          "numero": 19,
+          "enunciado": "Um financiamento de R$ 60.000 em seis prestações mensais segue o SAC, à taxa de 2% ao mês. Qual é o valor da terceira prestação?",
+          "alternativas": [
+            "R$ 10.400.",
+            "R$ 10.600.",
+            "R$ 11.000.",
+            "R$ 10.800.",
+            "R$ 11.200."
+          ]
+        },
+        {
+          "numero": 20,
+          "enunciado": "Um projeto requer R$ 1.000 hoje e gera R$ 1.210 ao fim de dois anos, sem fluxo intermediário. Qual é a TIR anual efetiva?",
+          "alternativas": [
+            "9,5%.",
+            "10,5%.",
+            "10%.",
+            "11%.",
+            "21%."
+          ]
+        },
+        {
+          "numero": 21,
+          "enunciado": "Um capital é remunerado continuamente a uma taxa anual constante de 0,08. Após dois anos, por qual fator o capital inicial é multiplicado?",
+          "alternativas": [
+            "1,16.",
+            "1,08².",
+            "e^0,04.",
+            "e^0,16.",
+            "e^0,08."
+          ]
+        },
+        {
+          "numero": 22,
+          "enunciado": "Cinco pagamentos foram de 2, 4, 4, 10 e 30 mil reais. Quais são, respectivamente, a média, a mediana e a amplitude, em mil reais?",
+          "alternativas": [
+            "10, 4 e 26.",
+            "10, 6 e 28.",
+            "8, 4 e 30.",
+            "10, 10 e 28.",
+            "10, 4 e 28."
+          ]
+        },
+        {
+          "numero": 23,
+          "enunciado": "Se X tem média 12 e variância 9, quais são a média e o desvio-padrão de Y = 2X − 5?",
+          "alternativas": [
+            "19 e 13.",
+            "19 e 6.",
+            "24 e 6.",
+            "24 e 18.",
+            "19 e 36."
+          ]
+        },
+        {
+          "numero": 24,
+          "enunciado": "Entre oito auditores, serão escolhidos um coordenador e dois revisores. A ordem dos revisores é irrelevante. Quantas equipes são possíveis?",
+          "alternativas": [
+            "56.",
+            "112.",
+            "336.",
+            "512.",
+            "168."
+          ]
+        },
+        {
+          "numero": 25,
+          "enunciado": "Em quatro verificações independentes, cada documento tem probabilidade de 0,2 de apresentar erro. Qual é a probabilidade de exatamente um erro?",
+          "alternativas": [
+            "0,1024.",
+            "0,2048.",
+            "0,5904.",
+            "0,8192.",
+            "0,4096."
+          ]
+        },
+        {
+          "numero": 26,
+          "enunciado": "Há, em média, três chamados por hora, segundo um processo de Poisson homogêneo. Qual é a probabilidade de nenhum chamado em 20 minutos?",
+          "alternativas": [
+            "e⁻³.",
+            "e⁻¹.",
+            "1 − e⁻¹.",
+            "1/3.",
+            "3e⁻³."
+          ]
+        },
+        {
+          "numero": 27,
+          "enunciado": "Em uma amostra aleatória de 100 registros independentes, a média foi 48 e o desvio-padrão populacional conhecido é 10. Usando valor crítico 1,96, qual é o intervalo bilateral de 95% para a média?",
+          "alternativas": [
+            "[47,02; 48,98].",
+            "[46,04; 49,96].",
+            "[44,08; 51,92].",
+            "[38,00; 58,00].",
+            "[28,40; 67,60]."
+          ]
+        },
+        {
+          "numero": 28,
+          "enunciado": "Em um teste bilateral de proporção, obteve-se p-valor de 0,03. Quais são as decisões aos níveis de 5% e 1%, respectivamente?",
+          "alternativas": [
+            "Rejeitar H₀ em ambos.",
+            "Não rejeitar H₀ em ambos.",
+            "Não rejeitar H₀ e rejeitar H₀.",
+            "Aceitar H₀ como verdadeira e rejeitar H₀.",
+            "Rejeitar H₀ e não rejeitar H₀."
+          ]
+        },
+        {
+          "numero": 29,
+          "enunciado": "Em regressão linear simples com intercepto, a correlação amostral é −0,8. Qual par descreve a inclinação e o coeficiente de determinação?",
+          "alternativas": [
+            "Inclinação positiva e R² = 0,64.",
+            "Inclinação negativa e R² = 0,80.",
+            "Inclinação negativa e R² = −0,64.",
+            "Inclinação negativa e R² = 0,64.",
+            "Inclinação nula e R² = 0,20."
+          ]
+        },
+        {
+          "numero": 30,
+          "enunciado": "Uma população tem três regiões. Em todas foram sorteados registros independentemente, com alocação proporcional ao tamanho de cada região. Qual é o desenho?",
+          "alternativas": [
+            "Amostragem por conglomerados em um estágio.",
+            "Amostragem por conveniência.",
+            "Amostragem estratificada proporcional.",
+            "Amostragem sistemática de lista única.",
+            "Amostragem por cotas sem sorteio."
+          ]
+        },
+        {
+          "numero": 31,
+          "enunciado": "Se todo processo urgente recebe prioridade e nenhum processo recebido hoje recebeu prioridade, segue-se necessariamente que",
+          "alternativas": [
+            "todo processo recebido ontem era urgente.",
+            "todo processo prioritário era urgente.",
+            "nenhum processo urgente pode receber prioridade hoje.",
+            "nenhum processo recebido hoje era urgente.",
+            "algum processo recebido hoje era urgente."
+          ]
+        },
+        {
+          "numero": 32,
+          "enunciado": "Qual é a negação lógica de “Todos os relatórios foram revisados e publicados”?",
+          "alternativas": [
+            "Nenhum relatório foi revisado nem publicado.",
+            "Pelo menos um relatório deixou de ser revisado e também de ser publicado.",
+            "Todos os relatórios foram revisados, mas não foram publicados.",
+            "Pelo menos um relatório não foi revisado ou não foi publicado.",
+            "Todos os relatórios apresentam pelo menos uma falha de revisão ou publicação."
+          ]
+        },
+        {
+          "numero": 33,
+          "enunciado": "Quatro pareceres A, B, C e D serão analisados uma vez cada. A antecede C, D é imediatamente posterior a B e C é o último. Qual ordem é possível?",
+          "alternativas": [
+            "D, B, A, C.",
+            "A, D, B, C.",
+            "B, A, D, C.",
+            "B, D, A, C.",
+            "C, B, D, A."
+          ]
+        },
+        {
+          "numero": 34,
+          "enunciado": "Uma inspeção segue o ciclo A, B, C, D, E, começando em A no dia 1. Qual unidade será inspecionada no dia 47?",
+          "alternativas": [
+            "A.",
+            "C.",
+            "B.",
+            "D.",
+            "E."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Noções de Direito Constitucional",
+      "questoes": [
+        {
+          "numero": 35,
+          "enunciado": "Uma associação legalmente constituída e em funcionamento regular há 18 meses pretende impetrar mandado de segurança coletivo em defesa dos interesses de seus membros. Segundo a Constituição Federal, ela",
+          "alternativas": [
+            "precisa ter pelo menos cinco anos de funcionamento.",
+            "depende de autorização prévia do Ministério Público.",
+            "precisa ter representação no Congresso Nacional.",
+            "possui legitimidade, pois já cumpre o requisito temporal de pelo menos um ano.",
+            "somente tem legitimidade se integrar a administração indireta."
+          ]
+        },
+        {
+          "numero": 36,
+          "enunciado": "A iniciativa de lei federal para criar cargos públicos na administração direta da União é reservada ao",
+          "alternativas": [
+            "Presidente da República.",
+            "Presidente do Senado Federal.",
+            "Tribunal de Contas da União.",
+            "Conselho Nacional de Justiça.",
+            "Procurador-Geral da República."
+          ]
+        },
+        {
+          "numero": 37,
+          "enunciado": "Conforme a Constituição Federal, as contas anuais prestadas pelo Presidente da República são julgadas pelo",
+          "alternativas": [
+            "TCU, mediante ratificação pelo Senado Federal.",
+            "STF, após parecer da Câmara dos Deputados.",
+            "Congresso Nacional, precedidas de parecer prévio do TCU.",
+            "Senado Federal, com recurso ao Congresso Nacional.",
+            "Ministério Público Federal, após manifestação do TCU."
+          ]
+        },
+        {
+          "numero": 38,
+          "enunciado": "Segundo a Constituição de Santa Catarina, cabe ao Tribunal de Contas estadual, em relação às contas anuais do Governador,",
+          "alternativas": [
+            "apreciá-las mediante parecer prévio.",
+            "julgá-las em definitivo no lugar da Assembleia Legislativa.",
+            "registrá-las sem emitir parecer.",
+            "encaminhá-las diretamente ao STF para julgamento originário.",
+            "autorizar previamente todos os pagamentos do Executivo."
+          ]
+        },
+        {
+          "numero": 39,
+          "enunciado": "Em caso de compatibilidade de horários, a Constituição Federal permite a acumulação remunerada de",
+          "alternativas": [
+            "dois cargos técnicos em qualquer área profissional.",
+            "dois cargos ou empregos privativos de profissionais de saúde com profissões regulamentadas.",
+            "três cargos de professor.",
+            "dois cargos administrativos efetivos em órgãos diferentes.",
+            "dois cargos privativos de profissionais de saúde com profissões não regulamentadas."
+          ]
+        },
+        {
+          "numero": 40,
+          "enunciado": "É competência legislativa privativa da União, ressalvada a possibilidade de lei complementar autorizar os Estados a legislar sobre questões específicas, legislar sobre",
+          "alternativas": [
+            "direito financeiro.",
+            "direito penitenciário.",
+            "direito civil.",
+            "proteção do meio ambiente.",
+            "produção e consumo."
+          ]
+        },
+        {
+          "numero": 41,
+          "enunciado": "Para manutenção e desenvolvimento do ensino, qual percentual mínimo a Constituição Federal fixa para os Estados sobre as receitas de impostos, incluídas as transferências?",
+          "alternativas": [
+            "18%.",
+            "25%.",
+            "12%.",
+            "15%.",
+            "30%."
+          ]
+        },
+        {
+          "numero": 42,
+          "enunciado": "Na ordem social, o conjunto integrado de ações destinadas a assegurar direitos relativos a saúde, previdência e assistência social corresponde à",
+          "alternativas": [
+            "política urbana.",
+            "ordem econômica.",
+            "educação básica obrigatória.",
+            "seguridade social.",
+            "defesa civil."
+          ]
+        },
+        {
+          "numero": 43,
+          "enunciado": "A Constituição Federal prevê reeleição para apenas um período subsequente para",
+          "alternativas": [
+            "somente Prefeitos que não tenham exercido o primeiro mandato integralmente.",
+            "Presidente da República, Governadores e Prefeitos, inclusive quem os sucedeu ou substituiu no curso do mandato.",
+            "Presidente da República e Governadores, com até dois períodos subsequentes.",
+            "Senadores e Deputados, como limite geral para mandatos legislativos.",
+            "exclusivamente Governadores e Prefeitos."
+          ]
+        },
+        {
+          "numero": 44,
+          "enunciado": "No exercício de sua competência constitucional, um Município pode",
+          "alternativas": [
+            "editar normas gerais de direito civil para todo o Estado.",
+            "organizar e manter o Poder Judiciário estadual.",
+            "legislar sobre assuntos de interesse local e suplementar a legislação federal e estadual no que couber.",
+            "criar territórios federais por lei municipal.",
+            "estabelecer as diretrizes nacionais de política monetária."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Noções de Direito Administrativo",
+      "questoes": [
+        {
+          "numero": 45,
+          "enunciado": "A autoridade instaura processo para apurar infração funcional de servidor subordinado. O poder administrativo diretamente relacionado à apuração e eventual sanção é o",
+          "alternativas": [
+            "regulamentar.",
+            "de polícia administrativa sobre particulares.",
+            "disciplinar.",
+            "legislativo.",
+            "jurisdicional."
+          ]
+        },
+        {
+          "numero": 46,
+          "enunciado": "Veículo oficial conduzido por servidor em serviço causa dano a terceiro. Demonstrados dano e nexo causal e ausentes causas excludentes, aplica-se a regra de que",
+          "alternativas": [
+            "o terceiro precisa provar dolo do servidor para obter indenização do ente.",
+            "o servidor responde objetivamente em regresso.",
+            "o ente responde objetivamente e pode exercer regresso contra o servidor se houver dolo ou culpa.",
+            "apenas o servidor responde pelo dano.",
+            "o ente só responde após condenação criminal do motorista."
+          ]
+        },
+        {
+          "numero": 47,
+          "enunciado": "Um órgão de governo pode exigir os motivos do requerente como condição para apreciar pedido de informação de interesse público, nos termos da LAI?",
+          "alternativas": [
+            "Sim, sempre que o pedido for eletrônico.",
+            "Não, a lei veda exigências relativas aos motivos determinantes do pedido.",
+            "Sim, em todo pedido de pessoa jurídica.",
+            "Sim, se a informação não constar de transparência ativa.",
+            "Sim, se o pedido envolver mais de uma unidade."
+          ]
+        },
+        {
+          "numero": 48,
+          "enunciado": "Pela LAI, se o acesso imediato for inviável, o prazo ordinário para as providências legais é de até",
+          "alternativas": [
+            "10 dias, sem prorrogação.",
+            "15 dias úteis, automaticamente prorrogáveis por 15.",
+            "30 dias, prorrogáveis por 30 sem justificativa.",
+            "45 dias, contados da eventual classificação.",
+            "20 dias, prorrogáveis por 10 com justificativa expressa e ciência ao requerente."
+          ]
+        },
+        {
+          "numero": 49,
+          "enunciado": "Na Lei nº 14.133/2021, para adquirir bens comuns com padrões objetivamente definidos por especificações usuais de mercado, adota-se a modalidade",
+          "alternativas": [
+            "concurso.",
+            "leilão.",
+            "pregão.",
+            "diálogo competitivo.",
+            "tomada de preços."
+          ]
+        },
+        {
+          "numero": 50,
+          "enunciado": "Qual é a distinção entre dispensa e inexigibilidade na Lei nº 14.133/2021?",
+          "alternativas": [
+            "A inexigibilidade pressupõe inviabilidade de competição. A dispensa decorre de hipóteses autorizadas em lei.",
+            "A dispensa pressupõe inviabilidade de competição, e a inexigibilidade depende do valor.",
+            "A inexigibilidade é modalidade licitatória, e a dispensa é critério de julgamento.",
+            "A dispensa elimina a instrução do processo, e a inexigibilidade exige edital competitivo.",
+            "Ambas exigem sempre exclusividade do fornecedor."
+          ]
+        },
+        {
+          "numero": 51,
+          "enunciado": "Para os tipos dos arts. 9º, 10 e 11 da Lei nº 8.429/1992, a configuração do ato de improbidade exige",
+          "alternativas": [
+            "conduta dolosa tipificada, com vontade livre e consciente de alcançar o resultado ilícito previsto.",
+            "mera voluntariedade na prática de qualquer ato irregular.",
+            "dano presumido em todas as hipóteses.",
+            "negligência simples em todos os tipos.",
+            "condenação criminal anterior pelo mesmo fato."
+          ]
+        },
+        {
+          "numero": 52,
+          "enunciado": "Nos termos do Estatuto dos Servidores Públicos Civis de Santa Catarina, o ato que completa a investidura em cargo público é a",
+          "alternativas": [
+            "posse.",
+            "homologação do concurso.",
+            "publicação do edital.",
+            "classificação provisória.",
+            "vacância."
+          ]
+        },
+        {
+          "numero": 53,
+          "enunciado": "À luz da estrutura organizacional disciplinada pela LC estadual nº 741/2019, uma Secretaria de Estado integra",
+          "alternativas": [
+            "a administração indireta, com personalidade autárquica própria.",
+            "a estrutura do Legislativo estadual.",
+            "a administração direta do Poder Executivo estadual.",
+            "a estrutura externa do Tribunal de Contas.",
+            "a administração municipal desconcentrada."
+          ]
+        },
+        {
+          "numero": 54,
+          "enunciado": "Ao identificar ilegalidade em ato próprio, a Administração, no exercício da autotutela e observados os limites legais aplicáveis, pode",
+          "alternativas": [
+            "revogá-lo pelos mesmos pressupostos de conveniência e oportunidade.",
+            "anulá-lo.",
+            "apenas declarar o vício, sem possibilidade de desfazer o ato.",
+            "delegar a um particular a decisão sobre a validade do ato.",
+            "convalidá-lo obrigatoriamente, qualquer que seja o vício."
+          ]
+        },
+        {
+          "numero": 55,
+          "enunciado": "No acompanhamento contratual pela Lei nº 14.133/2021, o fiscal designado deve",
+          "alternativas": [
+            "alterar unilateralmente a dotação por registro informal.",
+            "assumir pessoalmente os encargos trabalhistas da contratada.",
+            "substituir a documentação por aprovação verbal.",
+            "autorizar qualquer ampliação do objeto sem instrução.",
+            "registrar ocorrências e informar em tempo hábil à autoridade superior o que exceder sua competência."
+          ]
+        },
+        {
+          "numero": 56,
+          "enunciado": "Qual arranjo descreve o controle externo federal da Administração Pública previsto na Constituição?",
+          "alternativas": [
+            "O TCU atua sob direção hierárquica da CGU.",
+            "O STF o exerce com auxílio do Senado Federal.",
+            "A CGU o exerce em substituição ao Congresso Nacional.",
+            "O Congresso Nacional o exerce com auxílio do TCU.",
+            "O Ministério Público Federal o exerce com auxílio exclusivo dos órgãos de controle interno."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Ciência e Análise de Dados",
+      "questoes": [
+        {
+          "numero": 57,
+          "enunciado": "Uma base reúne planilhas de colunas fixas, respostas em JSON com campos variáveis e gravações de áudio. A classificação típica dos dados, na ordem, é",
+          "alternativas": [
+            "semiestruturados, estruturados e não estruturados.",
+            "não estruturados, semiestruturados e estruturados.",
+            "estruturados, não estruturados e semiestruturados.",
+            "semiestruturados, não estruturados e estruturados.",
+            "estruturados, semiestruturados e não estruturados."
+          ]
+        },
+        {
+          "numero": 58,
+          "enunciado": "A unidade A realizou 90 de 100 atendimentos no prazo e a unidade B, 20 de 50. Qual é a taxa conjunta ponderada por atendimento?",
+          "alternativas": [
+            "65%.",
+            "70%.",
+            "73,33%, aproximadamente.",
+            "75%.",
+            "80%."
+          ]
+        },
+        {
+          "numero": 59,
+          "enunciado": "Qual visualização mostra mais diretamente a evolução do tempo mediano de resposta nos últimos 24 meses?",
+          "alternativas": [
+            "Gráfico de linhas com o tempo no eixo horizontal.",
+            "Gráfico de setores com 24 fatias.",
+            "Mapa coroplético sem dimensão temporal.",
+            "Nuvem de palavras com nomes dos meses.",
+            "Histograma que omite a ordem cronológica."
+          ]
+        },
+        {
+          "numero": 60,
+          "enunciado": "Duas áreas registram o mesmo fornecedor com códigos internos distintos. Como cruzar as bases com menor risco de associações erradas?",
+          "alternativas": [
+            "Unir pelo primeiro termo da razão social.",
+            "Usar a posição física das linhas como chave.",
+            "Normalizar e validar um identificador comum, mantendo o vínculo com a origem.",
+            "Eliminar registros com valores monetários iguais.",
+            "Usar o mês de inclusão como identificador."
+          ]
+        },
+        {
+          "numero": 61,
+          "enunciado": "O volume de processos subiu ao mesmo tempo em que caiu o tempo médio de análise. Qual conclusão é sustentada por essa informação?",
+          "alternativas": [
+            "Houve movimentos simultâneos em sentidos opostos. Efeitos causais exigem investigação adicional.",
+            "A elevação do volume causou a redução do tempo médio.",
+            "O tempo médio sempre cairá quando o volume subir.",
+            "Pode-se excluir qualquer influência de automação.",
+            "A qualidade de todas as análises comprovadamente aumentou."
+          ]
+        },
+        {
+          "numero": 62,
+          "enunciado": "Um portal reutiliza, com base jurídica e controles, dados já fornecidos a outro órgão. Qual capacidade viabiliza essa medida?",
+          "alternativas": [
+            "Padronização das cores das interfaces.",
+            "Conversão das consultas em processos manuais.",
+            "Duplicação sem regras de sincronização.",
+            "Eliminação da governança de acesso.",
+            "Interoperabilidade técnica e semântica."
+          ]
+        },
+        {
+          "numero": 63,
+          "enunciado": "Pela LGPD, limitar o tratamento ao mínimo de dados pertinente à finalidade decorre do princípio da",
+          "alternativas": [
+            "necessidade.",
+            "qualidade dos dados.",
+            "não discriminação.",
+            "livre acesso.",
+            "responsabilização e prestação de contas."
+          ]
+        },
+        {
+          "numero": 64,
+          "enunciado": "Um órgão define a finalidade e os elementos essenciais de um tratamento. A prestadora realiza operações seguindo suas instruções lícitas. Pela LGPD, são, respectivamente,",
+          "alternativas": [
+            "operador e controlador.",
+            "encarregado e titular.",
+            "operador e encarregado.",
+            "titular e controlador.",
+            "controlador e operador."
+          ]
+        },
+        {
+          "numero": 65,
+          "enunciado": "Um titular encontra a data de nascimento incorreta em cadastro que o identifica. Qual direito pode exercer pela LGPD?",
+          "alternativas": [
+            "Solicitar a correção do dado inexato.",
+            "Exigir a eliminação de qualquer registro público em toda hipótese.",
+            "Escolher a autoridade fiscalizadora do controlador.",
+            "Assumir a custódia dos bancos do órgão.",
+            "Dispensar o controlador de requisitos de segurança."
+          ]
+        },
+        {
+          "numero": 66,
+          "enunciado": "Uma equipe usa IA generativa para resumir pareceres. Qual procedimento reduz o risco de publicar uma afirmação inventada?",
+          "alternativas": [
+            "Aceitar referências com formatação bibliográfica completa.",
+            "Considerar a fluência do resumo como evidência suficiente.",
+            "Pedir textos mais longos e publicar automaticamente.",
+            "Conferir afirmações e citações no documento de origem.",
+            "Pedir apenas uma paráfrase ao mesmo modelo."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Ética, Integridade e Prevenção ao Assédio e Discriminação",
+      "questoes": [
+        {
+          "numero": 67,
+          "enunciado": "Um fiscal percebe que a avaliação a seu cargo envolve empresa gerida por parente próximo. Qual conduta protege a imparcialidade?",
+          "alternativas": [
+            "Prosseguir e informar o vínculo apenas à empresa.",
+            "Compartilhar o resultado após homologação, mantendo o vínculo reservado.",
+            "Declarar o vínculo e acionar o procedimento institucional de tratamento do conflito.",
+            "Escolher parecerista indicado pela empresa.",
+            "Transferir informalmente a decisão a subordinado e assinar o aceite."
+          ]
+        },
+        {
+          "numero": 68,
+          "enunciado": "Qual controle reduz o risco de uma única pessoa aprovar sozinha uma contratação fictícia e pagar por ela?",
+          "alternativas": [
+            "Centralizar todas as etapas em uma conta.",
+            "Conferir a contratação apenas depois de prescrito o prazo de apuração.",
+            "Segregar autorização, ateste e autorização financeira, com registros.",
+            "Exigir que o mesmo agente assine todas as etapas.",
+            "Tornar opcionais os registros de aprovação."
+          ]
+        },
+        {
+          "numero": 69,
+          "enunciado": "Pela Lei nº 12.846/2013, a responsabilidade civil e administrativa da pessoa jurídica pelos atos lesivos previstos na lei é",
+          "alternativas": [
+            "subjetiva e sempre condicionada à culpa do dirigente máximo.",
+            "objetiva, quando praticados em seu interesse ou benefício, exclusivo ou não.",
+            "exclusivamente penal.",
+            "subsidiária e dependente de condenação da pessoa natural.",
+            "restrita a atos no interesse exclusivamente próprio."
+          ]
+        },
+        {
+          "numero": 70,
+          "enunciado": "Uma chefia humilha publicamente uma servidora toda semana, atribui-lhe apelidos depreciativos e ameaça isolá-la se procurar ajuda. O padrão é compatível com",
+          "alternativas": [
+            "assédio moral, passível de apuração.",
+            "cobrança regular de desempenho por haver subordinação.",
+            "exercício regular do poder hierárquico.",
+            "gestão de conflitos que dispensa registro.",
+            "divergência técnica legítima por ocorrer em reuniões."
+          ]
+        },
+        {
+          "numero": 71,
+          "enunciado": "Um supervisor condiciona vantagem funcional a favor de natureza sexual. A conduta é compatível com",
+          "alternativas": [
+            "conflito de interesses solucionado pela anuência do supervisor.",
+            "tratamento regular de desempenho.",
+            "gestão de talentos por critérios objetivos.",
+            "exercício regular da discricionariedade.",
+            "assédio sexual por chantagem."
+          ]
+        },
+        {
+          "numero": 72,
+          "enunciado": "Uma unidade recebe denúncia de discriminação. Qual é a resposta inicial compatível com um programa de integridade?",
+          "alternativas": [
+            "Divulgar de imediato a identidade da pessoa denunciante.",
+            "Condicionar o recebimento à anuência da chefia denunciada.",
+            "Transferir compulsoriamente a pessoa denunciante como resposta padrão.",
+            "Registrar a denúncia, restringir o acesso conforme a necessidade e acionar a apuração com proteção contra retaliação.",
+            "Eliminar o registro quando houver contestação."
+          ]
+        },
+        {
+          "numero": 73,
+          "enunciado": "Um sistema rejeita automaticamente pessoas acima de 50 anos para um serviço público em que não há requisito etário. Qual risco deve ser avaliado primeiro?",
+          "alternativas": [
+            "Discriminação por idade decorrente de critério sem justificativa pertinente.",
+            "Segregação geográfica por excesso de unidades.",
+            "Desatualização gráfica sem impacto na elegibilidade.",
+            "Descumprimento de reserva automática aos mais jovens.",
+            "Inconsistência de grafia nos nomes dos usuários."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Conhecimentos Regionais de Santa Catarina",
+      "questoes": [
+        {
+          "numero": 74,
+          "enunciado": "O conflito do Contestado ocorreu em território disputado entre Santa Catarina e",
+          "alternativas": [
+            "Rio Grande do Sul.",
+            "São Paulo.",
+            "Mato Grosso do Sul.",
+            "Minas Gerais.",
+            "Paraná."
+          ]
+        },
+        {
+          "numero": 75,
+          "enunciado": "Qual rio é o eixo da bacia associada ao Vale do Itajaí, onde se situa Blumenau?",
+          "alternativas": [
+            "Uruguai.",
+            "Pelotas.",
+            "Tubarão.",
+            "Itajaí-Açu.",
+            "Iguaçu."
+          ]
+        },
+        {
+          "numero": 76,
+          "enunciado": "Quais são, na ordem, os limites de Santa Catarina ao norte, ao sul, a oeste e a leste?",
+          "alternativas": [
+            "Paraná, Rio Grande do Sul, Argentina e Atlântico.",
+            "Rio Grande do Sul, Paraná, Argentina e Atlântico.",
+            "São Paulo, Paraná, Paraguai e Atlântico.",
+            "Paraná, Uruguai, Paraguai e Atlântico.",
+            "Rio Grande do Sul, Uruguai, Argentina e Atlântico."
+          ]
+        },
+        {
+          "numero": 77,
+          "enunciado": "Qual associação entre uma região catarinense e uma atividade que marcou sua formação econômica é correta?",
+          "alternativas": [
+            "Vale do Itajaí e extração de petróleo em terra.",
+            "Serra e cultivo de cacau tropical.",
+            "Sul e mineração de bauxita.",
+            "Oeste e agroindústria de aves e suínos.",
+            "Litoral e extração de borracha de seringais."
+          ]
+        },
+        {
+          "numero": 78,
+          "enunciado": "A presença açoriana na formação cultural catarinense está associada sobretudo",
+          "alternativas": [
+            "à fundação de colônias exclusivamente no Extremo Oeste no fim do século XX.",
+            "à ocupação litorânea, incluindo a Ilha de Santa Catarina, a partir do século XVIII.",
+            "à mineração no planalto na primeira metade do século XVI.",
+            "a missões castelhanas na bacia do Paraná no século XIX.",
+            "à industrialização automobilística no início do século XVII."
+          ]
+        },
+        {
+          "numero": 79,
+          "enunciado": "Qual era o nome da capital catarinense antes da denominação Florianópolis, adotada no fim do século XIX?",
+          "alternativas": [
+            "São Francisco do Sul.",
+            "Nossa Senhora da Graça.",
+            "São José da Terra Firme.",
+            "Porto Belo.",
+            "Desterro."
+          ]
+        },
+        {
+          "numero": 80,
+          "enunciado": "Qual município abriga a sede da Assembleia Legislativa do Estado de Santa Catarina?",
+          "alternativas": [
+            "Joinville.",
+            "Florianópolis.",
+            "Blumenau.",
+            "Lages.",
+            "Chapecó."
+          ]
+        }
+      ]
+    }
+  ],
+  "conhecimentos_especificos": [
+    {
+      "disciplina": "Finanças Públicas",
+      "questoes": [
+        {
+          "numero": 81,
+          "enunciado": "O Executivo precisa reforçar uma dotação, criar dotação para despesa sem previsão específica e atender despesa urgente e imprevisível de calamidade. Quais créditos se aplicam, respectivamente?",
+          "alternativas": [
+            "Especial, suplementar e extraordinário.",
+            "Suplementar, especial e extraordinário.",
+            "Extraordinário, especial e suplementar.",
+            "Suplementar, extraordinário e especial.",
+            "Especial, extraordinário e suplementar."
+          ]
+        },
+        {
+          "numero": 82,
+          "enunciado": "Uma despesa foi empenhada e liquidada em dezembro. O pagamento ficou para janeiro. Em 31 de dezembro, o valor caracteriza",
+          "alternativas": [
+            "restos a pagar não processados.",
+            "despesa de exercícios anteriores por ausência de empenho.",
+            "obrigação sem registro orçamentário.",
+            "restos a pagar processados.",
+            "adiantamento a fornecedor."
+          ]
+        },
+        {
+          "numero": 83,
+          "enunciado": "O servidor confere contrato, nota de empenho e comprovantes de entrega para verificar o direito do credor e determinar o valor exato a pagar. Qual é o estágio?",
+          "alternativas": [
+            "Liquidação.",
+            "Empenho.",
+            "Fixação.",
+            "Programação financeira.",
+            "Recolhimento."
+          ]
+        },
+        {
+          "numero": 84,
+          "enunciado": "Uma receita orçamentária é lançada em dezembro e arrecadada em janeiro. A qual exercício ela pertence segundo o art. 35 da Lei nº 4.320/1964?",
+          "alternativas": [
+            "Ao de dezembro, pelo lançamento.",
+            "Ao de janeiro, pela arrecadação.",
+            "Ao da inscrição em dívida ativa, necessariamente.",
+            "Ao de elaboração do PPA.",
+            "Ao que o órgão escolher por conveniência."
+          ]
+        },
+        {
+          "numero": 85,
+          "enunciado": "Qual instrumento estabelece, de forma regionalizada, diretrizes, objetivos e metas para despesas de capital e programas de duração continuada?",
+          "alternativas": [
+            "RREO.",
+            "RGF.",
+            "Cronograma mensal de desembolso.",
+            "PPA.",
+            "Quadro de detalhamento da despesa."
+          ]
+        },
+        {
+          "numero": 86,
+          "enunciado": "O princípio da exclusividade veda matéria estranha à previsão da receita e à fixação da despesa na LOA. Qual autorização é expressamente ressalvada pela Constituição Federal?",
+          "alternativas": [
+            "Criação de tributos e autarquias.",
+            "Alteração de carreiras e vencimentos.",
+            "Abertura de créditos suplementares e contratação de operações de crédito, inclusive por antecipação de receita.",
+            "Reforma da estrutura administrativa e majoração de alíquotas.",
+            "Abertura genérica de créditos especiais e emancipação de municípios."
+          ]
+        },
+        {
+          "numero": 87,
+          "enunciado": "Pela LRF, se ao final de um bimestre a realização da receita puder comprometer as metas fiscais, qual medida cabe aos Poderes e ao Ministério Público, observadas as regras legais e a LDO?",
+          "alternativas": [
+            "Abrir automaticamente crédito extraordinário.",
+            "Promover por ato próprio limitação de empenho e movimentação financeira nos trinta dias subsequentes.",
+            "Suspender em definitivo todas as despesas obrigatórias.",
+            "Alterar o PPA por resolução do Executivo.",
+            "Remanejar livremente todas as receitas vinculadas."
+          ]
+        },
+        {
+          "numero": 88,
+          "enunciado": "Uma obrigação foi reconhecida depois do encerramento do exercício a que se refere e não foi inscrita em restos a pagar. Atendidos os requisitos do art. 37 da Lei nº 4.320/1964, o pagamento pode ocorrer",
+          "alternativas": [
+            "por registro retroativo obrigatório como restos a pagar processados.",
+            "à conta de dotação específica de despesas de exercícios anteriores.",
+            "diretamente, sem dotação.",
+            "por anulação da receita correspondente.",
+            "por crédito extraordinário automático."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Governança, Gestão de TI e Projetos",
+      "questoes": [
+        {
+          "numero": 89,
+          "enunciado": "No COBIT 2019, um colegiado avalia necessidades das partes interessadas, direciona prioridades e monitora desempenho. A que domínio correspondem essas ações?",
+          "alternativas": [
+            "APO.",
+            "BAI.",
+            "DSS.",
+            "EDM.",
+            "MEA."
+          ]
+        },
+        {
+          "numero": 90,
+          "enunciado": "Uma equipe aplica um contorno para restabelecer um portal e depois investiga a causa de interrupções recorrentes. Na gestão de serviços, os dois focos são",
+          "alternativas": [
+            "gestão de problemas e de disponibilidade.",
+            "gestão de mudanças e de incidentes.",
+            "gestão de capacidade e financeira.",
+            "gestão de incidentes e de problemas.",
+            "gestão de ativos e de configuração."
+          ]
+        },
+        {
+          "numero": 91,
+          "enunciado": "Um SLA exige disponibilidade de 99,5% em mês de 30 dias, medido 24×7, sem exclusões. Qual é a indisponibilidade máxima permitida?",
+          "alternativas": [
+            "216 minutos.",
+            "72 minutos.",
+            "144 minutos.",
+            "300 minutos.",
+            "432 minutos."
+          ]
+        },
+        {
+          "numero": 92,
+          "enunciado": "Qual cláusula permite medir objetivamente o cumprimento do prazo contratual de resolução?",
+          "alternativas": [
+            "Percentual de excelência informado pela contratada ao fim do mês.",
+            "Tempo considerado adequado, sem registro da abertura.",
+            "Quantidade de chamados abertos como única medida do prazo.",
+            "Total de horas trabalhadas dividido pelo número de atendentes.",
+            "Percentual de chamados elegíveis resolvidos em oito horas úteis, com início, fim, exclusões e fonte de horários definidos."
+          ]
+        },
+        {
+          "numero": 93,
+          "enunciado": "Segundo o Scrum Guide 2020, qual é o compromisso associado ao Product Backlog?",
+          "alternativas": [
+            "Product Goal.",
+            "Sprint Goal.",
+            "Definition of Done.",
+            "Increment.",
+            "Sprint Review."
+          ]
+        },
+        {
+          "numero": 94,
+          "enunciado": "Uma equipe usa Kanban e detecta acúmulo persistente na revisão. Qual medida trata mais diretamente o problema de fluxo?",
+          "alternativas": [
+            "Aumentar a entrada de itens para ocupar a capacidade inicial.",
+            "Medir apenas as tarefas iniciadas por pessoa.",
+            "Retirar a sinalização dos itens bloqueados.",
+            "Criar filas paralelas sem medir o tempo de espera.",
+            "Limitar o trabalho em progresso e liberar a revisão antes de puxar novos itens."
+          ]
+        },
+        {
+          "numero": 95,
+          "enunciado": "Um projeto tem marcos regulatórios fixos e uma interface cujos requisitos serão descobertos com protótipos. Qual abordagem é mais coerente?",
+          "alternativas": [
+            "Preditiva, congelando a interface antes de consultar usuários.",
+            "Adaptativa, tratando os marcos regulatórios como opcionais.",
+            "Preditiva, adiando a aceitação para depois do encerramento.",
+            "Híbrida, com marcos e aprovações planejados e desenvolvimento iterativo da interface.",
+            "Adaptativa, com escopo e sequência da interface inteiramente imutáveis."
+          ]
+        },
+        {
+          "numero": 96,
+          "enunciado": "Na data de controle de um projeto, PV = R$ 500 mil, EV = R$ 400 mil e AC = R$ 450 mil. Qual é o diagnóstico por valor agregado?",
+          "alternativas": [
+            "Avanço em relação ao plano e eficiência de custo.",
+            "Atraso em relação ao plano e eficiência de custo.",
+            "Atraso em relação ao plano e ineficiência de custo.",
+            "Avanço em relação ao plano e ineficiência de custo.",
+            "Prazo e custo exatamente conforme o planejado."
+          ]
+        },
+        {
+          "numero": 97,
+          "enunciado": "A contratada informa que concluiu a entrega, mas falhou no teste obrigatório de integridade. Qual é a medida de fiscalização mais adequada?",
+          "alternativas": [
+            "Registrar a falha, exigir correção e condicionar o aceite aos critérios pactuados.",
+            "Aceitar a entrega com base na declaração da fornecedora.",
+            "Alterar retroativamente o critério de teste.",
+            "Aceitar o tempo gasto como prova de conformidade.",
+            "Considerar o pagamento como evidência de aceite técnico."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Engenharia e Arquitetura de Software",
+      "questoes": [
+        {
+          "numero": 98,
+          "enunciado": "Qual requisito é simultaneamente não funcional e verificável?",
+          "alternativas": [
+            "O sistema deve permitir anexar comprovantes.",
+            "A solução deve ser agradável e moderna.",
+            "O usuário deve poder consultar o saldo.",
+            "A aplicação deve exportar o relatório para PDF.",
+            "Sob 200 usuários simultâneos, 95% das consultas devem responder em até dois segundos."
+          ]
+        },
+        {
+          "numero": 99,
+          "enunciado": "Uma alteração no formato de uma API deve ser detectada antes de romper dois consumidores que implantam em ritmos distintos. Qual teste é mais diretamente indicado?",
+          "alternativas": [
+            "Teste unitário de ordenação interna.",
+            "Teste de contrato entre o fornecedor e os consumidores da API.",
+            "Teste exploratório de usabilidade da tela inicial.",
+            "Teste de estresse do servidor durante backup.",
+            "Teste de capacidade do enlace entre datacenters."
+          ]
+        },
+        {
+          "numero": 100,
+          "enunciado": "Na APF, um grupo lógico de dados é reconhecido pelo usuário, consultado pela aplicação medida e mantido por outra aplicação. Qual função de dados melhor corresponde a esse grupo?",
+          "alternativas": [
+            "Arquivo Lógico Interno (ALI).",
+            "Entrada Externa (EE).",
+            "Arquivo de Interface Externa (AIE).",
+            "Saída Externa (SE).",
+            "Consulta Externa (CE)."
+          ]
+        },
+        {
+          "numero": 101,
+          "enunciado": "Um commit publicado introduziu regressão em uma branch compartilhada. Qual comando cria um novo commit que inverte a mudança, preservando o histórico publicado?",
+          "alternativas": [
+            "git reset --hard.",
+            "git rebase -i.",
+            "git stash pop.",
+            "git revert.",
+            "git clean -fd."
+          ]
+        },
+        {
+          "numero": 102,
+          "enunciado": "Em CI/CD, qual configuração melhora a rastreabilidade entre o que foi testado e o que foi implantado?",
+          "alternativas": [
+            "Promover o mesmo artefato imutável entre ambientes, registrando identificador e commit de origem.",
+            "Reconstruir em produção a partir do estado mais recente da branch.",
+            "Sobrescrever a imagem aprovada usando etiqueta mutável.",
+            "Testar só depois da promoção e descartar as evidências.",
+            "Identificar a aplicação e sua versão apenas pelo nome da equipe."
+          ]
+        },
+        {
+          "numero": 103,
+          "enunciado": "Na semântica HTTP, qual método é idempotente, mas não é classificado como seguro?",
+          "alternativas": [
+            "GET.",
+            "HEAD.",
+            "PUT.",
+            "OPTIONS.",
+            "CONNECT."
+          ]
+        },
+        {
+          "numero": 104,
+          "enunciado": "Em C#, após executar int? n = null; int r = (n ?? 4) * 2;, qual é o valor de r?",
+          "alternativas": [
+            "0.",
+            "4.",
+            "2.",
+            "8.",
+            "null."
+          ]
+        },
+        {
+          "numero": 105,
+          "enunciado": "Em JavaScript, qual é o resultado de [2, 4, 6].filter(x => x > 2).map(x => x / 2)?",
+          "alternativas": [
+            "[1, 2, 3].",
+            "[2, 3].",
+            "[4, 6].",
+            "[1, 2].",
+            "[3]."
+          ]
+        },
+        {
+          "numero": 106,
+          "enunciado": "Em TypeScript, uma entrada tem tipo unknown. Qual caminho permite usar .trim() após uma checagem que confirma o tipo do valor em execução?",
+          "alternativas": [
+            "Declarar valor as string, pois a asserção verifica o valor em execução.",
+            "Restringir o tipo com typeof valor === 'string' antes da chamada.",
+            "Chamar .trim() diretamente, pois unknown equivale a string.",
+            "Acrescentar ! para converter o valor em cadeia.",
+            "Testar apenas valor !== null."
+          ]
+        },
+        {
+          "numero": 107,
+          "enunciado": "Dois microsserviços trocam eventos. O consumidor pode receber a mesma mensagem várias vezes. Qual desenho evita registrar o mesmo efeito contábil duas vezes?",
+          "alternativas": [
+            "Eliminar os identificadores dos eventos.",
+            "Aplicar todo efeito fora de transação e sem controle de duplicidade.",
+            "Registrar o identificador do evento com unicidade na mesma transação que aplica o efeito.",
+            "Esperar um intervalo aleatório antes de registrar cada efeito.",
+            "Gerar identificador diferente por tentativa e usá-lo como chave do efeito."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Integração e Sistemas da Administração Pública",
+      "questoes": [
+        {
+          "numero": 108,
+          "enunciado": "Compras e contabilidade atribuem conceitos diferentes ao campo valor_total. Qual medida resolve o problema de interoperabilidade semântica?",
+          "alternativas": [
+            "Padronizar apenas a codificação de caracteres.",
+            "Transferir os dados por HTTPS sem revisar a especificação.",
+            "Copiar toda a tabela de compras sobre a tabela contábil.",
+            "Padronizar as cores usadas para exibir o campo.",
+            "Definir significado, unidade, composição e regras de transformação em contrato de dados comum."
+          ]
+        },
+        {
+          "numero": 109,
+          "enunciado": "Uma liquidação pode estar na origem sem jamais chegar ao destino. Qual controle detecta essa discrepância?",
+          "alternativas": [
+            "Contar apenas as mensagens que chegaram ao destino.",
+            "Conciliar periodicamente os eventos esperados com os recebidos, pela chave e pelo valor, registrando as exceções.",
+            "Comparar a disponibilidade média dos servidores.",
+            "Validar a sintaxe dos eventos recebidos.",
+            "Inspecionar os nomes das filas na implantação."
+          ]
+        },
+        {
+          "numero": 110,
+          "enunciado": "Que recurso permite seguir a mesma solicitação do sistema de contratos até a contabilização, passando por vários serviços?",
+          "alternativas": [
+            "Um número aleatório diferente em cada etapa, sem vínculo.",
+            "A mensagem do último serviço da cadeia.",
+            "O dia da semana como referência comum.",
+            "O total diário de chamadas de cada serviço.",
+            "Um identificador de correlação propagado e registrado nos eventos pertinentes."
+          ]
+        },
+        {
+          "numero": 111,
+          "enunciado": "Uma API de compras precisa introduzir um campo obrigatório sem interromper clientes legados. Qual estratégia é adequada?",
+          "alternativas": [
+            "Exigir o campo imediatamente na versão atual.",
+            "Eliminar a validação em todas as versões futuras.",
+            "Manter contrato compatível para os clientes atuais e migrá-los de forma coordenada para a nova versão.",
+            "Manter a URL e mudar o significado de campos existentes sem comunicar.",
+            "Fazer cada cliente ler diretamente a tabela de origem."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Bancos de Dados e SQL",
+      "questoes": [
+        {
+          "numero": 112,
+          "enunciado": "Em Item(pedido_id, produto_id, nome_produto, quantidade), a chave é (pedido_id, produto_id), e nome_produto depende só de produto_id. Com atributos atômicos, qual forma normal é a primeira violada?",
+          "alternativas": [
+            "Primeira forma normal.",
+            "Terceira forma normal, estando a segunda satisfeita.",
+            "Segunda forma normal.",
+            "Forma normal de Boyce-Codd, estando a terceira satisfeita.",
+            "Quarta forma normal, estando a terceira satisfeita."
+          ]
+        },
+        {
+          "numero": 113,
+          "enunciado": "A consulta deve retornar todos os órgãos e os contratos ativos correspondentes, quando houver. Qual instrução preserva também os órgãos sem contrato ativo?",
+          "alternativas": [
+            "SELECT o.id, c.id FROM Orgao o JOIN Contrato c ON c.orgao_id = o.id AND c.ativo = 1",
+            "SELECT o.id, c.id FROM Orgao o LEFT JOIN Contrato c ON c.orgao_id = o.id WHERE c.ativo = 1",
+            "SELECT o.id, c.id FROM Orgao o LEFT JOIN Contrato c ON c.orgao_id = o.id AND c.ativo = 1",
+            "SELECT o.id, c.id FROM Orgao o LEFT JOIN Contrato c ON c.ativo = 1 WHERE c.orgao_id = o.id",
+            "SELECT o.id, c.id FROM Orgao o CROSS JOIN Contrato c WHERE c.ativo = 1"
+          ]
+        },
+        {
+          "numero": 114,
+          "enunciado": "Uma coluna decimal valor contém 9, NULL e 0. O que retorna SELECT COUNT(*), COUNT(valor), AVG(valor) FROM T?",
+          "alternativas": [
+            "3, 2 e 4,5.",
+            "3, 3 e 3.",
+            "2, 2 e 4,5.",
+            "3, 2 e 3.",
+            "3, 1 e 9."
+          ]
+        },
+        {
+          "numero": 115,
+          "enunciado": "Uma consulta deve retornar fornecedores cujo total de pagamentos supera R$ 100 mil. Qual condição filtra corretamente depois de agrupar por fornecedor?",
+          "alternativas": [
+            "HAVING SUM(valor) > 100000",
+            "WHERE SUM(valor) > 100000",
+            "WHERE valor > 100000",
+            "ORDER BY SUM(valor) > 100000",
+            "HAVING COUNT(*) > 100000"
+          ]
+        },
+        {
+          "numero": 116,
+          "enunciado": "Em PostgreSQL, uma CTE recursiva percorre órgão e descendentes em uma hierarquia sem ciclos com UNION ALL. De quais partes a CTE precisa?",
+          "alternativas": [
+            "Apenas termo inicial seguido de ORDER BY.",
+            "Dois termos recursivos sem seleção inicial.",
+            "Visão materializada e índice hash obrigatórios.",
+            "Uma transação autônoma por nível.",
+            "Termo inicial que seleciona a raiz e termo recursivo que usa a CTE para encontrar os filhos."
+          ]
+        },
+        {
+          "numero": 117,
+          "enunciado": "Para numerar as despesas de cada órgão da maior para a menor, com desempate por id único, qual expressão é adequada?",
+          "alternativas": [
+            "ROW_NUMBER() OVER (PARTITION BY orgao_id ORDER BY valor DESC, id)",
+            "ROW_NUMBER() OVER (ORDER BY valor DESC, id)",
+            "COUNT(*) OVER (PARTITION BY orgao_id)",
+            "RANK() OVER (PARTITION BY valor ORDER BY orgao_id)",
+            "SUM(valor) OVER (ORDER BY id)"
+          ]
+        },
+        {
+          "numero": 118,
+          "enunciado": "Uma transação altera uma linha. Outra lê o valor alterado antes do commit da primeira. Qual anomalia ocorreu?",
+          "alternativas": [
+            "Leitura fantasma.",
+            "Leitura não repetível.",
+            "Deadlock.",
+            "Leitura suja.",
+            "Violação de chave estrangeira."
+          ]
+        },
+        {
+          "numero": 119,
+          "enunciado": "Uma tabela grande recebe consultas seletivas por igualdade em orgao_id e intervalo em data. Qual índice B-tree está mais alinhado a esse filtro?",
+          "alternativas": [
+            "Índice composto (orgao_id, data).",
+            "Índice apenas em uma coluna de descrição.",
+            "Índice composto (valor, data), sem filtro por valor.",
+            "Índice apenas em um campo ausente da consulta.",
+            "Índice composto (id, status), com ambos fora do filtro."
+          ]
+        },
+        {
+          "numero": 120,
+          "enunciado": "Qual comando SQL pertence à DCL e concede leitura sobre um objeto a um papel?",
+          "alternativas": [
+            "CREATE VIEW relatorio AS SELECT id FROM t",
+            "COMMIT",
+            "UPDATE relatorio SET valor = 0",
+            "ALTER TABLE relatorio ADD COLUMN codigo INT",
+            "GRANT SELECT ON relatorio TO auditor"
+          ]
+        },
+        {
+          "numero": 121,
+          "enunciado": "No MongoDB, pedidos contêm poucos itens, em quantidade limitada, quase sempre lidos com o pedido. Que desenho tende a evitar consultas adicionais?",
+          "alternativas": [
+            "Gravar cada campo de item em um banco separado.",
+            "Duplicar toda a coleção de clientes em cada item.",
+            "Embutir os itens como subdocumentos em um array do documento do pedido.",
+            "Separar pedido e itens apenas porque a relação é de um para muitos.",
+            "Guardar todos os pedidos em um único documento crescente."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Data Warehouse e Engenharia de Dados",
+      "questoes": [
+        {
+          "numero": 122,
+          "enunciado": "O grão de uma tabela fato é de uma linha por pagamento efetuado. Qual decisão respeita esse grão?",
+          "alternativas": [
+            "Gravar totais mensais indistinguíveis dos pagamentos na mesma tabela.",
+            "Gravar uma linha por fornecedor e sobrescrevê-la a cada pagamento.",
+            "Registrar cada pagamento com suas chaves dimensionais e medidas.",
+            "Misturar empenhos sem pagamento e pagamentos sem diferenciá-los.",
+            "Alterar o grão conforme a origem do arquivo."
+          ]
+        },
+        {
+          "numero": 123,
+          "enunciado": "Um relatório deve atribuir o pagamento à região do fornecedor na data do fato, mesmo que ele mude de endereço depois. Qual desenho atende ao requisito?",
+          "alternativas": [
+            "Dimensão tipo 1 que sobrescreve o endereço.",
+            "Chave do fornecedor sem vigência e sempre com endereço atual.",
+            "Tabela de fatos sem vínculo com a dimensão de fornecedor.",
+            "Dimensão lentamente mutável tipo 2, com chaves substitutas e vigências.",
+            "Cálculo histórico baseado apenas no endereço de hoje."
+          ]
+        },
+        {
+          "numero": 124,
+          "enunciado": "Um pipeline carrega dados brutos no armazém e executa as transformações dentro dele. Qual padrão descreve essa ordem?",
+          "alternativas": [
+            "ETL com transformação anterior à carga.",
+            "ELT.",
+            "OLTP.",
+            "SCD tipo 1.",
+            "Replicação síncrona em duas fases."
+          ]
+        },
+        {
+          "numero": 125,
+          "enunciado": "Uma carga incremental pode ser reexecutada após falha. Qual comportamento indica idempotência?",
+          "alternativas": [
+            "Reexecutar insere cópias dos registros anteriores.",
+            "O pipeline bloqueia qualquer recuperação.",
+            "O resultado depende da quantidade de tentativas.",
+            "O número de linhas sempre aumenta a cada tentativa.",
+            "Reexecutar o mesmo lote produz o mesmo estado final no destino."
+          ]
+        },
+        {
+          "numero": 126,
+          "enunciado": "No Spark SQL, uma equipe encadeia filter e select em um DataFrame distribuído e chama count. Quando o cálculo das transformações normalmente é disparado?",
+          "alternativas": [
+            "Quando count, uma ação, precisa calcular o resultado.",
+            "Assim que filter é escrito, antes de definir o DataFrame.",
+            "Quando select traz todas as linhas ao driver.",
+            "Somente ao iniciar uma segunda sessão Spark.",
+            "No momento em que o nome das colunas é carregado."
+          ]
+        },
+        {
+          "numero": 127,
+          "enunciado": "Um painel agrega bilhões de linhas e lê poucas colunas por consulta. Por que um formato colunar como Parquet se ajusta ao caso?",
+          "alternativas": [
+            "É necessário para transações de linha com bloqueio pessimista.",
+            "Impede qualquer leitura seletiva de colunas.",
+            "Dispensa informações de esquema para interpretar todos os tipos.",
+            "Permite leitura das colunas projetadas e explora compressão e estatísticas por blocos.",
+            "Exige converter todo o conjunto para texto a cada consulta."
+          ]
+        },
+        {
+          "numero": 128,
+          "enunciado": "Em uma visão OLAP, o usuário navega do total anual para os meses do mesmo ano. Qual operação realizou?",
+          "alternativas": [
+            "Roll-up.",
+            "Drill-down.",
+            "Pivot sem mudança de nível.",
+            "Deduplicação.",
+            "Data masking."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Governança e Qualidade de Dados",
+      "questoes": [
+        {
+          "numero": 129,
+          "enunciado": "Um valor do painel precisa ser rastreado até os arquivos de origem e as transformações intermediárias. Qual recurso registra esse percurso?",
+          "alternativas": [
+            "Glossário semântico isolado.",
+            "Lista de perfis de usuário.",
+            "Dicionário de senhas.",
+            "Inventário de licenças.",
+            "Linhagem de dados."
+          ]
+        },
+        {
+          "numero": 130,
+          "enunciado": "A coluna obrigatória data_pagamento é nula em 7% dos registros. Qual dimensão o indicador mede diretamente?",
+          "alternativas": [
+            "Unicidade.",
+            "Atualidade.",
+            "Precisão monetária.",
+            "Completude.",
+            "Confidencialidade."
+          ]
+        },
+        {
+          "numero": 131,
+          "enunciado": "Há registros distintos para o mesmo fornecedor em compras e contabilidade, com dados complementares. Que abordagem busca manter uma identidade corporativa confiável?",
+          "alternativas": [
+            "Conservar códigos conflitantes sem correspondência.",
+            "Usar a amplitude de valores para definir a identidade.",
+            "Deduplicar pela data de atualização.",
+            "Converter fornecedores em metadados de uso.",
+            "Gerir dados mestres, reconciliar identidades e definir a precedência dos atributos."
+          ]
+        },
+        {
+          "numero": 132,
+          "enunciado": "Uma base apresenta nulos, códigos inválidos, formatos misturados e duplicidades potenciais. Qual ação inicial produz evidência quantitativa para orientar a correção?",
+          "alternativas": [
+            "Remover registros acima da média.",
+            "Executar data profiling por coluna e chave candidata, medindo frequências, nulos, formatos e duplicidades.",
+            "Substituir nulos por zero antes de medir.",
+            "Atribuir um novo código a cada linha.",
+            "Manter apenas os registros recentes antes de examinar o histórico."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Business Intelligence, Analytics e Visualização",
+      "questoes": [
+        {
+          "numero": 133,
+          "enunciado": "No Power BI, que componente permite combinar arquivos, corrigir tipos e padronizar nomes antes da carga no modelo?",
+          "alternativas": [
+            "Power Query, com linguagem M.",
+            "Cartão de visualização.",
+            "Filtro visual após a carga.",
+            "Medida DAX exibida no relatório.",
+            "Painel de marcadores."
+          ]
+        },
+        {
+          "numero": 134,
+          "enunciado": "Um total deve se recalcular quando o usuário filtra ano ou órgão no Power BI. Qual opção implementa o requisito diretamente?",
+          "alternativas": [
+            "Uma medida DAX como Total Pago = SUM(Pagamento[Valor]).",
+            "Uma coluna calculada que grava em cada linha o total global no processamento.",
+            "Um texto fixo com o total do último mês.",
+            "Uma dimensão desconectada que registra só a data de atualização.",
+            "Uma etapa de extração que ignora as interações."
+          ]
+        },
+        {
+          "numero": 135,
+          "enunciado": "Em DAX, CALCULATE([Total Pago], REMOVEFILTERS('Calendario'[Ano])) é usado em um visual por ano e órgão. Qual é o efeito de REMOVEFILTERS nessa expressão?",
+          "alternativas": [
+            "Remove todos os filtros do modelo, inclusive os de órgão.",
+            "Remove apenas o filtro de órgão.",
+            "Transforma [Total Pago] em coluna física.",
+            "Impede o recálculo quando muda a seleção do órgão.",
+            "Remove o filtro da coluna Ano e mantém filtros não afetados, como o de órgão."
+          ]
+        },
+        {
+          "numero": 136,
+          "enunciado": "Calendario[Data] é única e Pagamento[Data] tem múltiplas ocorrências. Em um esquema estrela do Power BI, qual relacionamento é adequado para filtrar pagamentos por mês?",
+          "alternativas": [
+            "Muitos para muitos e sempre bidirecional.",
+            "Um para um, da tabela de pagamentos para a dimensão.",
+            "Muitos para um, com pagamentos no lado da unicidade.",
+            "Um para muitos, com filtro de Calendario para Pagamento.",
+            "Nenhum relacionamento, com filtros independentes."
+          ]
+        },
+        {
+          "numero": 137,
+          "enunciado": "Uma equipe identifica por que o atraso médio cresceu, detalhando unidade, período e etapa. A atividade é principalmente análise",
+          "alternativas": [
+            "prescritiva.",
+            "diagnóstica.",
+            "preditiva.",
+            "de classificação supervisionada.",
+            "de séries temporais com previsão obrigatória."
+          ]
+        },
+        {
+          "numero": 138,
+          "enunciado": "Dois painéis de autosserviço apresentam totais divergentes sob os mesmos filtros. Que medida de governança ajuda a evitar a recorrência?",
+          "alternativas": [
+            "Distribuir cópias isoladas da fonte sem documentação.",
+            "Publicar modelo semântico compartilhado, com medidas certificadas e definições documentadas.",
+            "Remover a data de atualização e ocultar os filtros.",
+            "Alterar manualmente os totais em cada painel.",
+            "Duplicar as dimensões com chaves incompatíveis."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Programação e Automação para Dados",
+      "questoes": [
+        {
+          "numero": 139,
+          "enunciado": "Em Python, f(x, acum=None) cria uma nova lista se acum is None, executa acum.append(x) e retorna acum. O que retornam duas chamadas independentes f(4) e f(9)?",
+          "alternativas": [
+            "Listas distintas, [4] e [9].",
+            "A mesma lista [4, 9].",
+            "[4] e [4, 9], em listas distintas.",
+            "None em ambas.",
+            "A segunda chamada lança TypeError por omitir acum."
+          ]
+        },
+        {
+          "numero": 140,
+          "enunciado": "Em Python, uma exceção ocorre dentro de with open('mov.csv', encoding='utf-8') as arquivo: e não é capturada no bloco. Qual é o efeito esperado?",
+          "alternativas": [
+            "O arquivo permanece aberto e a exceção é suprimida.",
+            "Ao sair do bloco, o arquivo fecha e a exceção pode se propagar.",
+            "O arquivo é reaberto automaticamente em modo binário.",
+            "A leitura passa a usar outra codificação.",
+            "O fechamento ocorre apenas em saída sem erro."
+          ]
+        },
+        {
+          "numero": 141,
+          "enunciado": "Em NumPy, A tem formato (3, 1) e B tem formato (1, 4). Pelo broadcasting, qual é o formato de A + B?",
+          "alternativas": [
+            "(3, 1).",
+            "(1, 4).",
+            "(3, 4).",
+            "(4, 3).",
+            "A operação é incompatível."
+          ]
+        },
+        {
+          "numero": 142,
+          "enunciado": "Em pandas, qual merge preserva todos os pagamentos de df_pag e verifica que uma chave corresponde a no máximo um registro em df_cad?",
+          "alternativas": [
+            "df_pag.merge(df_cad, on='id', how='left', validate='many_to_one')",
+            "df_pag.merge(df_cad, on='id', how='inner', validate='one_to_one')",
+            "df_pag.merge(df_cad, how='cross')",
+            "df_pag.merge(df_cad, on='id', how='right', validate='one_to_many')",
+            "df_pag.merge(df_cad, on='id', how='inner', validate='many_to_many')"
+          ]
+        },
+        {
+          "numero": 143,
+          "enunciado": "Um CSV com vírgula como separador contém o campo de descrição \"material, reposição\". Como preservar a descrição como campo único?",
+          "alternativas": [
+            "Dividir a linha em cada vírgula e descartar os excedentes.",
+            "Substituir toda vírgula por separador de registro.",
+            "Tratar as aspas como dados comuns e dividir por cada vírgula.",
+            "Usar um leitor CSV que respeite o delimitador e o caractere de aspas.",
+            "Contar vírgulas sem processar as regras de citação."
+          ]
+        },
+        {
+          "numero": 144,
+          "enunciado": "Uma API paginada devolve next_cursor, um cursor opaco que vem nulo no fim. Como coletar todas as páginas?",
+          "alternativas": [
+            "Interpretar o cursor como contador e incrementar manualmente.",
+            "Enviar o cursor retornado na próxima consulta e encerrar quando for nulo.",
+            "Alterar o cursor para identificar unicamente cada requisição.",
+            "Solicitar sempre a primeira página e deduplicar as respostas.",
+            "Ignorar o cursor e usar o número de registros como limite global."
+          ]
+        },
+        {
+          "numero": 145,
+          "enunciado": "Um robô de RPA preenche telas de um sistema legado sem API. Qual fragilidade é relevante para a implantação?",
+          "alternativas": [
+            "O logotipo constante garante imunidade a mudanças de interface.",
+            "A automação pela interface torna logs desnecessários.",
+            "Rotinas RPA garantem transações entre sistemas.",
+            "O uso de interface gráfica dispensa o controle de credenciais.",
+            "Mudanças no layout ou nos seletores da interface podem interromper a automação."
+          ]
+        },
+        {
+          "numero": 146,
+          "enunciado": "Para cada par (orgao, valor), executa-se totais[orgao] = totais.get(orgao, 0) + valor em um dicionário inicialmente vazio. Com entradas A/8, B/3 e A/5, qual é o resultado?",
+          "alternativas": [
+            "A = 5 e B = 3.",
+            "A = 8 e B = 3.",
+            "A = 13 e B = 3.",
+            "A = 13 e B = 0.",
+            "A = 16 e B = 3."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Estatística, Ciência de Dados e Machine Learning",
+      "questoes": [
+        {
+          "numero": 147,
+          "enunciado": "Uma equipe quer descobrir perfis de unidades por atributos numéricos em escalas muito distintas. Planeja usar k-means com distância euclidiana. Qual abordagem corresponde ao problema?",
+          "alternativas": [
+            "Classificação supervisionada com rótulos obrigatórios.",
+            "Regressão linear com um grupo-alvo por unidade.",
+            "Ajuste direto, pois as escalas não influenciam a distância euclidiana.",
+            "Agrupamento não supervisionado, com avaliação da escala dos atributos antes do ajuste.",
+            "Classificação de cada atributo como classe sem avaliar as unidades."
+          ]
+        },
+        {
+          "numero": 148,
+          "enunciado": "Um modelo prevê atraso antes do vencimento, mas usa a data efetiva de pagamento, inclusive quando só é conhecida depois do vencimento. Qual problema esse atributo introduz?",
+          "alternativas": [
+            "Subajuste por falta de atributos.",
+            "Colinearidade entre classes, exclusivamente.",
+            "Viés de arredondamento.",
+            "Redução garantida de erro em produção.",
+            "Vazamento de informação do futuro."
+          ]
+        },
+        {
+          "numero": 149,
+          "enunciado": "No scikit-learn, como evitar que a média usada para padronizar um atributo seja calculada com exemplos da dobra de validação?",
+          "alternativas": [
+            "Padronizar todo o conjunto antes de formar as dobras.",
+            "Ajustar o padronizador na validação e aplicá-lo ao treino.",
+            "Colocar a padronização e o estimador em um Pipeline avaliado dentro da validação cruzada.",
+            "Calcular a média global inclusive com exemplos de teste.",
+            "Ajustar o estimador na validação e reservar o treino para métricas."
+          ]
+        },
+        {
+          "numero": 150,
+          "enunciado": "Um classificador aponta 60 casos, dos quais 45 são verdadeiros positivos. Há 90 positivos reais no teste. Quais são a precisão e a sensibilidade, respectivamente?",
+          "alternativas": [
+            "50% e 75%.",
+            "75% e 66,7%.",
+            "50% e 66,7%.",
+            "66,7% e 50%.",
+            "75% e 50%."
+          ]
+        },
+        {
+          "numero": 151,
+          "enunciado": "Uma árvore profunda obtém 99% de acurácia no treino e 72% em validação estratificada. A diferença persiste em sucessivas dobras representativas. Qual hipótese e ação são mais coerentes?",
+          "alternativas": [
+            "Sobreajuste. Restringir a profundidade ou aumentar o mínimo por folha e revalidar.",
+            "Subajuste. Aumentar ainda mais a profundidade sem revalidar.",
+            "Ausência de viés. Reportar apenas a acurácia de treino.",
+            "Vazamento confirmado. Incluir o rótulo como atributo em produção.",
+            "Inexistência de erro. Substituir a validação pelo treino."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Detecção de Anomalias e Padrões Suspeitos",
+      "questoes": [
+        {
+          "numero": 152,
+          "enunciado": "Em uma análise, Q1 = R$ 100 e Q3 = R$ 180. Pela regra de 1,5 vezes a amplitude interquartil, qual valor excede o limite superior?",
+          "alternativas": [
+            "R$ 290.",
+            "R$ 260.",
+            "R$ 310.",
+            "R$ 230.",
+            "R$ 190."
+          ]
+        },
+        {
+          "numero": 153,
+          "enunciado": "Um alerta procura possível fracionamento em compras de objetos semelhantes. Qual procedimento é adequado para triagem?",
+          "alternativas": [
+            "Marcar como fraude comprovada toda compra parcelada contratualmente.",
+            "Agregar compras por unidade, objeto comparável e janela temporal, examinar o acumulado e revisar a documentação.",
+            "Agrupar apenas por valor idêntico, mesmo com objetos diferentes.",
+            "Excluir compras de baixo valor antes de medir o acumulado.",
+            "Considerar a grafia literal da descrição como prova conclusiva."
+          ]
+        },
+        {
+          "numero": 154,
+          "enunciado": "Reduz-se o limiar de escore para sinalizar casos suspeitos no mesmo conjunto rotulado, sem remover nenhum alerta já existente. Qual efeito é garantido?",
+          "alternativas": [
+            "O número de falsos positivos diminui.",
+            "A precisão aumenta.",
+            "A sensibilidade diminui.",
+            "Os falsos negativos aumentam quando entram novos verdadeiros positivos.",
+            "Os números de verdadeiros positivos e de falsos positivos não diminuem."
+          ]
+        },
+        {
+          "numero": 155,
+          "enunciado": "Um órgão busca pagamentos duplicados mesmo com diferenças de grafia. Qual abordagem reduz o risco de confundir coincidência de valor com duplicidade?",
+          "alternativas": [
+            "Classificar todo par de mesmo valor como duplicidade definitiva.",
+            "Comparar apenas o nome exato do pagador.",
+            "Ignorar o documento e comparar apenas a data.",
+            "Excluir todos os pagamentos de fornecedores recorrentes.",
+            "Combinar identificadores, data, valor e similaridade após normalização, encaminhando ambiguidades para revisão."
+          ]
+        },
+        {
+          "numero": 156,
+          "enunciado": "Só 1% dos casos é uma irregularidade real. Um modelo que nunca emite alertas obtém 99% de acurácia. Qual é sua sensibilidade para irregularidades?",
+          "alternativas": [
+            "1%.",
+            "50%.",
+            "99%.",
+            "100%.",
+            "0%."
+          ]
+        },
+        {
+          "numero": 157,
+          "enunciado": "Um pagamento não é extremo na base inteira, mas é muito alto para aquele tipo de contrato e unidade. Como considerar melhor o contexto?",
+          "alternativas": [
+            "Aplicar apenas um limite absoluto global.",
+            "Comparar o valor com uma distribuição de referência condicionada ao grupo pertinente.",
+            "Examinar apenas se o valor termina em zero.",
+            "Ordenar os fornecedores por nome e revisar a primeira página.",
+            "Excluir as variáveis de contexto e calcular uma média global."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Inteligência Artificial, PLN e IA Generativa",
+      "questoes": [
+        {
+          "numero": 158,
+          "enunciado": "Qual tarefa de PLN se aplica mais diretamente a localizar e classificar nomes de fornecedores e números de contratos em pareceres?",
+          "alternativas": [
+            "Classificação de sentimento do parecer inteiro.",
+            "Tradução automática de documentos completos.",
+            "Modelagem de tópicos sem extração de trechos.",
+            "Ranqueamento de pareceres por data.",
+            "Reconhecimento de entidades nomeadas com classes de domínio definidas."
+          ]
+        },
+        {
+          "numero": 159,
+          "enunciado": "Como embeddings são empregados em uma busca semântica?",
+          "alternativas": [
+            "Substituem a indexação por busca de caracteres idênticos.",
+            "Geram uma assinatura criptográfica para preservar proximidade semântica.",
+            "Ordenam documentos por posição geográfica fixa.",
+            "Representam consultas e trechos como vetores comparáveis por uma medida de similaridade.",
+            "Transformam rótulos de documentos em senhas de acesso."
+          ]
+        },
+        {
+          "numero": 160,
+          "enunciado": "Um assistente deve responder com base em manuais recém-atualizados e citar a versão consultada. Qual arquitetura favorece esse objetivo?",
+          "alternativas": [
+            "Treinar do zero a cada pergunta, sem registrar as fontes.",
+            "Aumentar somente a temperatura de geração.",
+            "Usar RAG para recuperar trechos versionados e fornecê-los ao gerador com metadados de fonte.",
+            "Usar um conjunto fixo de respostas antigas.",
+            "Fornecer contexto vazio e um prompt curto."
+          ]
+        },
+        {
+          "numero": 161,
+          "enunciado": "O que a autoatenção de um Transformer permite calcular ao construir representações de uma sequência?",
+          "alternativas": [
+            "Uma média obrigatoriamente uniforme e independente das entradas.",
+            "Um índice dependente apenas do tamanho do vocabulário.",
+            "Uma combinação ponderada de representações de posições acessíveis, com pesos dependentes do conteúdo e da máscara.",
+            "Um conjunto de regras sintáticas escrito manualmente para cada palavra.",
+            "Uma transcrição literal do conjunto de treinamento."
+          ]
+        },
+        {
+          "numero": 162,
+          "enunciado": "Um modelo multimodal analisa documentos com tabelas e imagens. Qual critério de aceitação reduz o risco de uso incorreto em auditoria?",
+          "alternativas": [
+            "Aceitar toda extração bem formatada.",
+            "Validar apenas páginas de texto corrido.",
+            "Escolher o modelo pelo tamanho da resposta.",
+            "Ignorar a taxa de erro quando houver uma justificativa.",
+            "Testar contra amostras anotadas, registrar a origem dos valores e encaminhar saídas incertas à revisão humana."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Infraestrutura, Redes e Computação em Nuvem",
+      "questoes": [
+        {
+          "numero": 163,
+          "enunciado": "Qual protocolo fornece automaticamente a um host IPv4 endereço, máscara, gateway e parâmetros de DNS?",
+          "alternativas": [
+            "DNS.",
+            "DHCP.",
+            "HTTPS.",
+            "NAT.",
+            "TCP."
+          ]
+        },
+        {
+          "numero": 164,
+          "enunciado": "Um switch de camada 2 separa dispositivos de dois setores em domínios de broadcast distintos sobre a mesma infraestrutura física. Qual recurso foi empregado?",
+          "alternativas": [
+            "DNS recursivo.",
+            "NAT de origem.",
+            "TCP com retransmissão.",
+            "VLAN.",
+            "Balanceamento HTTP."
+          ]
+        },
+        {
+          "numero": 165,
+          "enunciado": "Qual afirmação caracteriza tipicamente contêineres Linux em comparação com máquinas virtuais convencionais?",
+          "alternativas": [
+            "Cada contêiner inicializa um kernel convidado independente.",
+            "A imagem de contêiner é sempre uma cópia de uma máquina física.",
+            "O isolamento elimina a necessidade de controlar permissões e recursos.",
+            "Os contêineres compartilham o kernel hospedeiro, com isolamento de processos e recursos.",
+            "Os contêineres não podem compartilhar uma imagem-base versionada."
+          ]
+        },
+        {
+          "numero": 166,
+          "enunciado": "No Kubernetes, uma aplicação precisa carregar dados antes de atender solicitações. Qual mecanismo sinaliza se o pod está apto a receber tráfego por um Service?",
+          "alternativas": [
+            "Liveness probe como única condição de roteamento.",
+            "StorageClass sem vínculo com o pod.",
+            "Readiness probe.",
+            "CronJob sem relação com o Deployment.",
+            "A política de reinício, por si só."
+          ]
+        },
+        {
+          "numero": 167,
+          "enunciado": "Em uma oferta IaaS com máquina virtual não gerenciada, quem aplica, em regra, correções ao sistema operacional convidado?",
+          "alternativas": [
+            "O provedor físico, por ter acesso ao hardware.",
+            "O fabricante do processador.",
+            "A operadora de internet do órgão.",
+            "O cliente que administra a máquina virtual.",
+            "O emissor do certificado TLS."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Segurança da Informação e Proteção de Dados",
+      "questoes": [
+        {
+          "numero": 168,
+          "enunciado": "A mesma pessoa não pode cadastrar fornecedor e autorizar seu pagamento. Qual configuração de acesso atende à segregação de funções?",
+          "alternativas": [
+            "Papel único com privilégios amplos para toda a equipe.",
+            "Papéis separados, com regra que impede acumular permissões conflitantes.",
+            "Contas compartilhadas para as duas funções.",
+            "Permissões determinadas apenas pelo turno.",
+            "MFA em uma conta comum que mantém as duas funções."
+          ]
+        },
+        {
+          "numero": 169,
+          "enunciado": "Em uma assinatura digital válida, o que a verificação com a chave pública permite estabelecer?",
+          "alternativas": [
+            "Que a mensagem é sigilosa para qualquer destinatário.",
+            "Que a assinatura corresponde ao conteúdo verificado e à chave privada associada, sujeita à validação da identidade vinculada à chave.",
+            "Que mudanças no conteúdo preservam a validade da assinatura.",
+            "Que a autoridade certificadora conhece a chave privada.",
+            "Que o serviço de envio esteve continuamente disponível."
+          ]
+        },
+        {
+          "numero": 170,
+          "enunciado": "Uma API manipula dados pessoais e envia registros de auditoria a um ambiente central. Qual prática reduz a exposição preservando a auditabilidade?",
+          "alternativas": [
+            "Registrar os identificadores e eventos necessários, mascarar campos sensíveis e restringir o acesso aos logs.",
+            "Registrar tokens e senhas completos.",
+            "Excluir todos os logs após cada chamada.",
+            "Guardar cópias integrais dos dados pessoais com acesso amplo.",
+            "Transferir os logs por canal não autenticado."
+          ]
+        },
+        {
+          "numero": 171,
+          "enunciado": "Um órgão troca CPFs por códigos aleatórios, mas mantém em ambiente restrito uma tabela capaz de associar os códigos aos titulares. Como se caracteriza o tratamento?",
+          "alternativas": [
+            "Anonimização definitiva por retirada da coluna CPF.",
+            "Dados automaticamente livres de proteção quando o vínculo está separado.",
+            "Criptografia assimétrica obrigatória em razão do vínculo.",
+            "Livre divulgação por decisão técnica do operador.",
+            "Pseudonimização, com possibilidade de reassociação a considerar na aplicação da LGPD."
+          ]
+        },
+        {
+          "numero": 172,
+          "enunciado": "Um sistema estabelece RPO de 15 minutos e RTO de duas horas. Como interpretar esses objetivos?",
+          "alternativas": [
+            "Janela tolerável de perda de dados de até 15 minutos e meta de restauração em até duas horas.",
+            "Restauração em 15 minutos e perda de até duas horas de dados.",
+            "Retenção mínima de 15 minutos e rotação de chaves a cada duas horas.",
+            "Detecção em 15 minutos e duração do backup de duas horas.",
+            "Indisponibilidade planejada de duas horas a cada 15 minutos."
+          ]
+        },
+        {
+          "numero": 173,
+          "enunciado": "Que estratégia contribui para recuperar dados se as credenciais do ambiente produtivo forem comprometidas?",
+          "alternativas": [
+            "Usar as mesmas credenciais para permitir apagar todas as cópias.",
+            "Confiar exclusivamente em réplica síncrona com permissões idênticas.",
+            "Manter cópias imutáveis ou isoladas do domínio de produção e testar restaurações.",
+            "Guardar uma única cópia no mesmo volume gravável.",
+            "Substituir os testes de restauração por relatórios de espaço livre."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Auditoria e Controle com Uso de Tecnologia",
+      "questoes": [
+        {
+          "numero": 174,
+          "enunciado": "Um teste automatizado de despesas será reexecutado seis meses depois. Que evidências permitem reproduzir o resultado em condições equivalentes?",
+          "alternativas": [
+            "Apenas o PDF do painel final.",
+            "Apenas a quantidade de exceções.",
+            "Versões ou snapshots das entradas, código, parâmetros, regras de transformação e registros de execução.",
+            "Apenas o nome do analista e a data do relatório.",
+            "Um link para a tabela operacional que muda diariamente."
+          ]
+        },
+        {
+          "numero": 175,
+          "enunciado": "Um fornecedor faturou pontos de função por mudança restrita a requisitos técnicos de infraestrutura. Qual deve ser o foco inicial da auditoria?",
+          "alternativas": [
+            "Confrontar escopo e método contratual com os requisitos funcionais do usuário e a memória de contagem.",
+            "Aceitar a quantidade devido ao esforço informado.",
+            "Tratar qualquer alteração de código como um ponto de função.",
+            "Multiplicar o número de arquivos modificados pelo preço do ponto.",
+            "Usar o valor global do contrato como prova do tamanho funcional."
+          ]
+        },
+        {
+          "numero": 176,
+          "enunciado": "Qual procedimento automatizado encontra diretamente pagamentos sem liquidação válida?",
+          "alternativas": [
+            "Fazer junção interna e inspecionar apenas as linhas correspondentes.",
+            "Comparar somente os totais mensais agregados.",
+            "Escolher uma única unidade e presumir validade nas demais.",
+            "Comparar as chaves e selecionar pagamentos sem liquidação válida correspondente.",
+            "Comparar só o nome textual do fornecedor."
+          ]
+        },
+        {
+          "numero": 177,
+          "enunciado": "O SLA exclui manutenção programada e previamente aprovada. A fornecedora excluiu também períodos de falha sem autorização. Qual revisão cabe ao auditor?",
+          "alternativas": [
+            "Usar exclusivamente o percentual informado pela fornecedora.",
+            "Excluir toda indisponibilidade inferior a uma hora.",
+            "Contar interrupções sem medir sua duração.",
+            "Recalcular com registros independentes e excluir apenas os intervalos de manutenção que satisfaçam os critérios comprovados.",
+            "Converter falhas em manutenção quando a restauração ocorrer no mesmo dia."
+          ]
+        }
+      ]
+    },
+    {
+      "disciplina": "Inglês Técnico",
+      "questoes": [
+        {
+          "numero": 178,
+          "enunciado": "Leia: “The retry mechanism may redeliver a message after the consumer has already committed its transaction.” Qual situação é descrita?",
+          "alternativas": [
+            "O mecanismo impede duplicidade após a primeira entrega.",
+            "O consumidor deve reverter a transação antes que a mensagem exista.",
+            "Uma nova tentativa pode entregar novamente a mensagem depois de o consumidor confirmar a transação.",
+            "Uma nova entrega só é permitida se a transação inicial tiver falhado.",
+            "O produtor confirma a transação apenas ao descartar a mensagem."
+          ]
+        },
+        {
+          "numero": 179,
+          "enunciado": "Leia: “Unless the latest backup has been verified, the migration must be postponed.” Quando o texto determina o adiamento?",
+          "alternativas": [
+            "Quando a cópia de segurança mais recente não tiver sido verificada.",
+            "Sempre que a cópia mais recente tiver sido verificada.",
+            "Quando pelo menos uma cópia antiga tiver sido verificada.",
+            "Quando a migração já tiver sido concluída.",
+            "Somente quando o backup tiver sido verificado e restaurado integralmente."
+          ]
+        },
+        {
+          "numero": 180,
+          "enunciado": "Leia: “Access is granted on a need-to-know basis and must be revoked when the assignment ends.” Qual regra o texto expressa?",
+          "alternativas": [
+            "Conceder acesso conforme a necessidade de conhecer e revogá-lo ao término da atribuição.",
+            "Conceder acesso definitivo a qualquer integrante da equipe.",
+            "Revogar acesso somente por solicitação voluntária do usuário.",
+            "Liberar o acesso após o encerramento da atribuição.",
+            "Manter o acesso se o usuário conhecer a existência do sistema."
+          ]
+        }
+      ]
+    }
+  ],
+  "gabarito": {
+    "1": "D",
+    "2": "E",
+    "3": "B",
+    "4": "B",
+    "5": "C",
+    "6": "C",
+    "7": "A",
+    "8": "D",
+    "9": "B",
+    "10": "D",
+    "11": "E",
+    "12": "A",
+    "13": "A",
+    "14": "E",
+    "15": "A",
+    "16": "E",
+    "17": "B",
+    "18": "B",
+    "19": "D",
+    "20": "C",
+    "21": "D",
+    "22": "E",
+    "23": "B",
+    "24": "E",
+    "25": "E",
+    "26": "B",
+    "27": "B",
+    "28": "E",
+    "29": "D",
+    "30": "C",
+    "31": "D",
+    "32": "D",
+    "33": "D",
+    "34": "C",
+    "35": "D",
+    "36": "A",
+    "37": "C",
+    "38": "A",
+    "39": "B",
+    "40": "C",
+    "41": "B",
+    "42": "D",
+    "43": "B",
+    "44": "C",
+    "45": "C",
+    "46": "C",
+    "47": "B",
+    "48": "E",
+    "49": "C",
+    "50": "A",
+    "51": "A",
+    "52": "A",
+    "53": "C",
+    "54": "B",
+    "55": "E",
+    "56": "D",
+    "57": "E",
+    "58": "C",
+    "59": "A",
+    "60": "C",
+    "61": "A",
+    "62": "E",
+    "63": "A",
+    "64": "E",
+    "65": "A",
+    "66": "D",
+    "67": "C",
+    "68": "C",
+    "69": "B",
+    "70": "A",
+    "71": "E",
+    "72": "D",
+    "73": "A",
+    "74": "E",
+    "75": "D",
+    "76": "A",
+    "77": "D",
+    "78": "B",
+    "79": "E",
+    "80": "B",
+    "81": "B",
+    "82": "D",
+    "83": "A",
+    "84": "B",
+    "85": "D",
+    "86": "C",
+    "87": "B",
+    "88": "B",
+    "89": "D",
+    "90": "D",
+    "91": "A",
+    "92": "E",
+    "93": "A",
+    "94": "E",
+    "95": "D",
+    "96": "C",
+    "97": "A",
+    "98": "E",
+    "99": "B",
+    "100": "C",
+    "101": "D",
+    "102": "A",
+    "103": "C",
+    "104": "D",
+    "105": "B",
+    "106": "B",
+    "107": "C",
+    "108": "E",
+    "109": "B",
+    "110": "E",
+    "111": "C",
+    "112": "C",
+    "113": "C",
+    "114": "A",
+    "115": "A",
+    "116": "E",
+    "117": "A",
+    "118": "D",
+    "119": "A",
+    "120": "E",
+    "121": "C",
+    "122": "C",
+    "123": "D",
+    "124": "B",
+    "125": "E",
+    "126": "A",
+    "127": "D",
+    "128": "B",
+    "129": "E",
+    "130": "D",
+    "131": "E",
+    "132": "B",
+    "133": "A",
+    "134": "A",
+    "135": "E",
+    "136": "D",
+    "137": "B",
+    "138": "B",
+    "139": "A",
+    "140": "B",
+    "141": "C",
+    "142": "A",
+    "143": "D",
+    "144": "B",
+    "145": "E",
+    "146": "C",
+    "147": "D",
+    "148": "E",
+    "149": "C",
+    "150": "E",
+    "151": "A",
+    "152": "C",
+    "153": "B",
+    "154": "E",
+    "155": "E",
+    "156": "E",
+    "157": "B",
+    "158": "E",
+    "159": "D",
+    "160": "C",
+    "161": "C",
+    "162": "E",
+    "163": "B",
+    "164": "D",
+    "165": "D",
+    "166": "C",
+    "167": "D",
+    "168": "B",
+    "169": "B",
+    "170": "A",
+    "171": "E",
+    "172": "A",
+    "173": "C",
+    "174": "C",
+    "175": "A",
+    "176": "D",
+    "177": "D",
+    "178": "C",
+    "179": "A",
+    "180": "A"
+  }
+}
