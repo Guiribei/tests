@@ -1,0 +1,29 @@
+{{define "base"}}<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simulados completos para a SEFAZ Santa Catarina 2026.">
+  <meta name="theme-color" content="#102a21">
+  <title>{{.Title}} · Caderno</title>
+  <link rel="icon" href="/static/favicon.svg?v=1" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/app.css?v=3">
+  <script src="https://unpkg.com/htmx.org@2.0.8/dist/htmx.min.js" defer></script>
+  <script src="/static/app.js?v=2" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Ir para o início">
+      <img class="brand-mark" src="/static/favicon.svg?v=1" alt="" width="34" height="34">
+      <span><strong>Caderno</strong><small>Simulados públicos</small></span>
+    </a>
+    <span class="header-tag">SEFAZ/SC · 2026</span>
+  </header>
+  <main id="app">{{template "content" .}}</main>
+  <footer class="site-footer">
+    <span>Progresso salvo neste navegador</span>
+    {{if .RepositoryURL}}<a href="{{.RepositoryURL}}" target="_blank" rel="noreferrer">Fonte das provas ↗</a>{{end}}
+  </footer>
+</body>
+</html>{{end}}
+

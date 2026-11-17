@@ -1,0 +1,6 @@
+/data/
+/caderno
+*.db
+*.db-shm
+*.db-wal
+

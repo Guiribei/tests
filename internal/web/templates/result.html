@@ -1,0 +1,78 @@
+{{define "content"}}
+<section class="result-hero shell">
+  <a class="back-link" href="/">← Todas as provas</a>
+  <div class="result-heading">
+    <div>
+      <span class="eyebrow">Prova finalizada</span>
+      <h1>Seu desempenho,<br><em>sem atalhos.</em></h1>
+      <p>{{.Exam.Document.Metadata.Title}}</p>
+    </div>
+    <div class="score-ring" style="--score: {{percent (div (float .Score.WeightedRaw) (float .Score.WeightedMaximum))}}">
+      <strong>{{.Score.TotalCorrect}}</strong><span>de 180</span>
+    </div>
+  </div>
+  <div class="score-grid">
+    <div><span>Conhecimentos gerais</span><strong>{{.Score.GeneralCorrect}}<small>/80</small></strong><p>Peso 1</p></div>
+    <div><span>Conhecimentos específicos</span><strong>{{.Score.SpecificCorrect}}<small>/100</small></strong><p>Peso 2</p></div>
+    <div><span>Pontos brutos ponderados</span><strong>{{.Score.WeightedRaw}}<small>/280</small></strong><p>{{percent (mul (div (float .Score.WeightedRaw) 280) 100)}}% do total</p></div>
+    <div><span>Tempo decorrido</span><strong class="time-score">{{duration .Attempt.StartedAt .Attempt.FinishedAt}}</strong><p>{{.Answered}} respostas marcadas</p></div>
+  </div>
+</section>
+
+<section class="official-score shell">
+  <div class="section-heading">
+    <div><span class="section-number">Nota do edital</span><h2>Padronização FCC</h2></div>
+  </div>
+  {{if .Cohort.Available}}
+  <div class="official-card">
+    <div><span>Nota padronizada estimada</span><strong>{{score .Cohort.Final}}</strong><small>Corte de habilitação: 150</small></div>
+    <div class="qualification {{if .Cohort.Qualified}}qualified{{else}}not-qualified{{end}}">
+      {{if .Cohort.Qualified}}Atingiu o mínimo{{else}}Abaixo do mínimo{{end}}
+    </div>
+    <p>Estimativa feita com {{.Cohort.Candidates}} tentativas concluídas nesta instalação. A FCC usa a média e o desvio-padrão do grupo oficial de candidatos; portanto, esta não é uma nota oficial.</p>
+  </div>
+  {{else}}
+  <div class="official-card unavailable">
+    <div><span>Nota padronizada</span><strong>—</strong><small>Dados de grupo insuficientes</small></div>
+    <p>O edital calcula cada prova por <code>NP = ((A − média) ÷ desvio-padrão) × 10 + 50</code>, depois aplica pesos 1 e 2. É preciso haver ao menos duas tentativas e variação nas duas provas para estimar essa nota. Seus pontos brutos acima já estão corretos.</p>
+  </div>
+  {{end}}
+</section>
+
+<section class="discipline-section shell">
+  <div class="section-heading"><div><span class="section-number">Por disciplina</span><h2>Onde você ganhou pontos</h2></div></div>
+  <div class="discipline-grid">
+    {{range .Disciplines}}
+    <div class="discipline-row"><span>{{.Name}}</span><strong>{{.Correct}}/{{.Total}}</strong><div><i style="width: {{percent (mul (div (float .Correct) (float .Total)) 100)}}%"></i></div></div>
+    {{end}}
+  </div>
+</section>
+
+<section class="review-section shell" aria-labelledby="review-title">
+  <div class="section-heading sticky-heading">
+    <div><span class="section-number">Correção completa</span><h2 id="review-title">Questão por questão</h2></div>
+    <div class="legend"><span class="correct-dot">Certa</span><span class="wrong-dot">Errada / em branco</span></div>
+  </div>
+  <div class="review-list">
+    {{range .Results}}
+    <article class="review-card {{if .Correct}}is-correct{{else}}is-wrong{{end}}">
+      <div class="review-meta">
+        <span>Questão {{.Number}}</span><span>{{.Discipline}}</span>
+        <strong>{{if .Correct}}Acertou{{else if .Blank}}Em branco{{else}}Errou{{end}}</strong>
+      </div>
+      {{if .BaseText}}<details class="base-text"><summary>Ver texto-base</summary><p>{{.BaseText}}</p></details>{{end}}
+      <h3>{{.Statement}}</h3>
+      <div class="result-alternatives">
+        {{range .Alternatives}}
+        <div class="result-alternative {{if .Correct}}correct-answer{{end}} {{if and .Chosen (not .Correct)}}wrong-answer{{end}}">
+          <span class="alternative-letter">{{.Letter}}</span><span>{{.Text}}</span>
+          {{if .Correct}}<strong>Gabarito</strong>{{else if .Chosen}}<strong>Sua resposta</strong>{{end}}
+        </div>
+        {{end}}
+      </div>
+    </article>
+    {{end}}
+  </div>
+</section>
+{{end}}
+

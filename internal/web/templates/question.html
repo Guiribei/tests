@@ -1,0 +1,74 @@
+{{define "content"}}
+<div class="exam-layout">
+  <aside class="question-sidebar">
+    <a class="back-link" href="/">← Sair da prova</a>
+    <div class="sidebar-title">
+      <span>{{.Exam.Document.Metadata.RoleCode}}</span>
+      <h2>{{.Exam.Document.Metadata.Title}}</h2>
+    </div>
+    <div class="progress-copy"><strong>{{.Answered}} de {{.Total}}</strong><span>respondidas</span></div>
+    <div class="progress-track"><span style="width: {{percent .Progress}}%"></span></div>
+    <div class="question-map" aria-label="Mapa de questões">
+      {{range .Exam.Questions}}
+      <a href="/tentativas/{{$.Attempt.ID}}/questoes/{{.Number}}"
+         hx-get="/tentativas/{{$.Attempt.ID}}/questoes/{{.Number}}" hx-target="#app" hx-push-url="true"
+         class="map-item {{if eq .Number $.Question.Number}}current{{end}} {{if index $.Answers .Number}}answered{{end}}"
+         aria-label="Questão {{.Number}}{{if index $.Answers .Number}}, respondida{{end}}">{{.Number}}</a>
+      {{end}}
+    </div>
+  </aside>
+
+  <section class="question-stage">
+    <div class="mobile-progress">
+      <span>Questão {{.Question.Number}} de {{.Total}}</span>
+      <span>{{.Answered}} respondidas</span>
+    </div>
+    <article class="question-card">
+      <div class="question-meta">
+        <span class="number-label">Questão {{.Question.Number}}</span>
+        <span>{{.Question.Paper}} · {{.Question.Discipline}}</span>
+      </div>
+      {{if .Question.BaseText}}
+      <details class="base-text" open>
+        <summary>Texto-base {{.Question.BaseTextID}}</summary>
+        <p>{{.Question.BaseText}}</p>
+      </details>
+      {{end}}
+      <h1>{{.Question.Statement}}</h1>
+      <form class="answer-form" method="post" action="/tentativas/{{.Attempt.ID}}/respostas/{{.Question.Number}}"
+            hx-post="/tentativas/{{.Attempt.ID}}/respostas/{{.Question.Number}}" hx-trigger="change"
+            hx-target="#save-state" hx-swap="innerHTML">
+        <fieldset>
+          <legend class="sr-only">Escolha uma alternativa</legend>
+          {{range .Question.Alternatives}}
+          <label class="alternative">
+            <input type="radio" name="choice" value="{{.Letter}}" {{if .Selected}}checked{{end}}>
+            <span class="alternative-letter">{{.Letter}}</span>
+            <span>{{.Text}}</span>
+          </label>
+          {{end}}
+        </fieldset>
+        <div id="save-state" class="save-state" aria-live="polite">{{if index .Answers .Question.Number}}Resposta salva{{else}}Selecione uma alternativa{{end}}</div>
+        <noscript><button class="secondary-button" type="submit">Salvar resposta</button></noscript>
+      </form>
+    </article>
+
+    <nav class="question-actions" aria-label="Navegação entre questões">
+      {{if .Previous}}<a class="secondary-button" href="/tentativas/{{.Attempt.ID}}/questoes/{{.Previous}}" hx-get="/tentativas/{{.Attempt.ID}}/questoes/{{.Previous}}" hx-target="#app" hx-push-url="true">← Anterior</a>{{else}}<span></span>{{end}}
+      {{if .Next}}
+      <a class="primary-button" href="/tentativas/{{.Attempt.ID}}/questoes/{{.Next}}" hx-get="/tentativas/{{.Attempt.ID}}/questoes/{{.Next}}" hx-target="#app" hx-push-url="true">Próxima <span>→</span></a>
+      {{else}}
+      <form method="post" action="/tentativas/{{.Attempt.ID}}/finalizar" data-confirm-finish data-answered="{{.Answered}}" data-total="{{.Total}}">
+        <button class="finish-button" type="submit">Finalizar e corrigir</button>
+      </form>
+      {{end}}
+    </nav>
+
+    <form class="finish-panel" method="post" action="/tentativas/{{.Attempt.ID}}/finalizar" data-confirm-finish data-answered="{{.Answered}}" data-total="{{.Total}}">
+      <div><strong>Terminou sua revisão?</strong><span>O gabarito só será revelado após finalizar.</span></div>
+      <button class="text-button" type="submit">Finalizar prova →</button>
+    </form>
+  </section>
+</div>
+{{end}}
+
