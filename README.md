@@ -1,4 +1,4 @@
-# Caderno — simulados SEFAZ/SC 2026
+# Caderno — simulados Vibecoded
 
 Aplicação de simulados feita com Go, `net/http`, HTMX e SQLite. As provas são arquivos JSON versionados no repositório; o progresso de cada navegador é salvo automaticamente e a correção só aparece depois da finalização.
 
