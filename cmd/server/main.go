@@ -21,24 +21,33 @@ const defaultRepository = "https://github.com/Guiribei/tests.git"
 
 func main() {
 	logger := slog.New(slog.NewTextHandler(os.Stdout, &slog.HandlerOptions{Level: slog.LevelInfo}))
-	examsDir := env("EXAMS_DIR", ".")
+	databasePath := env("DATABASE_PATH", "./data/provas.db")
+	examsDir := env("EXAMS_DIR", filepath.Join(filepath.Dir(databasePath), "exams"))
 	repositoryURL := env("EXAMS_REPOSITORY_URL", defaultRepository)
-
-	if envBool("SYNC_ON_START", false) {
-		ctx, cancel := context.WithTimeout(context.Background(), 45*time.Second)
-		if err := source.Sync(ctx, examsDir, repositoryURL); err != nil {
-			logger.Warn("não foi possível sincronizar o repositório; usando os arquivos locais", "error", err)
-		}
-		cancel()
-	}
-
-	catalog, err := exam.LoadDir(examsDir)
-	if err != nil {
-		logger.Error("falha ao carregar provas", "directory", examsDir, "error", err)
+	interval, err := time.ParseDuration(env("SYNC_INTERVAL", "1m"))
+	if err != nil || interval < 0 {
+		logger.Error("SYNC_INTERVAL deve ser uma duração positiva ou zero")
 		os.Exit(1)
 	}
 
-	databasePath := env("DATABASE_PATH", "./data/provas.db")
+	runCtx, stop := signal.NotifyContext(context.Background(), syscall.SIGINT, syscall.SIGTERM)
+	defer stop()
+	var catalog exam.Catalog
+	refresh := func(syncGit bool) {
+		if syncGit {
+			ctx, cancel := context.WithTimeout(runCtx, 45*time.Second)
+			err := source.Sync(ctx, examsDir, repositoryURL)
+			cancel()
+			if err != nil {
+				logger.Warn("falha ao sincronizar Git, consultando a cópia local", "directory", examsDir, "error", err)
+			}
+		}
+		if err := catalog.Reload(examsDir); err != nil {
+			logger.Warn("falha ao ler arquivos de prova", "directory", examsDir, "error", err)
+		}
+	}
+	refresh(envBool("SYNC_ON_START", true))
+
 	if err := os.MkdirAll(filepath.Dir(databasePath), 0o755); err != nil {
 		logger.Error("falha ao criar diretório do banco", "error", err)
 		os.Exit(1)
@@ -51,7 +60,7 @@ func main() {
 	defer db.Close()
 
 	handler, err := webapp.New(webapp.Config{
-		Catalog:       catalog,
+		Catalog:       &catalog,
 		Store:         db,
 		Logger:        logger,
 		RepositoryURL: repositoryURL,
@@ -77,9 +86,21 @@ func main() {
 		}
 	}()
 
-	stop := make(chan os.Signal, 1)
-	signal.Notify(stop, syscall.SIGINT, syscall.SIGTERM)
-	<-stop
+	if interval > 0 {
+		go func() {
+			ticker := time.NewTicker(interval)
+			defer ticker.Stop()
+			for {
+				select {
+				case <-runCtx.Done():
+					return
+				case <-ticker.C:
+					refresh(true)
+				}
+			}
+		}()
+	}
+	<-runCtx.Done()
 
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()

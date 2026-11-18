@@ -76,44 +76,6 @@ type Exam struct {
 	Questions  []Question
 }
 
-type Catalog struct {
-	bySlug map[string]*Exam
-	all    []*Exam
-}
-
-func LoadDir(dir string) (*Catalog, error) {
-	matches, err := filepath.Glob(filepath.Join(dir, "*.json"))
-	if err != nil {
-		return nil, fmt.Errorf("listar JSON: %w", err)
-	}
-	if len(matches) == 0 {
-		return nil, fmt.Errorf("nenhum arquivo .json encontrado em %s", dir)
-	}
-
-	catalog := &Catalog{bySlug: make(map[string]*Exam)}
-	var problems []error
-	for _, path := range matches {
-		exam, err := LoadFile(path)
-		if err != nil {
-			problems = append(problems, err)
-			continue
-		}
-		if _, exists := catalog.bySlug[exam.Slug]; exists {
-			problems = append(problems, fmt.Errorf("slug duplicado %q", exam.Slug))
-			continue
-		}
-		catalog.bySlug[exam.Slug] = exam
-		catalog.all = append(catalog.all, exam)
-	}
-	if len(problems) > 0 {
-		return nil, errors.Join(problems...)
-	}
-	sort.Slice(catalog.all, func(i, j int) bool {
-		return catalog.all[i].Document.Metadata.Title < catalog.all[j].Document.Metadata.Title
-	})
-	return catalog, nil
-}
-
 func LoadFile(path string) (*Exam, error) {
 	data, err := os.ReadFile(path)
 	if err != nil {
@@ -158,13 +120,6 @@ func (e *Exam) Question(number int) (Question, bool) {
 		return Question{}, false
 	}
 	return e.Questions[index], true
-}
-
-func (c *Catalog) All() []*Exam { return c.all }
-
-func (c *Catalog) Get(slug string) (*Exam, bool) {
-	exam, ok := c.bySlug[slug]
-	return exam, ok
 }
 
 func (e *Exam) normalizeAndValidate() error {
@@ -227,7 +182,7 @@ func (e *Exam) normalizeAndValidate() error {
 			return fmt.Errorf("numeração deve ser contínua de 1 a 180; faltou %d", expected+1)
 		}
 		answer := strings.ToUpper(e.Document.AnswerKey[fmt.Sprint(question.Number)])
-		if answer < "A" || answer > "E" {
+		if len(answer) != 1 || answer < "A" || answer > "E" {
 			return fmt.Errorf("gabarito inválido para questão %d", question.Number)
 		}
 		e.Document.AnswerKey[fmt.Sprint(question.Number)] = answer

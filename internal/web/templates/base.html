@@ -7,9 +7,8 @@
   <meta name="theme-color" content="#102a21">
   <title>{{.Title}} · Caderno</title>
   <link rel="icon" href="/static/favicon.svg?v=1" type="image/svg+xml">
-  <link rel="stylesheet" href="/static/app.css?v=3">
-  <script src="https://unpkg.com/htmx.org@2.0.8/dist/htmx.min.js" defer></script>
-  <script src="/static/app.js?v=2" defer></script>
+  <link rel="stylesheet" href="/static/app.css?v=4">
+  <script type="module" src="/static/app.js?v=3"></script>
 </head>
 <body>
   <header class="site-header">
@@ -27,3 +26,11 @@
 </body>
 </html>{{end}}
 
+
+{{define "local-attempts"}}
+<section class="local-attempts shell" hidden>
+  <h2>Provas neste aparelho</h2>
+  <div class="local-links"></div>
+  <p class="local-message" role="status"></p>
+</section>
+{{end}}

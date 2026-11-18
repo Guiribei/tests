@@ -9,11 +9,13 @@ FROM alpine:3.23
 RUN apk add --no-cache ca-certificates git
 WORKDIR /app
 COPY --from=build /out/caderno /usr/local/bin/caderno
-COPY option-one.json option-two.json ./
+COPY *.json ./
 RUN mkdir -p /data && chown 65532:65532 /data
 ENV ADDR=:8080 \
     DATABASE_PATH=/data/provas.db \
-    EXAMS_DIR=/app
+    EXAMS_DIR=/app \
+    SYNC_ON_START=false \
+    SYNC_INTERVAL=0
 VOLUME ["/data"]
 EXPOSE 8080
 USER 65532:65532

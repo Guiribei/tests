@@ -271,3 +271,10 @@ h1 em, h2 em { color: var(--green); font-family: Iowan Old Style, Baskerville, "
   * { scroll-behavior: auto !important; transition: none !important; }
 }
 
+
+[hidden] { display: none !important; }
+.offline-status { margin: 0 0 12px; color: var(--green); font-size: 13px; }
+.local-attempts { padding-block: 20px; }
+.local-links { display: grid; gap: 12px; }
+.local-links a { color: var(--green); text-decoration: underline; }
+.question-actions [data-next] { margin-left: auto; }

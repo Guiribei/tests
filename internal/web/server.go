@@ -136,6 +136,10 @@ func New(config Config) (*Server, error) {
 	mux.HandleFunc("POST /tentativas/{id}/respostas/{number}", server.saveAnswer)
 	mux.HandleFunc("POST /tentativas/{id}/finalizar", server.finishAttempt)
 	mux.HandleFunc("GET /tentativas/{id}/resultado", server.result)
+	mux.HandleFunc("GET /sw.js", server.serviceWorker)
+	mux.HandleFunc("GET /modo-offline", server.offlinePage)
+	mux.HandleFunc("GET /tentativas/{id}/pacote", server.packet)
+	mux.HandleFunc("POST /tentativas/{id}/sincronizar", server.syncAnswers)
 	mux.HandleFunc("GET /healthz", func(w http.ResponseWriter, _ *http.Request) { w.WriteHeader(http.StatusNoContent) })
 	server.handler = server.recoverer(server.securityHeaders(mux))
 	return server, nil
@@ -236,7 +240,7 @@ func (s *Server) startAttempt(w http.ResponseWriter, r *http.Request) {
 		s.internalError(w, r, err)
 		return
 	}
-	location := fmt.Sprintf("/tentativas/%s/questoes/1", attempt.ID)
+	location := fmt.Sprintf("/tentativas/%s/questoes/1?retomar=1", attempt.ID)
 	if r.Header.Get("HX-Request") == "true" {
 		w.Header().Set("HX-Redirect", location)
 		w.WriteHeader(http.StatusNoContent)
@@ -286,34 +290,19 @@ func (s *Server) question(w http.ResponseWriter, r *http.Request) {
 
 func (s *Server) saveAnswer(w http.ResponseWriter, r *http.Request) {
 	sessionID := s.sessionID(w, r)
-	attempt, currentExam, _, ok := s.loadAttempt(w, r, sessionID)
-	if !ok {
-		return
-	}
+	id := r.PathValue("id")
 	number, err := strconv.Atoi(r.PathValue("number"))
 	if err != nil {
 		s.notFound(w, r)
 		return
 	}
-	if _, exists := currentExam.Question(number); !exists {
-		s.notFound(w, r)
-		return
-	}
 	choice := strings.ToUpper(r.FormValue("choice"))
-	if choice < "A" || choice > "E" || len(choice) != 1 {
-		http.Error(w, "alternativa inválida", http.StatusUnprocessableEntity)
-		return
-	}
-	if err := s.store.SaveAnswer(r.Context(), sessionID, attempt.ID, number, choice); err != nil {
-		if errors.Is(err, store.ErrFinished) {
-			http.Error(w, "tentativa finalizada", http.StatusConflict)
-			return
-		}
-		s.internalError(w, r, err)
+	if _, err := s.store.ApplyAnswers(r.Context(), sessionID, id, nil, map[int]string{number: choice}, false); err != nil {
+		s.answerError(w, r, err)
 		return
 	}
 	if r.Header.Get("HX-Request") != "true" {
-		http.Redirect(w, r, fmt.Sprintf("/tentativas/%s/questoes/%d", attempt.ID, number), http.StatusSeeOther)
+		http.Redirect(w, r, fmt.Sprintf("/tentativas/%s/questoes/%d", id, number), http.StatusSeeOther)
 		return
 	}
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
@@ -322,18 +311,12 @@ func (s *Server) saveAnswer(w http.ResponseWriter, r *http.Request) {
 
 func (s *Server) finishAttempt(w http.ResponseWriter, r *http.Request) {
 	sessionID := s.sessionID(w, r)
-	attempt, currentExam, answers, ok := s.loadAttempt(w, r, sessionID)
-	if !ok {
+	id := r.PathValue("id")
+	if _, err := s.store.ApplyAnswers(r.Context(), sessionID, id, nil, nil, true); err != nil {
+		s.answerError(w, r, err)
 		return
 	}
-	if attempt.Status == "active" {
-		score := scoring.Calculate(currentExam, answers)
-		if err := s.store.Finish(r.Context(), sessionID, attempt.ID, score); err != nil {
-			s.internalError(w, r, err)
-			return
-		}
-	}
-	location := fmt.Sprintf("/tentativas/%s/resultado", attempt.ID)
+	location := fmt.Sprintf("/tentativas/%s/resultado", id)
 	if r.Header.Get("HX-Request") == "true" {
 		w.Header().Set("HX-Redirect", location)
 		w.WriteHeader(http.StatusNoContent)

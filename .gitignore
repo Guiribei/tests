@@ -3,4 +3,8 @@
 *.db
 *.db-shm
 *.db-wal
+.agents
+.claude
+.codex
+.impeccable
 
