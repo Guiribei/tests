@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-18T09:52:15Z",
+  "title": "Sistema de design do Caderno",
+  "extensions": {
+    "colorMeta": {
+      "wine": {
+        "role": "primary",
+        "displayName": "Vinho",
+        "tonalRamp": [
+          "#1f0008",
+          "#4c011f",
+          "#781239",
+          "#a32e55",
+          "#c65b78",
+          "#df879b",
+          "#f2b9c4",
+          "#fde9ec"
+        ]
+      },
+      "wine-dark": {
+        "role": "primary",
+        "displayName": "Vinho escuro",
+        "tonalRamp": [
+          "#1c0108",
+          "#470d20",
+          "#70213a",
+          "#993b56",
+          "#bc6479",
+          "#d58d9c",
+          "#ecbcc5",
+          "#faeaec"
+        ]
+      },
+      "rose": {
+        "role": "primary",
+        "displayName": "Rosa claro",
+        "tonalRamp": [
+          "#0e0a0b",
+          "#2b2426",
+          "#493f42",
+          "#695d60",
+          "#8b8083",
+          "#aba2a4",
+          "#cfc9ca",
+          "#f0eeee"
+        ]
+      },
+      "correct": {
+        "role": "secondary",
+        "displayName": "Verde do gabarito",
+        "tonalRamp": [
+          "#010f0a",
+          "#0b2d24",
+          "#1e4c3e",
+          "#376c5c",
+          "#5f8f7f",
+          "#89aea1",
+          "#b9d1c8",
+          "#e9f1ed"
+        ]
+      },
+      "correct-wash": {
+        "role": "secondary",
+        "displayName": "Verde claro",
+        "tonalRamp": [
+          "#0a0c0b",
+          "#232826",
+          "#3e4441",
+          "#5b625f",
+          "#7e8582",
+          "#a1a6a3",
+          "#c8cbca",
+          "#edefee"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Papel",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#262726",
+          "#424242",
+          "#606160",
+          "#828382",
+          "#a4a5a4",
+          "#cacaca",
+          "#eeeeee"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Branco",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#262626",
+          "#424242",
+          "#606060",
+          "#838383",
+          "#a4a4a4",
+          "#cacaca",
+          "#eeeeee"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Tinta",
+        "tonalRamp": [
+          "#0a0b0f",
+          "#24262d",
+          "#3f424c",
+          "#5c606b",
+          "#7f838e",
+          "#a1a4ad",
+          "#c8cad0",
+          "#eeeef0"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Cinza de leitura",
+        "tonalRamp": [
+          "#080c0e",
+          "#20282c",
+          "#3a444a",
+          "#566269",
+          "#7a858c",
+          "#9da6ac",
+          "#c6cbcf",
+          "#edeff0"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Cinza de filete",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#242728",
+          "#3f4345",
+          "#5c6163",
+          "#7f8486",
+          "#a1a5a7",
+          "#c8cbcc",
+          "#eeeeef"
+        ]
+      },
+      "mist": {
+        "role": "neutral",
+        "displayName": "Névoa",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#252728",
+          "#404344",
+          "#5e6163",
+          "#808485",
+          "#a2a5a6",
+          "#c9cbcc",
+          "#eeeeef"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Título de página",
+        "purpose": "Abre índice, resultado ou página de erro."
+      },
+      "headline": {
+        "displayName": "Título de seção",
+        "purpose": "Abre cada seção do resultado."
+      },
+      "title": {
+        "displayName": "Título de prova",
+        "purpose": "Identifica cada entrada do índice."
+      },
+      "statement": {
+        "displayName": "Enunciado",
+        "purpose": "Dá continuidade à leitura na resolução e na revisão."
+      },
+      "body": {
+        "displayName": "Texto corrente",
+        "purpose": "Serve a alternativas e texto de apoio."
+      },
+      "label": {
+        "displayName": "Rótulo de lista",
+        "purpose": "Distingue a identificação e a contagem da lista de provas."
+      },
+      "action": {
+        "displayName": "Ação",
+        "purpose": "Identifica botões de abertura, navegação e entrega."
+      },
+      "filename": {
+        "displayName": "Nome do arquivo",
+        "purpose": "Expõe a origem do conteúdo em cada ficha."
+      }
+    },
+    "shadows": [
+      {
+        "name": "contorno-da-questao-atual",
+        "value": "inset 0 0 0 1px var(--wine)",
+        "purpose": "Reforça a posição atual no mapa de questões."
+      }
+    ],
+    "motion": [
+      {
+        "name": "seta-da-acao",
+        "value": "transform 160ms ease-out",
+        "purpose": "Desloca a seta do botão principal ao focar ou apontar."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "grade-compacta",
+        "value": "58rem"
+      },
+      {
+        "name": "coluna-unica",
+        "value": "44rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Ação principal",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "A cor sólida e a seta indicam a abertura da prova ou o avanço para a questão seguinte.",
+      "html": "<button class=\"ds-primary-button\" type=\"button\">Abrir prova <svg class=\"ds-arrow\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 20 20\"><path d=\"M3 10h13m-5.5-5.5L16 10l-5.5 5.5\"/></svg></button>",
+      "css": ".ds-primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 1rem; border: 1px solid transparent; border-radius: 0; padding: .7rem 1rem; min-height: 2.8rem; font-size: .89rem; font-weight: 550; line-height: 1.2; text-decoration: none; font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); cursor: pointer; color: white; background: var(--wine, #911a46); }\n.ds-primary-button:hover { background: var(--wine-dark, #701334); }\n.ds-primary-button:focus-visible { outline: 2px solid var(--wine, #911a46); outline-offset: 4px; }\n.ds-primary-button:disabled { cursor: default; color: var(--muted, #525e65); border-color: var(--line, #c6ccce); background: var(--mist, #e9edef); }\n.ds-arrow { width: 1.12rem; height: 1.12rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.45; }\n.ds-primary-button .ds-arrow { transition: transform 160ms ease-out; }\n.ds-primary-button:hover .ds-arrow, .ds-primary-button:focus-visible .ds-arrow { transform: translateX(2px); }\n@media (prefers-reduced-motion: reduce) { .ds-primary-button .ds-arrow { transition-duration: 0s; } }"
+    },
+    {
+      "name": "Ação secundária",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "O fundo branco e o contorno cinza identificam a ação de salvar.",
+      "html": "<button class=\"ds-secondary-button\" type=\"button\">Salvar resposta</button>",
+      "css": ".ds-secondary-button { display: inline-flex; align-items: center; justify-content: center; gap: 1rem; border: 1px solid transparent; border-radius: 0; padding: .7rem 1rem; min-height: 2.8rem; font-size: .89rem; font-weight: 550; line-height: 1.2; text-decoration: none; font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); cursor: pointer; color: var(--ink, #262933); border-color: var(--line, #c6ccce); background: var(--white, #fff); }\n.ds-secondary-button:hover { background: var(--mist, #e9edef); }\n.ds-secondary-button:focus-visible { outline: 2px solid var(--wine, #911a46); outline-offset: 4px; }\n.ds-secondary-button:disabled { cursor: default; color: var(--muted, #525e65); border-color: var(--line, #c6ccce); background: var(--mist, #e9edef); }"
+    },
+    {
+      "name": "Entrega da prova",
+      "kind": "button",
+      "refersTo": "button-finish",
+      "description": "O contorno vinho identifica a entrega junto ao aviso de bloqueio.",
+      "html": "<button class=\"ds-text-button\" type=\"button\">Finalizar prova <svg class=\"ds-arrow\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 20 20\"><path d=\"M3 10h13m-5.5-5.5L16 10l-5.5 5.5\"/></svg></button>",
+      "css": ".ds-text-button { display: inline-flex; align-items: center; justify-content: center; gap: 1rem; border: 1px solid transparent; border-radius: 0; padding: .7rem 1rem; min-height: 2.8rem; font-size: .89rem; font-weight: 550; line-height: 1.2; text-decoration: none; font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); cursor: pointer; color: var(--wine, #911a46); background: transparent; border-color: currentColor; }\n.ds-text-button:hover { background: var(--rose, #f7e9ed); }\n.ds-text-button:focus-visible { outline: 2px solid var(--wine, #911a46); outline-offset: 4px; }\n.ds-text-button:disabled { cursor: default; color: var(--muted, #525e65); border-color: var(--line, #c6ccce); background: var(--mist, #e9edef); }\n.ds-arrow { width: 1.12rem; height: 1.12rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.45; }"
+    },
+    {
+      "name": "Abas do cabeçalho",
+      "kind": "nav",
+      "refersTo": "header-nav-current",
+      "description": "A aba preenchida identifica a página atual.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Principal\"><a href=\"#provas\" aria-current=\"page\">Provas</a><a href=\"#uso-offline\">Uso offline</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: stretch; font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); color: var(--ink, #262933); }\n.ds-nav a { display: flex; align-items: center; min-height: 2.75rem; padding: .25rem 1rem; border: 1px solid var(--ink, #262933); border-top: 0; text-decoration: none; font-size: .83rem; color: inherit; }\n.ds-nav a + a { border-left: 0; }\n.ds-nav [aria-current] { background: var(--ink, #262933); color: white; }\n.ds-nav a:hover { background: var(--mist, #e9edef); color: var(--ink, #262933); }\n.ds-nav a:focus-visible { outline: 2px solid var(--wine, #911a46); outline-offset: 4px; }"
+    },
+    {
+      "name": "Alternativa da prova",
+      "kind": "input",
+      "refersTo": "answer-option",
+      "description": "Cada linha aciona o rádio e destaca a letra escolhida.",
+      "html": "<label class=\"ds-option\"><input type=\"radio\" name=\"resposta\" value=\"A\"><span class=\"ds-letter\">A</span><span>Primeira alternativa</span></label><label class=\"ds-option\"><input type=\"radio\" name=\"resposta\" value=\"B\" checked><span class=\"ds-letter\">B</span><span>Segunda alternativa</span></label>",
+      "css": ".ds-option { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: .85rem; align-items: baseline; padding: .9rem .7rem; border-top: 1px solid var(--line, #c6ccce); cursor: pointer; position: relative; font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); font-size: 1rem; line-height: 1.5; color: var(--ink, #262933); }\n.ds-option:last-child { border-bottom: 1px solid var(--line, #c6ccce); }\n.ds-option:hover { background: var(--mist, #e9edef); }\n.ds-option input { width: 1px; height: 1px; opacity: 0; position: absolute; }\n.ds-letter { display: grid; place-items: center; align-self: start; width: 1.8rem; height: 1.8rem; border: 1px solid #859197; font-size: .88rem; }\n.ds-option:has(:checked) { background: var(--rose, #f7e9ed); }\n.ds-option input:checked + .ds-letter { color: white; background: var(--wine, #911a46); border-color: var(--wine, #911a46); }\n.ds-option:has(:focus-visible) { outline: 2px solid var(--wine, #911a46); outline-offset: -2px; }\n@media (forced-colors: active) { .ds-option input:checked + .ds-letter { outline: 2px solid Highlight; } }"
+    },
+    {
+      "name": "Mapa de questões",
+      "kind": "nav",
+      "refersTo": "map-item",
+      "description": "A grade distingue questões respondidas e a posição atual.",
+      "html": "<nav class=\"ds-map\" aria-label=\"Mapa de questões\"><a class=\"ds-cell ds-answered\" href=\"#questao-1\" aria-label=\"Questão 1, respondida\">1</a><a class=\"ds-cell ds-current\" aria-current=\"step\" href=\"#questao-2\" aria-label=\"Questão 2\">2</a><a class=\"ds-cell\" href=\"#questao-3\" aria-label=\"Questão 3\">3</a></nav>",
+      "css": ".ds-map { display: grid; grid-template-columns: repeat(auto-fill,minmax(2rem,1fr)); gap: .25rem; padding: .25rem; max-height: min(45vh, 25rem); overflow: auto; scrollbar-color: #8e9ba1 var(--mist, #e9edef); font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); max-width: 8rem; }\n.ds-cell { display: grid; place-items: center; height: 2.05rem; font-size: .79rem; text-decoration: none; background: var(--white, #fff); border: 1px solid var(--line, #c6ccce); color: var(--ink, #262933); font-variant-numeric: tabular-nums; }\n.ds-answered { background: var(--mist, #e9edef); border-color: #839398; font-weight: 700; }\n.ds-current, .ds-cell:hover { border-color: var(--wine, #911a46); color: var(--wine, #911a46); }\n.ds-current { box-shadow: inset 0 0 0 1px var(--wine, #911a46); }\n.ds-cell:focus-visible { outline: 2px solid var(--wine, #911a46); outline-offset: 4px; }\n@media (forced-colors: active) { .ds-current { outline: 2px solid Highlight; } }"
+    },
+    {
+      "name": "Ficha da prova",
+      "kind": "custom",
+      "refersTo": "exam-details",
+      "description": "O nome do arquivo acompanha o controle de expansão dos metadados.",
+      "html": "<details class=\"ds-file\"><summary>Ficha da prova <span class=\"ds-filename\">option-one.json</span></summary><dl><div><dt>Formato</dt><dd>80 gerais e 100 específicas</dd></div></dl></details>",
+      "css": ".ds-file { margin-top: .55rem; font-size: .8rem; font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); color: var(--ink, #262933); line-height: 1.5; }\n.ds-file summary { width: fit-content; color: var(--ink, #262933); padding-block: .35rem; cursor: pointer; }\n.ds-file summary:hover { color: var(--wine, #911a46); }\n.ds-file summary:focus-visible { outline: 2px solid var(--wine, #911a46); outline-offset: 4px; }\n.ds-filename { color: var(--muted, #525e65); margin-left: .45rem; overflow-wrap: anywhere; font-family: ui-monospace, monospace; font-size: .76rem; }\n.ds-file dl { margin: .4rem 0 0; }\n.ds-file dl div { display: grid; grid-template-columns: 6rem 1fr; gap: .45rem; padding-block: .3rem; }\n.ds-file dt { color: var(--muted, #525e65); }\n.ds-file dd { margin: 0; }"
+    },
+    {
+      "name": "Nota padronizada",
+      "kind": "card",
+      "refersTo": "score-note-panel",
+      "description": "O painel reúne o valor e as condições da estimativa.",
+      "html": "<div class=\"ds-panel\"><div><span>Nota padronizada</span><strong>—</strong><small>Dados de grupo insuficientes</small></div><p>É preciso haver ao menos duas tentativas e variação nas duas provas para estimar essa nota.</p></div>",
+      "css": ".ds-panel { display: flex; flex-wrap: wrap; align-items: baseline; gap: 1rem 2rem; padding: 1.4rem; background: var(--mist, #e9edef); font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); line-height: 1.5; color: var(--ink, #262933); }\n.ds-panel > div:first-child { display: grid; gap: .3rem; }\n.ds-panel span, .ds-panel small { font-size: .86rem; }\n.ds-panel strong { font: 400 2.1rem/1.1 var(--serif, Baskervville, Georgia, serif); }\n.ds-panel p { flex: 1 1 25rem; max-width: 70ch; color: var(--muted, #525e65); margin: 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Caderno de provas",
+    "overview": "O Caderno, da Computadora, organiza provas como folhas de uma mesma publicação. A linha horizontal separa registros, a serifa dá espaço ao enunciado e a numeração orienta quem vai e volta entre questões.\n\nA referência Mecha aparece no papel de tom frio, no contraste entre serifa e grotesca e no desenho técnico da encadernação. A ilustração acompanha a leitura do índice. Já a prova e o resultado dão o espaço central às perguntas, às alternativas e aos números.",
+    "keyCharacteristics": [
+      "Superfícies claras com filetes que alinham e separam registros.",
+      "Baskervville para conteúdo de leitura e grotesca para controles e metadados.",
+      "Vinho para ação e escolha, verde para correção.",
+      "Ícone de folhas sobrepostas ao lado de Caderno e da assinatura Computadora."
+    ],
+    "rules": [
+      {
+        "name": "Regra da correção",
+        "body": "Reserve o verde dos acertos para a prova entregue. Durante a tentativa, a letra preenchida em vinho confirma apenas a escolha.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Mantenha o nome do arquivo legível com a ficha fechada.",
+      "Preserve o alinhamento entre número, título e ação quando a linha quebrar.",
+      "Acompanhe as cores de correção com os rótulos de gabarito e resposta escolhida."
+    ],
+    "donts": [
+      "Evite dar pistas de acerto ao destacar a alternativa durante a prova.",
+      "Evite usar o espaço do enunciado para instruções secundárias quando elas cabem no texto-base expansível ou no mapa."
+    ]
+  }
+}

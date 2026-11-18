@@ -3,6 +3,20 @@ import {attempt, listAttempts, forgetAttempt} from "./local-store.js?v=1";
 const $ = selector => document.querySelector(selector);
 const layout = $(".exam-layout");
 const library = $(".local-attempts");
+const questionMap = $(".map-disclosure");
+const compact = window.matchMedia("(max-width: 44rem)");
+if (questionMap) {
+  questionMap.open = !compact.matches;
+  compact.addEventListener("change", () => { questionMap.open = !compact.matches; });
+}
+function revealOfflineHelp() {
+  if (location.hash === "#uso-offline") $("#uso-offline").open = true;
+}
+window.addEventListener("hashchange", revealOfflineHelp);
+document.querySelector('.mast-nav a[href="#uso-offline"]').addEventListener("click", () => {
+  $("#uso-offline").open = true;
+});
+revealOfflineHelp();
 const offlineShell = layout?.dataset.attempt === "";
 const route = location.pathname.match(/^\/tentativas\/([a-f0-9]+)\/questoes\/(\d+)$/);
 const id = route?.[1];
@@ -84,6 +98,8 @@ function render(row) {
   for (const link of map.children) {
     const n = Number(link.textContent);
     link.classList.toggle("current", n === number);
+    if (n === number) link.setAttribute("aria-current", "step");
+    else link.removeAttribute("aria-current");
     link.classList.toggle("answered", Boolean(choices[n]));
     link.setAttribute("aria-label", "Questão " + n + (choices[n] ? ", respondida" : ""));
   }
@@ -280,6 +296,8 @@ function navigate(n, push) {
   if (push) history.pushState(null, "", questionURL(id, n));
   render(current);
   $(".base-text").open = true;
+  if (compact.matches) questionMap.open = false;
+  $(".question-card h1").focus({preventScroll: true});
   window.scrollTo(0, 0);
   rememberPosition().catch(storageError);
 }

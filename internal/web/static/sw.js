@@ -1,7 +1,7 @@
-const CACHE = "caderno-offline-v1";
+const CACHE = "caderno-offline-v2";
 const SHELL = "/modo-offline";
-const assets = [SHELL, "/static/app.css?v=4", "/static/app.js?v=3",
-  "/static/local-store.js?v=1", "/static/favicon.svg?v=1"];
+const assets = [SHELL, "/static/app.css?v=5", "/static/app.js?v=4",
+  "/static/local-store.js?v=1", "/static/baskervville.ttf", "/static/favicon.svg?v=2"];
 
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(assets)));

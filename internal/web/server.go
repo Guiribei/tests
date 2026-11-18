@@ -61,6 +61,10 @@ type pageData struct {
 }
 
 type examCard struct {
+	Number            int
+	DisplayTitle      string
+	Subtitle          string
+	TotalQuestions    int
 	Slug              string
 	Title             string
 	RoleCode          string
@@ -203,13 +207,23 @@ func (s *Server) render(w http.ResponseWriter, r *http.Request, name string, sta
 
 func (s *Server) home(w http.ResponseWriter, r *http.Request) {
 	s.sessionID(w, r)
-	data := pageData{Title: "Escolha sua prova"}
-	for _, item := range s.catalog.All() {
+	data := pageData{Title: "Índice de provas"}
+	for index, item := range s.catalog.All() {
 		card := examCard{
+			Number: index + 1, TotalQuestions: len(item.Questions),
 			Slug: item.Slug, Title: item.Document.Metadata.Title, RoleCode: item.Document.Metadata.RoleCode,
 			Type: item.Document.Metadata.Type, Notice: item.Document.Metadata.Notice,
 			SourceFile: item.SourceFile, Hash: item.Hash,
 		}
+		// Keep the complete source title in the record and expose its natural
+		// title/subtitle split for scanning the catalog.
+		title := strings.ReplaceAll(card.Title, " – ", " — ")
+		parts := strings.Split(title, " — ")
+		if len(parts) > 1 && strings.EqualFold(parts[0], card.Type) {
+			parts = parts[1:]
+		}
+		card.DisplayTitle = strings.TrimPrefix(parts[0], "Simulado ")
+		card.Subtitle = strings.Join(parts[1:], " · ")
 		card.GeneralQuestions = len(flatten(item.Document.General))
 		card.SpecificQuestions = len(flatten(item.Document.Specific))
 		for _, paper := range item.Document.Metadata.Papers {

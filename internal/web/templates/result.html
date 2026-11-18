@@ -1,27 +1,21 @@
 {{define "content"}}
 <section class="result-hero shell" data-result-attempt="{{.Attempt.ID}}">
-  <a class="back-link" href="/">← Todas as provas</a>
-  <div class="result-heading">
-    <div>
-      <span class="eyebrow">Prova finalizada</span>
-      <h1>Seu desempenho,<br><em>sem atalhos.</em></h1>
-      <p>{{.Exam.Document.Metadata.Title}}</p>
-    </div>
-    <div class="score-ring" style="--score: {{percent (div (float .Score.WeightedRaw) (float .Score.WeightedMaximum))}}">
-      <strong>{{.Score.TotalCorrect}}</strong><span>de 180</span>
-    </div>
-  </div>
-  <div class="score-grid">
-    <div><span>Conhecimentos gerais</span><strong>{{.Score.GeneralCorrect}}<small>/80</small></strong><p>Peso 1</p></div>
-    <div><span>Conhecimentos específicos</span><strong>{{.Score.SpecificCorrect}}<small>/100</small></strong><p>Peso 2</p></div>
-    <div><span>Pontos brutos ponderados</span><strong>{{.Score.WeightedRaw}}<small>/280</small></strong><p>{{percent (mul (div (float .Score.WeightedRaw) 280) 100)}}% do total</p></div>
-    <div><span>Tempo decorrido</span><strong class="time-score">{{duration .Attempt.StartedAt .Attempt.FinishedAt}}</strong><p>{{.Answered}} respostas marcadas</p></div>
-  </div>
+  <a class="back-link" href="/">{{template "arrow"}} Índice de provas</a>
+  <h1>Resultado da prova</h1>
+  <p class="exam-subtitle">{{.Exam.Document.Metadata.Title}}</p>
+  <nav class="result-nav" aria-label="Seções do resultado"><a href="#disciplinas">Acertos por disciplina</a><a href="#revisao">Correção por questão</a></nav>
+  <dl class="score-grid">
+    <div><dt>Pontos ponderados</dt><dd>{{.Score.WeightedRaw}}<small> / {{.Score.WeightedMaximum}}</small></dd><dd class="score-note">{{percent (mul (div (float .Score.WeightedRaw) (float .Score.WeightedMaximum)) 100)}}% do total</dd></div>
+    <div><dt>Acertos</dt><dd>{{.Score.TotalCorrect}}<small> / 180</small></dd><dd class="score-note">{{.Answered}} respostas marcadas</dd></div>
+    <div><dt>Conhecimentos gerais</dt><dd>{{.Score.GeneralCorrect}}<small> / 80</small></dd><dd class="score-note">Peso 1</dd></div>
+    <div><dt>Conhecimentos específicos</dt><dd>{{.Score.SpecificCorrect}}<small> / 100</small></dd><dd class="score-note">Peso 2</dd></div>
+  </dl>
+  <p class="elapsed">Tempo decorrido · {{duration .Attempt.StartedAt .Attempt.FinishedAt}}</p>
 </section>
 
 <section class="official-score shell">
   <div class="section-heading">
-    <div><span class="section-number">Nota do edital</span><h2>Padronização FCC</h2></div>
+    <h2>Nota padronizada</h2>
   </div>
   {{if .Cohort.Available}}
   <div class="official-card">
@@ -39,8 +33,8 @@
   {{end}}
 </section>
 
-<section class="discipline-section shell">
-  <div class="section-heading"><div><span class="section-number">Por disciplina</span><h2>Onde você ganhou pontos</h2></div></div>
+<section id="disciplinas" class="discipline-section shell">
+  <div class="section-heading"><h2>Acertos por disciplina</h2></div>
   <div class="discipline-grid">
     {{range .Disciplines}}
     <div class="discipline-row"><span>{{.Name}}</span><strong>{{.Correct}}/{{.Total}}</strong><div><i style="width: {{percent (mul (div (float .Correct) (float .Total)) 100)}}%"></i></div></div>
@@ -48,10 +42,10 @@
   </div>
 </section>
 
-<section class="review-section shell" aria-labelledby="review-title">
+<section id="revisao" class="review-section shell" aria-labelledby="review-title">
   <div class="section-heading sticky-heading">
-    <div><span class="section-number">Correção completa</span><h2 id="review-title">Questão por questão</h2></div>
-    <div class="legend"><span class="correct-dot">Certa</span><span class="wrong-dot">Errada / em branco</span></div>
+    <h2 id="review-title">Correção por questão</h2>
+
   </div>
   <div class="review-list">
     {{range .Results}}
@@ -66,7 +60,7 @@
         {{range .Alternatives}}
         <div class="result-alternative {{if .Correct}}correct-answer{{end}} {{if and .Chosen (not .Correct)}}wrong-answer{{end}}">
           <span class="alternative-letter">{{.Letter}}</span><span>{{.Text}}</span>
-          {{if .Correct}}<strong>Gabarito</strong>{{else if .Chosen}}<strong>Sua resposta</strong>{{end}}
+          {{if .Correct}}<strong>{{if .Chosen}}Sua resposta · {{end}}Gabarito</strong>{{else if .Chosen}}<strong>Sua resposta</strong>{{end}}
         </div>
         {{end}}
       </div>

@@ -1,62 +1,45 @@
 {{define "content"}}
-<section class="hero shell">
-  <div class="hero-copy">
-    <div class="eyebrow">SEFAZ Santa Catarina · Edital 01/2026</div>
-    <h1>Simulado completo.<br><em>Correção sem distração.</em></h1>
-    <p>Resolva as 180 questões na ordem que preferir. O gabarito só aparece depois da entrega.</p>
-  </div>
-  <dl class="hero-facts" aria-label="Estrutura do simulado">
-    <div><dt>180</dt><dd>questões</dd></div>
-    <div><dt>2</dt><dd>blocos</dd></div>
-    <div><dt>280</dt><dd>pontos brutos</dd></div>
-  </dl>
-</section>
-
-{{template "local-attempts" .}}
-
-<section class="exam-section shell" aria-labelledby="available-title">
-  <div class="section-heading">
-    <div>
-      <span class="section-number">01</span>
-      <h2 id="available-title">Provas disponíveis</h2>
+<div class="catalog-layout">
+  <section class="catalog" aria-labelledby="catalog-title">
+    <div class="catalog-heading">
+      <h1 id="catalog-title">Índice de provas</h1>
+      <p>Escolha uma prova ou retome de onde parou.</p>
     </div>
-    <span class="section-note">{{len .Exams}} provas carregadas do repositório</span>
-  </div>
-  <div class="exam-grid">
-    {{range .Exams}}
-    <article class="exam-card">
-      <div class="card-topline">
-        <span>{{.Type}}</span>
-        <span>{{.RoleCode}}</span>
-      </div>
-      <h3>{{.Title}}</h3>
-      <div class="exam-stats">
-        <div><strong>{{.GeneralQuestions}}</strong><span>Gerais · peso 1</span></div>
-        <div><strong>{{.SpecificQuestions}}</strong><span>Específicas · peso 2</span></div>
-        <div><strong>{{.TotalMinutes}}</strong><span>minutos sugeridos</span></div>
-      </div>
-      <div class="card-footer">
-        <div class="source-meta">
-          <span>Edital {{.Notice}}</span>
-          <small>{{.SourceFile}} · {{.Hash}}</small>
+    {{template "local-attempts" .}}
+    <div class="list-heading"><h2>Provas disponíveis</h2><span>{{printf "%02d" (len .Exams)}}</span></div>
+    <ol class="exam-index">
+      {{range .Exams}}
+      <li class="exam-row">
+        <span class="index-number" aria-hidden="true">{{printf "%02d" .Number}}</span>
+        <div class="exam-info">
+          <h3>{{.DisplayTitle}}</h3>
+          {{if .Subtitle}}<p class="exam-subtitle">{{.Subtitle}}</p>{{end}}
+          <details class="exam-details">
+            <summary>Ficha da prova <span class="source-file">{{.SourceFile}}</span></summary>
+            <dl>
+              <div><dt>Título original</dt><dd>{{.Title}}</dd></div>
+              <div><dt>Versão</dt><dd>{{.Hash}}</dd></div>
+              <div><dt>Edital / cargo</dt><dd>{{.Notice}} / {{.RoleCode}}</dd></div>
+              <div><dt>Formato</dt><dd>{{.Type}} · {{.GeneralQuestions}} gerais e {{.SpecificQuestions}} específicas</dd></div>
+            </dl>
+          </details>
         </div>
-        <form method="post" action="/provas/{{.Slug}}/iniciar">
-          <button class="primary-button" type="submit">Começar prova <span>→</span></button>
-        </form>
-      </div>
-    </article>
-    {{end}}
-  </div>
-</section>
-
-<section class="how shell" aria-labelledby="how-title">
-  <span class="section-number">02</span>
-  <h2 id="how-title">Como funciona</h2>
-  <ol>
-    <li><span>1</span><div><strong>Responda sem pistas</strong><p>Nenhuma questão revela certo ou errado durante a prova.</p></div></li>
-    <li><span>2</span><div><strong>Navegue livremente</strong><p>Use o mapa para pular, revisar ou deixar uma questão para depois.</p></div></li>
-    <li><span>3</span><div><strong>Revise tudo no final</strong><p>Veja cada alternativa, o gabarito, seu desempenho por disciplina e a nota.</p></div></li>
-  </ol>
-</section>
+        <div class="exam-entry">
+          <span>{{.TotalQuestions}} questões · {{.TotalMinutes}} min sugeridos</span>
+          <form method="post" action="/provas/{{.Slug}}/iniciar"><button class="primary-button" type="submit" aria-label="Abrir prova {{.Number}}: {{.Title}}">Abrir prova {{template "arrow"}}</button></form>
+        </div>
+      </li>
+      {{else}}
+      <li class="empty-state">Nenhuma prova disponível. Volte após a próxima atualização do catálogo.</li>
+      {{end}}
+    </ol>
+  </section>
+  <aside class="catalog-plate" aria-label="Orientações da prova">
+    <div class="plate-art" aria-hidden="true"></div>
+    <div class="plate-notes">
+      <h2>Durante a prova</h2>
+      <p>Use o mapa para pular questões ou voltar às suas respostas. O gabarito aparece depois da entrega.</p>
+    </div>
+  </aside>
+</div>
 {{end}}
-

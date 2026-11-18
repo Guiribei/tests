@@ -1,35 +1,41 @@
+{{define "arrow"}}<svg class="arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20"><path d="M3 10h13m-5.5-5.5L16 10l-5.5 5.5"/></svg>{{end}}
+{{define "external"}}<svg class="arrow" aria-hidden="true" focusable="false" viewBox="0 0 20 20"><path d="M4 16 15 5M5.5 5H15v9.5"/></svg>{{end}}
 {{define "base"}}<!doctype html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Simulados completos para a SEFAZ Santa Catarina 2026.">
-  <meta name="theme-color" content="#102a21">
+  <meta name="description" content="Provas para estudo individual. Responda no seu ritmo e confira o gabarito depois da entrega.">
+  <meta name="theme-color" content="#f9faf9">
   <title>{{.Title}} · Caderno</title>
-  <link rel="icon" href="/static/favicon.svg?v=1" type="image/svg+xml">
-  <link rel="stylesheet" href="/static/app.css?v=4">
-  <script type="module" src="/static/app.js?v=3"></script>
+  <link rel="icon" href="/static/favicon.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/app.css?v=5">
+  <script type="module" src="/static/app.js?v=4"></script>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="/" aria-label="Ir para o início">
-      <img class="brand-mark" src="/static/favicon.svg?v=1" alt="" width="34" height="34">
-      <span><strong>Caderno</strong><small>Simulados públicos</small></span>
-    </a>
-    <span class="header-tag">SEFAZ/SC · 2026</span>
+  <a class="skip" href="#app">Pular para o conteúdo</a>
+  <header class="masthead">
+    <a class="brand" href="/" aria-label="Caderno, da Computadora. Página inicial"><img src="/static/favicon.svg?v=2" alt="" width="35" height="35"><span class="brand-type">Caderno<small>Computadora</small></span></a>
+    <nav class="mast-nav" aria-label="Principal">
+      <a href="/" {{if eq .Title "Índice de provas"}}aria-current="page"{{end}}>Provas</a>
+      <a href="#uso-offline">Uso offline</a>
+    </nav>
   </header>
-  <main id="app">{{template "content" .}}</main>
+  <main id="app" tabindex="-1">{{template "content" .}}</main>
   <footer class="site-footer">
-    <span>Progresso salvo neste navegador</span>
-    {{if .RepositoryURL}}<a href="{{.RepositoryURL}}" target="_blank" rel="noreferrer">Fonte das provas ↗</a>{{end}}
+    <div class="footer-name">Computadora <span>/ Caderno</span></div>
+    <details class="offline-help" id="uso-offline">
+      <summary>Como usar offline</summary>
+      <p>Abra a prova com conexão e aguarde “Disponível offline”. Você pode fechar a aba e retomar no mesmo navegador em “Provas neste aparelho”. Ao entregar sem sinal, reabra o site com conexão para receber a correção.</p>
+    </details>
+    {{if .RepositoryURL}}<a class="source-link" href="{{.RepositoryURL}}" target="_blank" rel="noreferrer">Fonte das provas {{template "external"}}</a>{{end}}
   </footer>
 </body>
 </html>{{end}}
 
-
 {{define "local-attempts"}}
-<section class="local-attempts shell" hidden>
-  <h2>Provas neste aparelho</h2>
+<section class="local-attempts" hidden aria-labelledby="local-title">
+  <h2 id="local-title">Provas neste aparelho</h2>
   <div class="local-links"></div>
   <p class="local-message" role="status"></p>
 </section>

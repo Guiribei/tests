@@ -6,5 +6,10 @@
 .agents
 .claude
 .codex
-.impeccable
+.impeccable/*
+!.impeccable/live/
+.impeccable/live/*
+!.impeccable/live/config.json
 
+!.impeccable/surfaces/
+!.impeccable/design.json

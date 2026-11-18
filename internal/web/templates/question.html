@@ -2,20 +2,24 @@
 {{if not .Attempt.ID}}{{template "local-attempts" .}}{{end}}
 <div class="exam-layout" data-attempt="{{.Attempt.ID}}" data-revision="{{.Attempt.Revision}}" {{if not .Attempt.ID}}hidden{{end}}>
   <aside class="question-sidebar">
-    <a class="back-link" href="/">← Sair da prova</a>
+    <a class="back-link" href="/">{{template "arrow"}} Índice de provas</a>
     <div class="sidebar-title">
-      <span>{{.Exam.Document.Metadata.RoleCode}}</span>
       <h2>{{.Exam.Document.Metadata.Title}}</h2>
+      <span>{{.Exam.Document.Metadata.RoleCode}}</span>
     </div>
     <div class="progress-copy"><strong>{{.Answered}} de {{.Total}}</strong><span>respondidas</span></div>
     <div class="progress-track"><span style="width: {{percent .Progress}}%"></span></div>
-    <div class="question-map" aria-label="Mapa de questões">
+    <details class="map-disclosure">
+      <summary>Mapa de questões</summary>
+      <nav class="question-map" aria-label="Mapa de questões">
       {{range .Exam.Questions}}
       <a href="/tentativas/{{$.Attempt.ID}}/questoes/{{.Number}}"
          class="map-item {{if eq .Number $.Question.Number}}current{{end}} {{if index $.Answers .Number}}answered{{end}}"
+         {{if eq .Number $.Question.Number}}aria-current="step"{{end}}
          aria-label="Questão {{.Number}}{{if index $.Answers .Number}}, respondida{{end}}">{{.Number}}</a>
       {{end}}
-    </div>
+      </nav>
+    </details>
   </aside>
 
   <section class="question-stage">
@@ -33,7 +37,7 @@
         <summary>Texto-base {{.Question.BaseTextID}}</summary>
         <p>{{.Question.BaseText}}</p>
       </details>
-      <h1>{{.Question.Statement}}</h1>
+      <h1 tabindex="-1">{{.Question.Statement}}</h1>
       <form class="answer-form" method="post" action="/tentativas/{{.Attempt.ID}}/respostas/{{.Question.Number}}">
         <fieldset>
           <legend class="sr-only">Escolha uma alternativa</legend>
@@ -51,13 +55,13 @@
     </article>
 
     <nav class="question-actions" aria-label="Navegação entre questões">
-      <a class="secondary-button" data-previous href="/tentativas/{{.Attempt.ID}}/questoes/{{.Previous}}" {{if not .Previous}}hidden{{end}}>← Anterior</a>
-      <a class="primary-button" data-next href="/tentativas/{{.Attempt.ID}}/questoes/{{.Next}}" {{if not .Next}}hidden{{end}}>Próxima <span>→</span></a>
+      <a class="secondary-button" data-previous href="/tentativas/{{.Attempt.ID}}/questoes/{{.Previous}}" {{if not .Previous}}hidden{{end}}>{{template "arrow"}} Anterior</a>
+      <a class="primary-button" data-next href="/tentativas/{{.Attempt.ID}}/questoes/{{.Next}}" {{if not .Next}}hidden{{end}}>Próxima {{template "arrow"}}</a>
     </nav>
 
     <form class="finish-panel" method="post" action="/tentativas/{{.Attempt.ID}}/finalizar" data-confirm-finish data-answered="{{.Answered}}" data-total="{{.Total}}">
-      <div><strong>Terminou sua revisão?</strong><span>O gabarito só será revelado após finalizar.</span></div>
-      <button class="text-button" type="submit">Finalizar prova →</button>
+      <p>Ao entregar, as respostas ficam bloqueadas para correção.</p>
+      <button class="text-button" type="submit">Finalizar prova {{template "arrow"}}</button>
     </form>
   </section>
 </div>
