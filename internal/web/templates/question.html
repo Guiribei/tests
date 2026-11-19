@@ -5,10 +5,9 @@
     <a class="back-link" href="/">{{template "arrow"}} Índice de provas</a>
     <div class="sidebar-title">
       <h2>{{.Exam.Document.Metadata.Title}}</h2>
-      <span>{{.Exam.Document.Metadata.RoleCode}}</span>
     </div>
-    <div class="progress-copy"><strong>{{.Answered}} de {{.Total}}</strong><span>respondidas</span></div>
-    <div class="progress-track"><span style="width: {{percent .Progress}}%"></span></div>
+    <div class="progress-copy"><strong>{{.Answered}} de {{.Total}}</strong><span>{{if eq .Answered 1}}respondida{{else}}respondidas{{end}}</span></div>
+    <div class="progress-track" role="progressbar" aria-label="Questões respondidas" aria-valuemin="0" aria-valuemax="{{.Total}}" aria-valuenow="{{.Answered}}"><span style="width: {{percent .Progress}}%"></span></div>
     <details class="map-disclosure">
       <summary>Mapa de questões</summary>
       <nav class="question-map" aria-label="Mapa de questões">
@@ -16,18 +15,13 @@
       <a href="/tentativas/{{$.Attempt.ID}}/questoes/{{.Number}}"
          class="map-item {{if eq .Number $.Question.Number}}current{{end}} {{if index $.Answers .Number}}answered{{end}}"
          {{if eq .Number $.Question.Number}}aria-current="step"{{end}}
-         aria-label="Questão {{.Number}}{{if index $.Answers .Number}}, respondida{{end}}">{{.Number}}</a>
+         aria-label="Questão {{.Number}}, {{if index $.Answers .Number}}respondida{{else}}em branco{{end}}">{{.Number}}</a>
       {{end}}
       </nav>
     </details>
   </aside>
 
   <section class="question-stage">
-    <p id="offline-status" class="offline-status" role="status" hidden></p>
-    <div class="mobile-progress">
-      <span>Questão {{.Question.Number}} de {{.Total}}</span>
-      <span>{{.Answered}} respondidas</span>
-    </div>
     <article class="question-card">
       <div class="question-meta">
         <span class="number-label">Questão {{.Question.Number}}</span>
@@ -43,13 +37,19 @@
           <legend class="sr-only">Escolha uma alternativa</legend>
           {{range .Question.Alternatives}}
           <label class="alternative">
-            <input type="radio" name="choice" value="{{.Letter}}" {{if .Selected}}checked{{end}}>
+            <input type="radio" name="choice" value="{{.Letter}}" aria-describedby="alternative-help" {{if .Selected}}checked{{end}}>
             <span class="alternative-letter">{{.Letter}}</span>
-            <span>{{.Text}}</span>
+            <span class="alternative-text">{{.Text}}</span>
+            <span class="alternative-state sr-only"></span>
           </label>
           {{end}}
         </fieldset>
-        <div id="save-state" class="save-state" aria-live="polite">{{if index .Answers .Question.Number}}Resposta salva{{else}}Selecione uma alternativa{{end}}</div>
+        <p id="alternative-help" class="alternative-help" hidden>Clique duas vezes para descartar ou restaurar uma alternativa. No teclado, use Delete.</p>
+        <p id="discard-state" class="sr-only" role="status"></p>
+        <div class="attempt-status">
+          <p id="save-state" class="save-state" aria-live="polite">{{if index .Answers .Question.Number}}Resposta salva no site{{else}}Escolha uma alternativa{{end}}</p>
+          <p id="offline-status" class="offline-status" role="status" hidden></p>
+        </div>
         <button class="secondary-button" type="submit">Salvar resposta</button>
       </form>
     </article>
@@ -60,8 +60,8 @@
     </nav>
 
     <form class="finish-panel" method="post" action="/tentativas/{{.Attempt.ID}}/finalizar" data-confirm-finish data-answered="{{.Answered}}" data-total="{{.Total}}">
-      <p>Ao entregar, as respostas ficam bloqueadas para correção.</p>
-      <button class="text-button" type="submit">Finalizar prova {{template "arrow"}}</button>
+      <p>Depois de entregar, você não poderá alterar as respostas. Questões em branco contam como erro.</p>
+      <button class="text-button" type="submit">Entregar prova {{template "arrow"}}</button>
     </form>
   </section>
 </div>

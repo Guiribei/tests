@@ -102,6 +102,68 @@ func TestSyncAndFinalRetry(t *testing.T) {
 	}
 }
 
+func TestClearAnswer(t *testing.T) {
+	for _, offline := range []bool{false, true} {
+		name := "online form"
+		if offline {
+			name = "offline sync"
+		}
+		t.Run(name, func(t *testing.T) {
+			db, err := Open(filepath.Join(t.TempDir(), "clear.db"))
+			if err != nil {
+				t.Fatal(err)
+			}
+			defer db.Close()
+			e, err := exam.LoadFile("../../option-one.json")
+			if err != nil {
+				t.Fatal(err)
+			}
+			a, err := db.StartOrResume(t.Context(), "attempt", "owner", e)
+			if err != nil {
+				t.Fatal(err)
+			}
+			draft, err := db.ApplyAnswers(t.Context(), "owner", a.ID, nil, map[int]string{1: "A", 2: "B"}, false)
+			if err != nil {
+				t.Fatal(err)
+			}
+			var revision *int64
+			if offline {
+				revision = &draft.Revision
+			}
+			cleared, err := db.ApplyAnswers(t.Context(), "owner", a.ID, revision, map[int]string{1: ""}, false)
+			if err != nil || cleared.Revision != draft.Revision+1 || len(cleared.Answers) != 1 || cleared.Answers[2] != "B" {
+				t.Fatalf("clear answer: %+v, %v", cleared, err)
+			}
+			if _, exists := cleared.Answers[1]; exists {
+				t.Fatal("cleared answer remains in the sheet")
+			}
+			for _, invalid := range []map[int]string{{1: "C", 181: ""}, {2: "", 3: "Z"}} {
+				if _, err := db.ApplyAnswers(t.Context(), "owner", a.ID, nil, invalid, false); !errors.Is(err, ErrInvalidAnswer) {
+					t.Fatalf("invalid batch accepted: %v", err)
+				}
+			}
+			_, saved, err := db.Packet(t.Context(), "owner", a.ID)
+			if err != nil || saved.Revision != cleared.Revision || len(saved.Answers) != 1 || saved.Answers[2] != "B" {
+				t.Fatalf("persisted answers after invalid batches: %+v, %v", saved, err)
+			}
+			if offline {
+				stale, err := db.ApplyAnswers(t.Context(), "owner", a.ID, revision, map[int]string{1: "A"}, false)
+				if !errors.Is(err, ErrRevision) || len(stale.Answers) != 1 {
+					t.Fatalf("stale selection restored: %+v, %v", stale, err)
+				}
+			}
+			final, err := db.ApplyAnswers(t.Context(), "owner", a.ID, &cleared.Revision, map[int]string{2: ""}, true)
+			if err != nil || !final.Finished || len(final.Answers) != 0 {
+				t.Fatalf("finish with blank answers: %+v, %v", final, err)
+			}
+			finished, err := db.GetAttempt(t.Context(), "owner", a.ID)
+			if err != nil || finished.WeightedRaw != 0 {
+				t.Fatalf("blank answer score: %+v, %v", finished, err)
+			}
+		})
+	}
+}
+
 func TestUpgradeActiveAttempt(t *testing.T) {
 	path := filepath.Join(t.TempDir(), "existing.db")
 	db, err := Open(path)

@@ -3,7 +3,6 @@
   <section class="catalog" aria-labelledby="catalog-title">
     <div class="catalog-heading">
       <h1 id="catalog-title">Índice de provas</h1>
-      <p>Escolha uma prova ou retome de onde parou.</p>
     </div>
     {{template "local-attempts" .}}
     <div class="list-heading"><h2>Provas disponíveis</h2><span>{{printf "%02d" (len .Exams)}}</span></div>
@@ -18,8 +17,9 @@
             <summary>Ficha da prova <span class="source-file">{{.SourceFile}}</span></summary>
             <dl>
               <div><dt>Título original</dt><dd>{{.Title}}</dd></div>
-              <div><dt>Versão</dt><dd>{{.Hash}}</dd></div>
-              <div><dt>Edital / cargo</dt><dd>{{.Notice}} / {{.RoleCode}}</dd></div>
+              <div><dt>Versão do arquivo</dt><dd>{{.Hash}}</dd></div>
+              <div><dt>Edital</dt><dd>{{.Notice}}</dd></div>
+              <div><dt>Código do cargo</dt><dd>{{.RoleCode}}</dd></div>
               <div><dt>Formato</dt><dd>{{.Type}} · {{.GeneralQuestions}} gerais e {{.SpecificQuestions}} específicas</dd></div>
             </dl>
           </details>
@@ -30,7 +30,7 @@
         </div>
       </li>
       {{else}}
-      <li class="empty-state">Nenhuma prova disponível. Volte após a próxima atualização do catálogo.</li>
+      <li class="empty-state">Nenhuma prova disponível. Recarregue a página para consultar o catálogo novamente.</li>
       {{end}}
     </ol>
   </section>

@@ -6,30 +6,32 @@
   <nav class="result-nav" aria-label="Seções do resultado"><a href="#disciplinas">Acertos por disciplina</a><a href="#revisao">Correção por questão</a></nav>
   <dl class="score-grid">
     <div><dt>Pontos ponderados</dt><dd>{{.Score.WeightedRaw}}<small> / {{.Score.WeightedMaximum}}</small></dd><dd class="score-note">{{percent (mul (div (float .Score.WeightedRaw) (float .Score.WeightedMaximum)) 100)}}% do total</dd></div>
-    <div><dt>Acertos</dt><dd>{{.Score.TotalCorrect}}<small> / 180</small></dd><dd class="score-note">{{.Answered}} respostas marcadas</dd></div>
+    <div><dt>Acertos</dt><dd>{{.Score.TotalCorrect}}<small> / 180</small></dd><dd class="score-note">{{.Answered}} {{if eq .Answered 1}}resposta marcada{{else}}respostas marcadas{{end}}</dd></div>
     <div><dt>Conhecimentos gerais</dt><dd>{{.Score.GeneralCorrect}}<small> / 80</small></dd><dd class="score-note">Peso 1</dd></div>
     <div><dt>Conhecimentos específicos</dt><dd>{{.Score.SpecificCorrect}}<small> / 100</small></dd><dd class="score-note">Peso 2</dd></div>
   </dl>
-  <p class="elapsed">Tempo decorrido · {{duration .Attempt.StartedAt .Attempt.FinishedAt}}</p>
+  <p class="elapsed">Da abertura à entrega · {{duration .Attempt.StartedAt .Attempt.FinishedAt}}</p>
 </section>
 
 <section class="official-score shell">
+  {{if .Cohort.Available}}
   <div class="section-heading">
     <h2>Nota padronizada</h2>
   </div>
-  {{if .Cohort.Available}}
   <div class="official-card">
-    <div><span>Nota padronizada estimada</span><strong>{{score .Cohort.Final}}</strong><small>Corte de habilitação: 150</small></div>
+    <div><span>Nota padronizada estimada</span><strong>{{score .Cohort.Final}}</strong><small>Mínimo para habilitação: 150</small></div>
     <div class="qualification {{if .Cohort.Qualified}}qualified{{else}}not-qualified{{end}}">
-      {{if .Cohort.Qualified}}Atingiu o mínimo{{else}}Abaixo do mínimo{{end}}
+      {{if .Cohort.Qualified}}Estimativa atingiu o mínimo{{else}}Estimativa abaixo do mínimo{{end}}
     </div>
-    <p>Estimativa feita com {{.Cohort.Candidates}} tentativas concluídas nesta instalação. A FCC usa a média e o desvio-padrão do grupo oficial de candidatos; portanto, esta não é uma nota oficial.</p>
+    <p>Estimativa baseada em {{.Cohort.Candidates}} tentativas concluídas neste site. Não é uma nota oficial: a FCC usa a média e o desvio-padrão do grupo oficial de candidatos.</p>
   </div>
   {{else}}
-  <div class="official-card unavailable">
-    <div><span>Nota padronizada</span><strong>—</strong><small>Dados de grupo insuficientes</small></div>
-    <p>O edital calcula cada prova por <code>NP = ((A − média) ÷ desvio-padrão) × 10 + 50</code>, depois aplica pesos 1 e 2. É preciso haver ao menos duas tentativas e variação nas duas provas para estimar essa nota. Seus pontos brutos acima já estão corretos.</p>
-  </div>
+  <details class="score-explanation">
+    <summary>Nota padronizada indisponível</summary>
+    <p>Para estimar a nota padronizada, é preciso ter ao menos duas tentativas concluídas desta prova e variação nos acertos dos dois blocos: conhecimentos gerais e conhecimentos específicos.</p>
+    <p>O edital calcula cada bloco por <code>NP = ((A − média) ÷ desvio-padrão) × 10 + 50</code> e aplica pesos 1 e 2. Na fórmula, A é o número de acertos; a média e o desvio-padrão vêm do grupo de comparação.</p>
+    <p>Os pontos ponderados acima podem ser consultados mesmo sem essa estimativa.</p>
+  </details>
   {{end}}
 </section>
 
@@ -43,9 +45,8 @@
 </section>
 
 <section id="revisao" class="review-section shell" aria-labelledby="review-title">
-  <div class="section-heading sticky-heading">
+  <div class="section-heading">
     <h2 id="review-title">Correção por questão</h2>
-
   </div>
   <div class="review-list">
     {{range .Results}}

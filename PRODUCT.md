@@ -27,13 +27,13 @@ O produto transforma arquivos JSON versionados em Git em provas completas e reto
 - O usuário pode responder em sequência ou navegar diretamente para qualquer questão.
 - Para usar offline, o usuário abre a tentativa com conexão e aguarda “Disponível offline”. Pode fechar a aba e retomar em “Provas neste aparelho”, no mesmo navegador. A sessão é anônima.
 - “Salvo neste aparelho” confirma a gravação local. “Sincronizado” confirma que o servidor recebeu as escolhas. Entregar sem conexão encerra a edição e deixa a tentativa aguardando correção. Com o site aberto novamente e a rede disponível, o navegador envia a entrega e o servidor calcula a nota.
-- Após a finalização, a revisão reúne todas as questões, alternativas, resposta escolhida e gabarito em uma única página rolável.
+- Após a entrega, a revisão reúne todas as questões, alternativas, resposta escolhida e gabarito em uma única página rolável.
 - As provas são mantidas como arquivos JSON no repositório Git `https://github.com/Guiribei/tests.git`.
 
 ## Capabilities and Constraints
 
 - O escopo inclui vários concursos. Ainda está em aberto quais editais entrarão no catálogo e quais formatos adicionais serão necessários. A distribuição de questões, os pesos e o cálculo descritos aqui correspondem às provas atuais.
-- Nenhuma questão informa acerto ou erro antes da finalização da tentativa.
+- Nenhuma questão informa acerto ou erro antes da entrega da tentativa.
 - Questões em branco podem ser entregues e contam como erro.
 - O formato canônico de prova contém metadados, textos-base, conhecimentos gerais, conhecimentos específicos e gabarito.
 - O validador atual exige dois blocos, 180 questões numeradas de 1 a 180, cinco alternativas por questão e um gabarito completo de A a E.

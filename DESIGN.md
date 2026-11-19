@@ -85,9 +85,8 @@ components:
     typography: "{typography.action}"
     rounded: "{rounded.square}"
     padding: ".7rem 1rem"
-  header-nav-current:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.white}"
+  header-help:
+    textColor: "{colors.muted}"
   answer-option:
     padding: ".9rem .7rem"
     typography: "{typography.body}"
@@ -95,12 +94,14 @@ components:
     backgroundColor: "{colors.rose}"
   map-item:
     backgroundColor: "{colors.white}"
-    height: "2.05rem"
+    minHeight: "2.75rem"
   exam-details:
     textColor: "{colors.ink}"
   score-note-panel:
     backgroundColor: "{colors.mist}"
     padding: "{spacing.panel}"
+  score-explanation:
+    textColor: "{colors.muted}"
 ---
 
 # Sistema de design do Caderno
@@ -109,7 +110,7 @@ components:
 
 **Creative North Star: "Caderno de provas"**
 
-O Caderno, da Computadora, organiza provas como folhas de uma mesma publicação. A linha horizontal separa registros, a serifa dá espaço ao enunciado e a numeração orienta quem vai e volta entre questões.
+Plataforma de resolução de questões, para não deixar a vista cansada e permitir horas a fio de estudo concentrado
 
 A referência Mecha aparece no papel de tom frio, no contraste entre serifa e grotesca e no desenho técnico da encadernação. A ilustração acompanha a leitura do índice. Já a prova e o resultado dão o espaço central às perguntas, às alternativas e aos números.
 
@@ -117,19 +118,18 @@ A referência Mecha aparece no papel de tom frio, no contraste entre serifa e gr
 
 - Superfícies claras com filetes que alinham e separam registros.
 - Baskervville para conteúdo de leitura e grotesca para controles e metadados.
-- Vinho para ação e escolha, verde para correção.
-- Ícone de folhas sobrepostas ao lado de Caderno e da assinatura Computadora.
+
 
 ## Colors
 
-O vinho pontua uma página dominada por cinzas frios. Cada fundo colorido de estado acompanha uma marca, uma letra ou um texto legível.
+Cada fundo colorido de estado acompanha uma marca, uma letra ou um texto legível.
 
-- **Vinho e vinho escuro** identificam a ação principal e sua passagem do ponteiro. O vinho também marca foco, questão atual, alternativa escolhida e pontos ponderados.
-- **Rosa claro** acompanha a escolha durante a prova, os links de retomada e a resposta incorreta na revisão.
+- **Cores principais** identificam a ação principal e sua passagem do ponteiro. O [cor] também marca foco, questão atual, alternativa escolhida e pontos ponderados.
+- **Cor secundária** acompanha a escolha durante a prova, os links de retomada e a resposta incorreta na revisão.
 - **Verde e verde claro** identificam o gabarito e os acertos por disciplina no resultado.
-- **Papel e branco** formam a página e os controles. **Tinta** serve ao texto principal e à aba atual. **Cinza de leitura** serve aos metadados. **Cinza de filete** separa itens e **névoa** reúne instruções, texto-base e nota padronizada.
+- **Papel e branco** formam a página e os controles. **Tinta** serve ao texto principal. **Cinza de leitura** serve aos metadados. **Cinza de filete** separa itens e **névoa** reúne texto-base e nota padronizada disponível.
 
-**Regra da correção.** Reserve o verde dos acertos para a prova entregue. Durante a tentativa, a letra preenchida em vinho confirma apenas a escolha.
+**Regra da correção.** Reserve o verde dos acertos para a prova entregue. Durante a tentativa, a letra preenchida em [cor] confirma apenas a escolha.
 
 ## Typography
 
@@ -139,9 +139,8 @@ O título da página tem escala fluida. O enunciado usa uma entrelinha mais aber
 
 ## Layout
 
-O cabeçalho, o conteúdo e o rodapé compartilham a margem lateral fluida. O conjunto ocupa até 100rem. No índice amplo, cada linha alinha número, identificação e ação. A ilustração ocupa a faixa lateral, de até 29% da grade. Em telas de até 58rem, a ação passa para a coluna do título. Até 44rem, a ilustração diminui e acompanha o título. As orientações passam para depois da lista.
+O cabeçalho, o conteúdo e o rodapé compartilham a margem lateral fluida. O conjunto ocupa até 100rem. No índice amplo, cada linha alinha número, identificação e ação. A ilustração ocupa a faixa lateral, de até 29% da grade, diretamente sobre o papel. Em telas de até 58rem, a ação passa para a coluna do título. Até 44rem, a ilustração diminui e acompanha o título. As orientações passam para depois da lista, separadas por um filete.
 
-Na prova, o mapa fica em uma coluna lateral e o corpo ocupa até 51rem. Até 44rem, o mapa recolhível passa para o fluxo acima do enunciado. No resultado, as quatro medidas da pontuação passam a duas colunas e as disciplinas passam a uma. A revisão corre em uma coluna de até 56rem.
 
 ## Elevation & Depth
 
@@ -153,12 +152,31 @@ Botões, alternativas, células do mapa e painéis têm cantos retos. A letra de
 
 ## Components
 
-- **Cabeçalho.** O ícone, o nome Caderno e a assinatura Computadora compartilham o link inicial. No celular, a assinatura passa para baixo do nome. As abas são contíguas e a aba atual usa tinta escura com texto branco.
-- **Linha de prova.** O título, o subtítulo e o nome do arquivo permitem identificar a prova antes de abrir a ficha. A ficha expansível reúne os metadados. A quantidade de questões e a duração ficam junto à ação de abrir.
-- **Botões.** Abrir e avançar usam preenchimento vinho. Salvar e voltar usam branco com filete cinza. Finalizar usa contorno vinho e aparece junto ao aviso de bloqueio das respostas. A seta do botão principal avança 2px em 160ms ao receber foco ou ponteiro. A preferência por movimento reduzido elimina a transição.
-- **Alternativas.** A linha inteira aciona o rádio. A escolha colore a linha de rosa e preenche o quadrado da letra em vinho. O foco de teclado contorna a linha. Na revisão, os rótulos “Sua resposta” e “Gabarito” explicam as cores.
-- **Mapa de questões.** Células numeradas formam uma grade rolável. Uma questão respondida ganha peso e fundo cinza. A atual recebe contorno vinho e identificação de passo atual para tecnologias assistivas.
-- **Resultado.** Filetes escuros abrem as medidas de pontuação e a primeira recebe destaque em vinho. Um painel cinza reúne a nota padronizada ou a razão de sua indisponibilidade. Barras verdes e contagens acompanham o desempenho por disciplina.
+- **Cabeçalho.** O ícone, o nome Caderno  compartilham o link inicial, que substitui a aba “Provas”. No celular, a assinatura passa para baixo do nome. “Uso offline” permanece como link de ajuda discreto.
+- **Linha de prova.** O título, o subtítulo e o nome do arquivo permitem identificar a prova antes de abrir a ficha. A ficha expansível reúne os metadados e conserva um alvo mínimo de 44px de altura. No celular, o nome do arquivo ocupa sua própria linha. A quantidade de questões e a duração ficam junto à ação de abrir.
+- **Botões.** Abrir e avançar usam preenchimento [cor]. Salvar e voltar usam branco com filete cinza. “Entregar prova” usa contorno [cor] e aparece junto ao aviso de encerramento da edição e da contagem de questões em branco como erro. A seta do botão principal avança 2px em 160ms ao receber foco ou ponteiro. A preferência por movimento reduzido elimina a transição.
+- **Alternativas.** A linha inteira aciona o rádio. A escolha colore a linha de rosa e preenche o quadrado da letra em [cor]. Clicar fora das alternativas ou pressionar Esc limpa a escolha e o destaque, deixando a questão em branco; links, botões e controles de navegação preservam a resposta. A remoção é salva no aparelho e sincronizada com o site. O duplo clique descarta ou restaura uma alternativa: a letra e o texto ficam riscados em cinza de leitura. Descartar a resposta escolhida deixa a questão em branco; outra resposta escolhida é preservada. Um clique simples escolhe e restaura a alternativa. O descarte fica salvo por tentativa no mesmo navegador, inclusive offline. A tecla Delete oferece a mesma ação com o rádio em foco, e tecnologias assistivas recebem o estado “Descartada”. O foco de teclado contorna a linha. Na revisão, os rótulos “Sua resposta” e “Gabarito” aparecem abaixo do texto da alternativa para preservar sua largura de leitura.
+- **Mapa de questões.** Células de pelo menos 44px por 44px formam uma grade rolável, com espaço para o foco de teclado. Uma questão respondida ganha peso e fundo cinza. A atual recebe fundo rosa, contorno [cor] e identificação de passo atual para tecnologias assistivas. Ao navegar ou reabrir o mapa, a grade revela a questão atual sem deslocar a página. A barra de progresso informa a contagem de questões respondidas às tecnologias assistivas.
+- **Progresso e gravação.** A contagem de respostas acompanha a barra em todos os tamanhos. O número da questão aparece somente junto ao enunciado. A gravação e a disponibilidade offline compartilham uma faixa após as alternativas, mantendo os dois estados distintos. O código do cargo continua acessível na ficha da prova.
+- **Retomada.** Cada link em “Provas neste aparelho” separa o título da prova do estado de gravação ou entrega em duas linhas, sobre fundo rosa.
+- **Resultado.** Filetes escuros abrem as medidas de pontuação e a primeira recebe destaque em [cor]. A nota padronizada estimada, quando disponível, ocupa um painel cinza com sua ressalva. Quando faltam dados, “Nota padronizada indisponível” abre a explicação e a fórmula sob demanda. Barras verdes e contagens acompanham o desempenho por disciplina.
+
+## Terminologia
+
+| Termo | Significado na interface |
+| --- | --- |
+| Prova | Caderno de questões escolhido no índice. |
+| Tentativa | Uma realização da prova, do início à entrega. |
+| Entregar prova | Encerrar a edição das respostas e solicitar a correção. Usar o mesmo verbo no botão, no aviso e na confirmação. |
+| Em branco | Questão sem alternativa escolhida. Conta como erro na entrega. |
+| Salvo neste aparelho | Gravação local confirmada. “Aguardando envio” indica que as respostas ainda precisam ser enviadas ao site. |
+| Sincronizado | O site recebeu as respostas. Não é sinônimo de apenas salvar no aparelho. |
+| Disponível offline | A interface e as questões foram preparadas para uso sem conexão. |
+| Aguardando conexão para corrigir | A entrega foi registrada no aparelho e a edição está encerrada; a correção depende do envio ao site. |
+| Pontos ponderados | Pontuação bruta que aplica os pesos da prova aos acertos. Não é a nota padronizada. |
+| Nota padronizada estimada | Cálculo com as tentativas concluídas neste site. O mínimo atingido pela estimativa não é uma habilitação oficial. |
+
+Mensagens de erro descrevem o que falhou e a próxima ação possível. Não garantem que a última resposta foi salva quando o sistema não pode confirmar a gravação.
 
 ## Do's and Don'ts
 

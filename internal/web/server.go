@@ -435,12 +435,12 @@ func randomID() string {
 }
 
 func (s *Server) notFound(w http.ResponseWriter, r *http.Request) {
-	s.render(w, r, "error", http.StatusNotFound, pageData{Title: "Página não encontrada", ErrorMessage: "Não encontramos essa prova ou tentativa."})
+	s.render(w, r, "error", http.StatusNotFound, pageData{Title: "Página não encontrada", ErrorMessage: "Não encontramos esta página ou prova. Volte ao índice e escolha uma prova disponível."})
 }
 
 func (s *Server) internalError(w http.ResponseWriter, r *http.Request, err error) {
 	s.logger.Error("erro interno", "method", r.Method, "path", r.URL.Path, "error", err)
-	s.render(w, r, "error", http.StatusInternalServerError, pageData{Title: "Algo saiu do esperado", ErrorMessage: "Seu progresso continua salvo. Tente novamente em instantes."})
+	s.render(w, r, "error", http.StatusInternalServerError, pageData{Title: "Não foi possível concluir a ação", ErrorMessage: "Tente novamente em instantes ou volte ao índice de provas."})
 }
 
 func (s *Server) recoverer(next http.Handler) http.Handler {

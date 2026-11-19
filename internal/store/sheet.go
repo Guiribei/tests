@@ -41,6 +41,7 @@ func (s *Store) Packet(ctx context.Context, sessionID, id string) (*exam.Exam, S
 
 // A nil revision is used by the online HTML forms. The offline client sends
 // changes for a draft and the entire answer sheet for a final submission.
+// An empty choice removes the answer, leaving the question blank.
 func (s *Store) ApplyAnswers(ctx context.Context, sessionID, id string, revision *int64, choices map[int]string, finish bool) (Sheet, error) {
 	tx, err := s.db.BeginTx(ctx, nil)
 	if err != nil {
@@ -65,7 +66,7 @@ func (s *Store) ApplyAnswers(ctx context.Context, sessionID, id string, revision
 		return Sheet{}, err
 	}
 	for n, choice := range choices {
-		if _, ok := e.Question(n); !ok || len(choice) != 1 || choice < "A" || choice > "E" {
+		if _, ok := e.Question(n); !ok || (choice != "" && (len(choice) != 1 || choice < "A" || choice > "E")) {
 			return Sheet{}, ErrInvalidAnswer
 		}
 	}
@@ -77,6 +78,13 @@ func (s *Store) ApplyAnswers(ctx context.Context, sessionID, id string, revision
 	}
 	now := formatTime(time.Now().UTC())
 	for n, choice := range choices {
+		if choice == "" {
+			if _, err := tx.ExecContext(ctx, "DELETE FROM answers WHERE attempt_id = ? AND question_number = ?", id, n); err != nil {
+				return Sheet{}, err
+			}
+			delete(sheet.Answers, n)
+			continue
+		}
 		if _, err := tx.ExecContext(ctx, `INSERT INTO answers (attempt_id, question_number, choice, updated_at)
 			VALUES (?, ?, ?, ?) ON CONFLICT(attempt_id, question_number) DO UPDATE SET
 			choice=excluded.choice, updated_at=excluded.updated_at`, id, n, choice, now); err != nil {

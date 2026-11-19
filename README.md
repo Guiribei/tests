@@ -24,7 +24,9 @@ No celular, acesse o mesmo domínio por **HTTPS**, abra uma prova com conexão e
 
 Você pode avançar, voltar, mudar uma resposta e fechar a aba. Para retomar, abra o site no mesmo navegador e escolha a tentativa em **Provas neste aparelho**. **Salvo neste aparelho** confirma a gravação local. **Sincronizado** confirma que o Go recebeu as escolhas. Limpar os dados do site antes do envio remove as respostas que só existem no celular.
 
-Ao finalizar sem sinal, a tentativa fica bloqueada para edição e aparece **Aguardando conexão para corrigir**. Quando a rede voltar, deixe o site aberto ou abra-o novamente. O servidor grava a entrega e calcula a nota usando a versão do gabarito salva no início da tentativa.
+Clique duas vezes em uma alternativa para deixá-la riscada como descartada; repita para restaurá-la. Um clique simples escolhe a alternativa e remove seu descarte. Se descartar a resposta marcada, a questão fica em branco. Com a alternativa em foco, a tecla **Delete** também alterna o descarte. Os descartes ficam salvos por tentativa neste navegador, inclusive offline.
+
+Ao entregar sem conexão, a tentativa fica bloqueada para edição e aparece **Aguardando conexão para corrigir**. Quando a rede voltar, deixe o site aberto ou abra-o novamente. O servidor grava a entrega e calcula a nota usando a versão do gabarito salva no início da tentativa.
 
 ## Atualizar um serviço systemd existente
 
@@ -116,7 +118,7 @@ docker run --rm -p 8080:8080 -v caderno-data:/data \
 
 - Sem cadastro: a tentativa pertence a um cookie anônimo do navegador.
 - Uma tentativa ativa por prova e navegador; ao voltar, ela é retomada.
-- Questões em branco podem ser finalizadas e contam como erro.
+- Questões em branco podem ser entregues e contam como erro.
 - Cada tentativa guarda um snapshot do JSON para não mudar durante uma atualização do Git.
 - O service worker guarda a interface e o IndexedDB guarda a prova baixada e as respostas pendentes. Os formulários HTML também funcionam online com JavaScript desativado.
 
