@@ -1,192 +1,215 @@
 ---
-name: Caderno
-description: Sistema visual da Computadora para escolher, responder e revisar provas de estudo individual.
+name: Questões de concurso
+description: Cores, tipografia e componentes da interface de provas.
 colors:
-  wine: "#911a46"
-  wine-dark: "#701334"
-  rose: "#f7e9ed"
-  correct: "#245a4a"
-  correct-wash: "#e7efeb"
-  paper: "#f9faf9"
+  paper: "#ffffff"
   white: "#fff"
-  ink: "#262933"
-  muted: "#525e65"
-  line: "#c6ccce"
-  mist: "#e9edef"
+  ink: "#293239"
+  muted: "#5e6b74"
+  line: "#dce1e5"
+  control-line: "#82929e"
+  mist: "#eef1f3"
+  accent: "#365b78"
+  accent-hover: "#28475f"
+  selected: "#edf3f8"
+  selected-line: "#839fb5"
+  correct: "#2b654b"
+  correct-wash: "#edf5ef"
+  incorrect: "#944b3c"
+  incorrect-wash: "#fbefeb"
 typography:
-  display:
-    fontFamily: "Baskervville, Georgia, serif"
-    fontSize: "clamp(3.3rem, 6.25vw, 6rem)"
-    fontWeight: 400
-    lineHeight: 1.03
-    letterSpacing: "-.04em"
   headline:
-    fontFamily: "Baskervville, Georgia, serif"
-    fontSize: "2.15rem"
-    fontWeight: 400
-    lineHeight: 1.2
-    letterSpacing: "-.032em"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "1.75rem"
+    fontWeight: 500
+    lineHeight: 1.3
+    letterSpacing: "-.025em"
+  section:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "1.25rem"
+    fontWeight: 500
+    lineHeight: 1.3
+    letterSpacing: "-.015em"
   title:
-    fontFamily: "Baskervville, Georgia, serif"
-    fontSize: "clamp(1.55rem, 2.55vw, 2.65rem)"
-    fontWeight: 400
-    lineHeight: 1.12
-    letterSpacing: "-.034em"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "1.125rem"
+    fontWeight: 500
+    lineHeight: 1.3
+    letterSpacing: "-.01em"
   statement:
-    fontFamily: "Baskervville, Georgia, serif"
-    fontSize: "1.55rem"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "1.125rem"
     fontWeight: 400
-    lineHeight: 1.45
-    letterSpacing: "-.012em"
+    lineHeight: 1.7
   body:
-    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
     fontSize: "1rem"
     fontWeight: 400
-    lineHeight: 1.5
+    lineHeight: 1.6
+  option:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: ".9375rem"
+    fontWeight: 400
+    lineHeight: 1.65
   label:
-    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
-    fontSize: ".78rem"
-    fontWeight: 550
-    lineHeight: 1.4
-    letterSpacing: ".055em"
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: ".8125rem"
+    fontWeight: 400
+    lineHeight: 1.6
   action:
-    fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif'
-    fontSize: ".89rem"
-    fontWeight: 550
-    lineHeight: 1.2
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: ".875rem"
+    fontWeight: 500
+    lineHeight: 1.3
   filename:
     fontFamily: "ui-monospace, monospace"
-    fontSize: ".76rem"
+    fontSize: ".75rem"
+    fontWeight: 400
+    lineHeight: 1.6
 rounded:
-  square: "0"
+  progress: "2px"
+  sm: "0"
+  control: "3px"
+  surface: "0"
+  circle: "50%"
 spacing:
-  gutter: "clamp(1.2rem, 3.2vw, 3.5rem)"
-  grid-gap: ".25rem"
-  inline: "1rem"
-  panel: "1.4rem"
+  compact: ".5rem"
+  inline: ".75rem"
+  base: "1rem"
+  panel: "1.25rem"
+  roomy: "1.5rem"
+  reading: "1.75rem"
+  gutter: "2rem"
 components:
   button-primary:
-    backgroundColor: "{colors.wine}"
+    backgroundColor: "{colors.accent}"
     textColor: "{colors.white}"
     typography: "{typography.action}"
-    rounded: "{rounded.square}"
+    rounded: "{rounded.control}"
     padding: ".7rem 1rem"
   button-primary-hover:
-    backgroundColor: "{colors.wine-dark}"
+    backgroundColor: "{colors.accent-hover}"
+  button-primary-active:
+    backgroundColor: "#1f394e"
   button-secondary:
     backgroundColor: "{colors.white}"
     textColor: "{colors.ink}"
     typography: "{typography.action}"
-    rounded: "{rounded.square}"
+    rounded: "{rounded.control}"
     padding: ".7rem 1rem"
-  button-finish:
+  button-text:
     backgroundColor: "transparent"
-    textColor: "{colors.wine}"
-    typography: "{typography.action}"
-    rounded: "{rounded.square}"
-    padding: ".7rem 1rem"
-  header-help:
     textColor: "{colors.muted}"
+    typography: "{typography.action}"
+    rounded: "{rounded.control}"
+    padding: ".7rem 1rem"
   answer-option:
-    padding: ".9rem .7rem"
-    typography: "{typography.body}"
+    typography: "{typography.option}"
+    rounded: "{rounded.control}"
+    padding: ".875rem .5rem"
   answer-option-selected:
-    backgroundColor: "{colors.rose}"
+    backgroundColor: "{colors.selected}"
   map-item:
     backgroundColor: "{colors.white}"
-    minHeight: "2.75rem"
-  exam-details:
-    textColor: "{colors.ink}"
-  score-note-panel:
+    rounded: "{rounded.sm}"
+  map-item-current:
+    backgroundColor: "{colors.selected}"
+    textColor: "{colors.accent}"
+  catalog:
+    backgroundColor: "{colors.white}"
+    rounded: "{rounded.surface}"
+  question-card:
+    backgroundColor: "{colors.white}"
+    rounded: "{rounded.surface}"
+    padding: "0"
+  local-attempt:
+    backgroundColor: "{colors.selected}"
+    textColor: "{colors.accent}"
+    rounded: "{rounded.control}"
+    padding: ".85rem 1rem"
+  score-panel:
+    backgroundColor: "{colors.white}"
+    rounded: "{rounded.surface}"
+  base-text:
     backgroundColor: "{colors.mist}"
-    padding: "{spacing.panel}"
-  score-explanation:
-    textColor: "{colors.muted}"
+    rounded: "{rounded.control}"
+    padding: ".5rem 1rem"
+  review-correct:
+    backgroundColor: "{colors.correct-wash}"
+    textColor: "{colors.correct}"
+  review-incorrect:
+    backgroundColor: "{colors.incorrect-wash}"
+    textColor: "{colors.incorrect}"
 ---
-
-# Sistema de design do Caderno
+# Design System: Questões de concurso
 
 ## Overview
 
-**Creative North Star: "Caderno de provas"**
+**Creative North Star: "Responder questões com clareza"**
 
-Plataforma de resolução de questões, para não deixar a vista cansada e permitir horas a fio de estudo concentrado
+A interface prioriza a leitura e a resolução de questões. “Questões de concurso” descreve a função do aplicativo. Os controles usam texto direto, tipografia do sistema e cores discretas.
 
-A referência Mecha aparece no papel de tom frio, no contraste entre serifa e grotesca e no desenho técnico da encadernação. A ilustração acompanha a leitura do índice. Já a prova e o resultado dão o espaço central às perguntas, às alternativas e aos números.
+A página é branca e o conteúdo é organizado por alinhamento, espaço e divisórias finas. Azul identifica avanço, foco e escolhas; verde e terracota aparecem na correção após a entrega. Não há caixas envolvendo catálogo, questão ou resultado, nem ilustração decorativa ou assinatura de marca.
 
 **Key Characteristics:**
 
-- Superfícies claras com filetes que alinham e separam registros.
-- Baskervville para conteúdo de leitura e grotesca para controles e metadados.
-
+- Tipografia sem serifa, com enunciados de entrelinha aberta.
+- Leitura direta sobre fundo branco, com divisórias no lugar de caixas.
+- Estados de escolha, gravação e correção identificados também por texto.
 
 ## Colors
 
-Cada fundo colorido de estado acompanha uma marca, uma letra ou um texto legível.
+Os valores normativos estão no frontmatter e correspondem às propriedades da folha de estilos.
 
-- **Cores principais** identificam a ação principal e sua passagem do ponteiro. O [cor] também marca foco, questão atual, alternativa escolhida e pontos ponderados.
-- **Cor secundária** acompanha a escolha durante a prova, os links de retomada e a resposta incorreta na revisão.
-- **Verde e verde claro** identificam o gabarito e os acertos por disciplina no resultado.
-- **Papel e branco** formam a página e os controles. **Tinta** serve ao texto principal. **Cinza de leitura** serve aos metadados. **Cinza de filete** separa itens e **névoa** reúne texto-base e nota padronizada disponível.
-
-**Regra da correção.** Reserve o verde dos acertos para a prova entregue. Durante a tentativa, a letra preenchida em [cor] confirma apenas a escolha.
+- **Primary:** azul discreto (`accent`) para abrir e avançar, foco e questão atual; `accent-hover` para o ponteiro. `selected` marca uma resposta escolhida e a questão atual. A retomada usa links e divisórias, sem fundo colorido.
+- **Correção:** `correct` e `correct-wash` mostram acerto e gabarito; `incorrect` e `incorrect-wash` mostram a resposta escolhida incorreta. Esses estados aparecem depois da entrega.
+- **Neutral:** `paper` é o fundo da página; `white`, a área de leitura. `ink` serve ao texto principal, `muted` ao apoio. `line` separa seções, `control-line` delimita controles e `mist` reúne textos-base e estados neutros.
 
 ## Typography
 
-A Baskervville regular é servida pelo aplicativo, com Georgia e a família serifa como alternativas. Ela distingue o nome da prova, o enunciado e o valor da nota do texto que explica cada um. Helvetica Neue, Helvetica e Arial compõem a pilha sem serifa dos controles, alternativas e metadados.
+A pilha sem serifa do sistema serve a títulos, enunciados e controles. A única família distinta é a monoespaçada dos nomes de arquivo; não há fonte externa.
 
-O título da página tem escala fluida. O enunciado usa uma entrelinha mais aberta e uma medida máxima de 63ch, preservada na revisão. O texto-base usa até 72ch. A numeração do índice, do mapa e da pontuação usa algarismos tabulares. O nome do JSON na ficha usa monoespaçada e conserva a grafia do arquivo.
+O frontmatter registra a hierarquia de página, seção, prova, enunciado, corpo, alternativa, rótulo e ação. Em telas de até 44rem, o título de página passa a 1.625rem, o título da prova a 1.125rem e o enunciado a 1.0625rem com entrelinha de 1.7. O enunciado e o texto-base têm medida máxima de 72ch. Contagens, mapa e pontuação usam algarismos tabulares.
 
 ## Layout
 
-O cabeçalho, o conteúdo e o rodapé compartilham a margem lateral fluida. O conjunto ocupa até 100rem. No índice amplo, cada linha alinha número, identificação e ação. A ilustração ocupa a faixa lateral, de até 29% da grade, diretamente sobre o papel. Em telas de até 58rem, a ação passa para a coluna do título. Até 44rem, a ilustração diminui e acompanha o título. As orientações passam para depois da lista, separadas por um filete.
+Cabeçalho, rodapé e conteúdo compartilham um quadro de até 74rem. A margem lateral usa `gutter`, passa a 1.5rem até 60rem e a 1rem até 44rem. O catálogo alinha número, identificação e ação em três colunas; no celular, a ação passa para baixo da identificação. Até 22rem, o cabeçalho da lista pode quebrar em duas linhas.
 
+A prova usa uma barra lateral de 13.5rem e uma área de leitura flexível, com intervalo de 3rem. Até 60rem, a barra passa a 12rem e o intervalo a 1.25rem. Até 44rem, a composição vira uma coluna, a barra perde a fixação e o mapa fica recolhido inicialmente. A questão não tem preenchimento lateral próprio: enunciado, alternativas, navegação e avisos compartilham o mesmo alinhamento.
+
+A pontuação usa quatro colunas e passa a duas no celular; disciplinas passam de duas colunas a uma. A revisão ocupa até 52rem. Linhas e textos longos quebram sem empurrar os controles para fora da tela.
 
 ## Elevation & Depth
 
-A mudança de superfície vem da cor de fundo e de filetes de 1px. A linha escura abre seções e a linha clara separa suas entradas. No mapa, um traço interno reforça a borda da questão atual.
+A hierarquia vem do espaço, dos pesos de texto e de divisórias de 1px. Catálogo, questão, revisão e pontuação ficam diretamente na página, sem contêineres com borda ou sombra. Texto-base e estimativa de nota usam um fundo neutro quando precisam reunir uma explicação. O foco tem contorno azul de 2px.
 
 ## Shapes
 
-Botões, alternativas, células do mapa e painéis têm cantos retos. A letra de cada alternativa fica em um quadrado de 1,8rem. O ícone da marca representa folhas sobrepostas em tinta escura. As setas de navegação usam traço fino e acompanham a cor do texto.
+Os botões têm cantos discretos de 3px. Células do mapa, alternativas e fundos de contexto têm cantos retos; as letras das alternativas permanecem circulares. As setas usam o mesmo traço simples em todos os controles.
 
 ## Components
 
-- **Cabeçalho.** O ícone, o nome Caderno  compartilham o link inicial, que substitui a aba “Provas”. No celular, a assinatura passa para baixo do nome. “Uso offline” permanece como link de ajuda discreto.
-- **Linha de prova.** O título, o subtítulo e o nome do arquivo permitem identificar a prova antes de abrir a ficha. A ficha expansível reúne os metadados e conserva um alvo mínimo de 44px de altura. No celular, o nome do arquivo ocupa sua própria linha. A quantidade de questões e a duração ficam junto à ação de abrir.
-- **Botões.** Abrir e avançar usam preenchimento [cor]. Salvar e voltar usam branco com filete cinza. “Entregar prova” usa contorno [cor] e aparece junto ao aviso de encerramento da edição e da contagem de questões em branco como erro. A seta do botão principal avança 2px em 160ms ao receber foco ou ponteiro. A preferência por movimento reduzido elimina a transição.
-- **Alternativas.** A linha inteira aciona o rádio. A escolha colore a linha de rosa e preenche o quadrado da letra em [cor]. Clicar fora das alternativas ou pressionar Esc limpa a escolha e o destaque, deixando a questão em branco; links, botões e controles de navegação preservam a resposta. A remoção é salva no aparelho e sincronizada com o site. O duplo clique descarta ou restaura uma alternativa: a letra e o texto ficam riscados em cinza de leitura. Descartar a resposta escolhida deixa a questão em branco; outra resposta escolhida é preservada. Um clique simples escolhe e restaura a alternativa. O descarte fica salvo por tentativa no mesmo navegador, inclusive offline. A tecla Delete oferece a mesma ação com o rádio em foco, e tecnologias assistivas recebem o estado “Descartada”. O foco de teclado contorna a linha. Na revisão, os rótulos “Sua resposta” e “Gabarito” aparecem abaixo do texto da alternativa para preservar sua largura de leitura.
-- **Mapa de questões.** Células de pelo menos 44px por 44px formam uma grade rolável, com espaço para o foco de teclado. Uma questão respondida ganha peso e fundo cinza. A atual recebe fundo rosa, contorno [cor] e identificação de passo atual para tecnologias assistivas. Ao navegar ou reabrir o mapa, a grade revela a questão atual sem deslocar a página. A barra de progresso informa a contagem de questões respondidas às tecnologias assistivas.
-- **Progresso e gravação.** A contagem de respostas acompanha a barra em todos os tamanhos. O número da questão aparece somente junto ao enunciado. A gravação e a disponibilidade offline compartilham uma faixa após as alternativas, mantendo os dois estados distintos. O código do cargo continua acessível na ficha da prova.
-- **Retomada.** Cada link em “Provas neste aparelho” separa o título da prova do estado de gravação ou entrega em duas linhas, sobre fundo rosa.
-- **Resultado.** Filetes escuros abrem as medidas de pontuação e a primeira recebe destaque em [cor]. A nota padronizada estimada, quando disponível, ocupa um painel cinza com sua ressalva. Quando faltam dados, “Nota padronizada indisponível” abre a explicação e a fórmula sob demanda. Barras verdes e contagens acompanham o desempenho por disciplina.
-
-## Terminologia
-
-| Termo | Significado na interface |
-| --- | --- |
-| Prova | Caderno de questões escolhido no índice. |
-| Tentativa | Uma realização da prova, do início à entrega. |
-| Entregar prova | Encerrar a edição das respostas e solicitar a correção. Usar o mesmo verbo no botão, no aviso e na confirmação. |
-| Em branco | Questão sem alternativa escolhida. Conta como erro na entrega. |
-| Salvo neste aparelho | Gravação local confirmada. “Aguardando envio” indica que as respostas ainda precisam ser enviadas ao site. |
-| Sincronizado | O site recebeu as respostas. Não é sinônimo de apenas salvar no aparelho. |
-| Disponível offline | A interface e as questões foram preparadas para uso sem conexão. |
-| Aguardando conexão para corrigir | A entrega foi registrada no aparelho e a edição está encerrada; a correção depende do envio ao site. |
-| Pontos ponderados | Pontuação bruta que aplica os pesos da prova aos acertos. Não é a nota padronizada. |
-| Nota padronizada estimada | Cálculo com as tentativas concluídas neste site. O mínimo atingido pela estimativa não é uma habilitação oficial. |
-
-Mensagens de erro descrevem o que falhou e a próxima ação possível. Não garantem que a última resposta foi salva quando o sistema não pode confirmar a gravação.
+- **Cabeçalho e ajuda:** “Questões de concurso” leva ao índice. “Uso offline” abre as orientações expansíveis no rodapé. Os links e resumos mantêm alvos de pelo menos 2.75rem.
+- **Lista de provas:** linhas abertas com divisórias e identificação numerada. Cada entrada reúne título, subtítulo, detalhes expansíveis, nome do JSON, quantidade de questões, duração sugerida e ação de abrir. O arquivo permanece visível com os detalhes fechados.
+- **Botões:** abrir, salvar e voltar usam branco com borda de controle; avançar usa azul com texto branco. Entregar usa o botão de texto junto ao aviso de encerramento da edição. Todos têm altura mínima de 2.75rem, foco visível e estados de ponteiro, pressão e desabilitado. As setas permanecem estáticas; a preferência por movimento reduzido também é respeitada.
+- **Alternativas:** a linha inteira aciona o rádio. A seleção colore a linha e preenche o círculo da letra em azul. O foco contorna a linha. Clicar fora das alternativas ou pressionar Esc limpa a resposta; links, botões e outros controles preservam a escolha. Duplo clique ou Delete com o rádio em foco descarta ou restaura a alternativa, riscando letra e texto em cinza. Descartar a escolhida deixa a questão em branco; outra resposta escolhida permanece. Um clique simples escolhe e restaura. O descarte persiste por tentativa no mesmo navegador, inclusive offline, e é anunciado às tecnologias assistivas.
+- **Mapa e progresso:** células de pelo menos 44px por 44px formam uma grade rolável. Questões em branco são links numéricos sem caixa; respondidas têm fundo neutro e peso maior. A atual tem fundo de seleção, contorno azul e `aria-current="step"`. Abrir ou navegar no mapa revela a célula atual sem deslocar a página. A barra informa a contagem de respondidas também às tecnologias assistivas. No celular, a navegação fecha o mapa e leva o foco ao enunciado.
+- **Gravação e retomada:** uma faixa após as alternativas separa o estado de gravação da disponibilidade offline. “Salvo neste aparelho” confirma gravação local; “aguardando envio” indica respostas pendentes; “Sincronizado” confirma recebimento pelo site. “Disponível offline” confirma que a prova foi preparada para uso sem rede. “Provas neste aparelho” mostra título e estado em duas linhas. Entregar sem conexão bloqueia a edição e informa “Aguardando conexão para corrigir”.
+- **Resultado:** pontos ponderados recebem destaque azul. A nota padronizada estimada, quando disponível, aparece em painel neutro com a ressalva; quando indisponível, uma seção expansível explica os dados necessários e a fórmula. Disciplinas mostram barras verdes e contagens. Na revisão, “Sua resposta” e “Gabarito” ficam abaixo do texto da alternativa, preservando a largura de leitura.
+- **Termos e erros:** “Prova” é o conjunto escolhido no índice; “tentativa” é uma realização até a entrega. “Entregar prova” encerra a edição e solicita a correção; questões “em branco” contam como erro. “Pontos ponderados” e “nota padronizada estimada” são medidas distintas. Erros descrevem a falha e uma ação possível; não afirmam que a resposta foi salva quando a gravação não foi confirmada.
 
 ## Do's and Don'ts
 
-### Aplicar
+### Do
 
-- Mantenha o nome do arquivo legível com a ficha fechada.
-- Preserve o alinhamento entre número, título e ação quando a linha quebrar.
-- Acompanhe as cores de correção com os rótulos de gabarito e resposta escolhida.
+- Do manter “prova”, “questão”, “resposta”, “gabarito” e “resultado” nos controles de estudo.
+- Do acompanhar os estados de correção com os rótulos “Sua resposta”, “Gabarito”, “Acertou”, “Errou” ou “Em branco”.
+- Do preservar foco visível, alvos de pelo menos 44px e a leitura das alternativas em telas estreitas.
+- Do distinguir gravação local, sincronização e disponibilidade offline nas mensagens.
 
-### Evitar
+### Don't
 
-- Evite dar pistas de acerto ao destacar a alternativa durante a prova.
-- Evite usar o espaço do enunciado para instruções secundárias quando elas cabem no texto-base expansível ou no mapa.
+- Don't reintroduzir o nome rejeitado, vinho, ilustrações de encadernação ou outra metáfora de marca.
+- Don't indicar acerto, erro ou gabarito antes da entrega.
+- Don't usar a cor como única identificação de uma escolha ou de um resultado.
+- Don't apresentar uma estimativa de nota como resultado oficial ou confirmar gravação sem sucesso comprovado.

@@ -1,220 +1,272 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-19T01:03:29Z",
-  "title": "Sistema de design do Caderno",
+  "generatedAt": "2026-11-19T01:46:19.414434Z",
+  "title": "Design System: Questões de concurso",
   "extensions": {
     "colorMeta": {
-      "wine": {
-        "role": "primary",
-        "displayName": "Vinho",
-        "tonalRamp": [
-          "#1f0008",
-          "#4c011f",
-          "#781239",
-          "#a32e55",
-          "#c65b78",
-          "#df879b",
-          "#f2b9c4",
-          "#fde9ec"
-        ]
-      },
-      "wine-dark": {
-        "role": "primary",
-        "displayName": "Vinho escuro",
-        "tonalRamp": [
-          "#1c0108",
-          "#470d20",
-          "#70213a",
-          "#993b56",
-          "#bc6479",
-          "#d58d9c",
-          "#ecbcc5",
-          "#faeaec"
-        ]
-      },
-      "rose": {
-        "role": "primary",
-        "displayName": "Rosa claro",
-        "tonalRamp": [
-          "#0e0a0b",
-          "#2b2426",
-          "#493f42",
-          "#695d60",
-          "#8b8083",
-          "#aba2a4",
-          "#cfc9ca",
-          "#f0eeee"
-        ]
-      },
-      "correct": {
-        "role": "secondary",
-        "displayName": "Verde do gabarito",
-        "tonalRamp": [
-          "#010f0a",
-          "#0b2d24",
-          "#1e4c3e",
-          "#376c5c",
-          "#5f8f7f",
-          "#89aea1",
-          "#b9d1c8",
-          "#e9f1ed"
-        ]
-      },
-      "correct-wash": {
-        "role": "secondary",
-        "displayName": "Verde claro",
-        "tonalRamp": [
-          "#0a0c0b",
-          "#232826",
-          "#3e4441",
-          "#5b625f",
-          "#7e8582",
-          "#a1a6a3",
-          "#c8cbca",
-          "#edefee"
-        ]
-      },
       "paper": {
         "role": "neutral",
-        "displayName": "Papel",
+        "displayName": "Branco da página",
         "tonalRamp": [
-          "#0b0b0b",
-          "#262726",
-          "#424242",
-          "#606160",
-          "#828382",
-          "#a4a5a4",
-          "#cacaca",
-          "#eeeeee"
+          "oklch(15% 0.0008 247.8)",
+          "oklch(26% 0.0012 247.8)",
+          "oklch(37% 0.0016 247.8)",
+          "oklch(48% 0.0017 247.8)",
+          "oklch(60% 0.0016 247.8)",
+          "oklch(71% 0.0014 247.8)",
+          "oklch(83% 0.0009 247.8)",
+          "oklch(95% 0.0003 247.8)"
         ]
       },
       "white": {
         "role": "neutral",
-        "displayName": "Branco",
+        "displayName": "Área branca",
         "tonalRamp": [
-          "#0b0b0b",
-          "#262626",
-          "#424242",
-          "#606060",
-          "#838383",
-          "#a4a4a4",
-          "#cacaca",
-          "#eeeeee"
+          "oklch(15% 0.0000 89.9)",
+          "oklch(26% 0.0000 89.9)",
+          "oklch(37% 0.0000 89.9)",
+          "oklch(48% 0.0000 89.9)",
+          "oklch(60% 0.0000 89.9)",
+          "oklch(71% 0.0000 89.9)",
+          "oklch(83% 0.0000 89.9)",
+          "oklch(95% 0.0000 89.9)"
         ]
       },
       "ink": {
         "role": "neutral",
-        "displayName": "Tinta",
+        "displayName": "Texto principal",
         "tonalRamp": [
-          "#0a0b0f",
-          "#24262d",
-          "#3f424c",
-          "#5c606b",
-          "#7f838e",
-          "#a1a4ad",
-          "#c8cad0",
-          "#eeeef0"
+          "oklch(15% 0.0080 241.6)",
+          "oklch(26% 0.0129 241.6)",
+          "oklch(37% 0.0162 241.6)",
+          "oklch(48% 0.0176 241.6)",
+          "oklch(60% 0.0168 241.6)",
+          "oklch(71% 0.0139 241.6)",
+          "oklch(83% 0.0090 241.6)",
+          "oklch(95% 0.0028 241.6)"
         ]
       },
       "muted": {
         "role": "neutral",
-        "displayName": "Cinza de leitura",
+        "displayName": "Texto de apoio",
         "tonalRamp": [
-          "#080c0e",
-          "#20282c",
-          "#3a444a",
-          "#566269",
-          "#7a858c",
-          "#9da6ac",
-          "#c6cbcf",
-          "#edeff0"
+          "oklch(15% 0.0097 238.1)",
+          "oklch(26% 0.0155 238.1)",
+          "oklch(37% 0.0195 238.1)",
+          "oklch(48% 0.0212 238.1)",
+          "oklch(60% 0.0202 238.1)",
+          "oklch(71% 0.0168 238.1)",
+          "oklch(83% 0.0108 238.1)",
+          "oklch(95% 0.0033 238.1)"
         ]
       },
       "line": {
         "role": "neutral",
-        "displayName": "Cinza de filete",
+        "displayName": "Divisórias",
         "tonalRamp": [
-          "#0a0b0c",
-          "#242728",
-          "#3f4345",
-          "#5c6163",
-          "#7f8486",
-          "#a1a5a7",
-          "#c8cbcc",
-          "#eeeeef"
+          "oklch(15% 0.0035 241.7)",
+          "oklch(26% 0.0056 241.7)",
+          "oklch(37% 0.0071 241.7)",
+          "oklch(48% 0.0077 241.7)",
+          "oklch(60% 0.0073 241.7)",
+          "oklch(71% 0.0061 241.7)",
+          "oklch(83% 0.0039 241.7)",
+          "oklch(95% 0.0012 241.7)"
+        ]
+      },
+      "control-line": {
+        "role": "neutral",
+        "displayName": "Borda de controle",
+        "tonalRamp": [
+          "oklch(15% 0.0117 240.3)",
+          "oklch(26% 0.0188 240.3)",
+          "oklch(37% 0.0236 240.3)",
+          "oklch(48% 0.0257 240.3)",
+          "oklch(60% 0.0245 240.3)",
+          "oklch(71% 0.0203 240.3)",
+          "oklch(83% 0.0131 240.3)",
+          "oklch(95% 0.0040 240.3)"
         ]
       },
       "mist": {
         "role": "neutral",
-        "displayName": "Névoa",
+        "displayName": "Fundo neutro",
         "tonalRamp": [
-          "#0a0b0c",
-          "#252728",
-          "#404344",
-          "#5e6163",
-          "#808485",
-          "#a2a5a6",
-          "#c9cbcc",
-          "#eeeeef"
+          "oklch(15% 0.0019 236.5)",
+          "oklch(26% 0.0031 236.5)",
+          "oklch(37% 0.0038 236.5)",
+          "oklch(48% 0.0042 236.5)",
+          "oklch(60% 0.0040 236.5)",
+          "oklch(71% 0.0033 236.5)",
+          "oklch(83% 0.0021 236.5)",
+          "oklch(95% 0.0007 236.5)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Azul de ação",
+        "tonalRamp": [
+          "oklch(15% 0.0290 243.5)",
+          "oklch(26% 0.0465 243.5)",
+          "oklch(37% 0.0586 243.5)",
+          "oklch(48% 0.0637 243.5)",
+          "oklch(60% 0.0607 243.5)",
+          "oklch(71% 0.0504 243.5)",
+          "oklch(83% 0.0325 243.5)",
+          "oklch(95% 0.0100 243.5)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Azul ao apontar",
+        "tonalRamp": [
+          "oklch(15% 0.0251 243.3)",
+          "oklch(26% 0.0403 243.3)",
+          "oklch(37% 0.0507 243.3)",
+          "oklch(48% 0.0552 243.3)",
+          "oklch(60% 0.0526 243.3)",
+          "oklch(71% 0.0437 243.3)",
+          "oklch(83% 0.0281 243.3)",
+          "oklch(95% 0.0086 243.3)"
+        ]
+      },
+      "selected": {
+        "role": "primary",
+        "displayName": "Fundo de seleção",
+        "tonalRamp": [
+          "oklch(15% 0.0042 242.8)",
+          "oklch(26% 0.0068 242.8)",
+          "oklch(37% 0.0085 242.8)",
+          "oklch(48% 0.0093 242.8)",
+          "oklch(60% 0.0088 242.8)",
+          "oklch(71% 0.0073 242.8)",
+          "oklch(83% 0.0047 242.8)",
+          "oklch(95% 0.0015 242.8)"
+        ]
+      },
+      "selected-line": {
+        "role": "primary",
+        "displayName": "Borda de seleção",
+        "tonalRamp": [
+          "oklch(15% 0.0205 242.0)",
+          "oklch(26% 0.0329 242.0)",
+          "oklch(37% 0.0414 242.0)",
+          "oklch(48% 0.0450 242.0)",
+          "oklch(60% 0.0429 242.0)",
+          "oklch(71% 0.0356 242.0)",
+          "oklch(83% 0.0230 242.0)",
+          "oklch(95% 0.0071 242.0)"
+        ]
+      },
+      "correct": {
+        "role": "secondary",
+        "displayName": "Acerto e gabarito",
+        "tonalRamp": [
+          "oklch(15% 0.0340 161.9)",
+          "oklch(26% 0.0546 161.9)",
+          "oklch(37% 0.0687 161.9)",
+          "oklch(48% 0.0748 161.9)",
+          "oklch(60% 0.0712 161.9)",
+          "oklch(71% 0.0592 161.9)",
+          "oklch(83% 0.0381 161.9)",
+          "oklch(95% 0.0117 161.9)"
+        ]
+      },
+      "correct-wash": {
+        "role": "secondary",
+        "displayName": "Fundo de acerto",
+        "tonalRamp": [
+          "oklch(15% 0.0053 153.7)",
+          "oklch(26% 0.0085 153.7)",
+          "oklch(37% 0.0106 153.7)",
+          "oklch(48% 0.0116 153.7)",
+          "oklch(60% 0.0110 153.7)",
+          "oklch(71% 0.0092 153.7)",
+          "oklch(83% 0.0059 153.7)",
+          "oklch(95% 0.0018 153.7)"
+        ]
+      },
+      "incorrect": {
+        "role": "tertiary",
+        "displayName": "Resposta incorreta",
+        "tonalRamp": [
+          "oklch(15% 0.0462 32.9)",
+          "oklch(26% 0.0741 32.9)",
+          "oklch(37% 0.0933 32.9)",
+          "oklch(48% 0.1015 32.9)",
+          "oklch(60% 0.0967 32.9)",
+          "oklch(71% 0.0803 32.9)",
+          "oklch(83% 0.0518 32.9)",
+          "oklch(95% 0.0159 32.9)"
+        ]
+      },
+      "incorrect-wash": {
+        "role": "tertiary",
+        "displayName": "Fundo de erro",
+        "tonalRamp": [
+          "oklch(15% 0.0064 39.4)",
+          "oklch(26% 0.0103 39.4)",
+          "oklch(37% 0.0129 39.4)",
+          "oklch(48% 0.0141 39.4)",
+          "oklch(60% 0.0134 39.4)",
+          "oklch(71% 0.0111 39.4)",
+          "oklch(83% 0.0072 39.4)",
+          "oklch(95% 0.0022 39.4)"
         ]
       }
     },
     "typographyMeta": {
-      "display": {
-        "displayName": "Título de página",
-        "purpose": "Abre índice, resultado ou página de erro."
-      },
       "headline": {
+        "displayName": "Título de página",
+        "purpose": "Catálogo, resultado e erro."
+      },
+      "section": {
         "displayName": "Título de seção",
-        "purpose": "Abre cada seção do resultado."
+        "purpose": "Seções do resultado."
       },
       "title": {
         "displayName": "Título de prova",
-        "purpose": "Identifica cada entrada do índice."
+        "purpose": "Identificação das provas na lista."
       },
       "statement": {
         "displayName": "Enunciado",
-        "purpose": "Dá continuidade à leitura na resolução e na revisão."
+        "purpose": "Resolução e revisão da questão."
       },
       "body": {
         "displayName": "Texto corrente",
-        "purpose": "Serve a alternativas e texto de apoio."
+        "purpose": "Texto base da interface."
+      },
+      "option": {
+        "displayName": "Alternativa",
+        "purpose": "Opções de resposta e correção."
       },
       "label": {
-        "displayName": "Rótulo de lista",
-        "purpose": "Distingue a identificação e a contagem da lista de provas."
+        "displayName": "Texto de apoio",
+        "purpose": "Metadados, navegação e contagens."
       },
       "action": {
         "displayName": "Ação",
-        "purpose": "Identifica botões de abertura, navegação e entrega."
+        "purpose": "Botões de abertura, navegação, gravação e entrega."
       },
       "filename": {
         "displayName": "Nome do arquivo",
-        "purpose": "Expõe a origem do conteúdo em cada ficha."
+        "purpose": "Origem JSON na ficha da prova."
       }
     },
-    "shadows": [
-      {
-        "name": "contorno-da-questao-atual",
-        "value": "inset 0 0 0 1px var(--wine)",
-        "purpose": "Reforça a posição atual no mapa de questões."
-      }
-    ],
-    "motion": [
-      {
-        "name": "seta-da-acao",
-        "value": "transform 160ms ease-out",
-        "purpose": "Desloca a seta do botão principal ao focar ou apontar."
-      }
-    ],
+    "shadows": [],
+    "motion": [],
     "breakpoints": [
       {
-        "name": "grade-compacta",
-        "value": "58rem"
+        "name": "compacto",
+        "value": "60rem"
       },
       {
-        "name": "coluna-unica",
+        "name": "celular",
         "value": "44rem"
+      },
+      {
+        "name": "estreito",
+        "value": "22rem"
       }
     ]
   },
@@ -223,99 +275,102 @@
       "name": "Ação principal",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "A cor sólida e a seta indicam a abertura da prova ou o avanço para a questão seguinte.",
-      "html": "<button class=\"ds-primary-button\" type=\"button\">Abrir prova <svg class=\"ds-arrow\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 20 20\"><path d=\"M3 10h13m-5.5-5.5L16 10l-5.5 5.5\"/></svg></button>",
-      "css": ".ds-primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 1rem; border: 1px solid transparent; border-radius: 0; padding: .7rem 1rem; min-height: 2.8rem; font-size: .89rem; font-weight: 550; line-height: 1.2; text-decoration: none; font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); cursor: pointer; color: white; background: var(--wine, #911a46); }\n.ds-primary-button:hover { background: var(--wine-dark, #701334); }\n.ds-primary-button:focus-visible { outline: 2px solid var(--wine, #911a46); outline-offset: 4px; }\n.ds-primary-button:disabled { cursor: default; color: var(--muted, #525e65); border-color: var(--line, #c6ccce); background: var(--mist, #e9edef); }\n.ds-arrow { width: 1.12rem; height: 1.12rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.45; }\n.ds-primary-button .ds-arrow { transition: transform 160ms ease-out; }\n.ds-primary-button:hover .ds-arrow, .ds-primary-button:focus-visible .ds-arrow { transform: translateX(2px); }\n@media (prefers-reduced-motion: reduce) { .ds-primary-button .ds-arrow { transition-duration: 0s; } }"
+      "description": "Abrir prova.",
+      "html": "<button class=\"ds-primary\" type=\"button\">Abrir prova <svg class=\"ds-arrow\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 20 20\"><path d=\"M3 10h13m-5.5-5.5L16 10l-5.5 5.5\"/></svg></button>",
+      "css": ".ds-arrow,.ds-primary{font-family:var(--sans,Arial,sans-serif);}.ds-arrow{width: 1.05rem; height: 1.05rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.6;}.ds-primary{display: inline-flex; align-items: center; justify-content: center; gap: .75rem; border: 1px solid transparent; border-radius: 3px; padding: .7rem 1rem; min-height: 2.75rem; max-width: 100%; overflow-wrap: anywhere; font-size: .875rem; font-weight: 500; line-height: 1.3; text-decoration: none;}.ds-primary{color: var(--white); background: var(--accent);}.ds-primary:hover{background: var(--accent-hover);}.ds-primary:active{background: #1f394e;}[data-previous] .ds-arrow{transform: rotate(180deg);}.ds-arrow:focus-visible,.ds-primary:focus-visible{outline:2px solid var(--accent,#365b78);outline-offset:3px;}button:disabled{cursor:default;color:var(--muted,#5e6b74);border-color:var(--line,#dce1e5);background:var(--mist,#eef1f3);}"
     },
     {
       "name": "Ação secundária",
       "kind": "button",
       "refersTo": "button-secondary",
-      "description": "O fundo branco e o contorno cinza identificam a ação de salvar.",
-      "html": "<button class=\"ds-secondary-button\" type=\"button\">Salvar resposta</button>",
-      "css": ".ds-secondary-button { display: inline-flex; align-items: center; justify-content: center; gap: 1rem; border: 1px solid transparent; border-radius: 0; padding: .7rem 1rem; min-height: 2.8rem; font-size: .89rem; font-weight: 550; line-height: 1.2; text-decoration: none; font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); cursor: pointer; color: var(--ink, #262933); border-color: var(--line, #c6ccce); background: var(--white, #fff); }\n.ds-secondary-button:hover { background: var(--mist, #e9edef); }\n.ds-secondary-button:focus-visible { outline: 2px solid var(--wine, #911a46); outline-offset: 4px; }\n.ds-secondary-button:disabled { cursor: default; color: var(--muted, #525e65); border-color: var(--line, #c6ccce); background: var(--mist, #e9edef); }"
+      "description": "Salvar resposta.",
+      "html": "<button class=\"ds-secondary\" type=\"button\">Salvar resposta</button>",
+      "css": ".ds-secondary{font-family:var(--sans,Arial,sans-serif);}.ds-secondary{display: inline-flex; align-items: center; justify-content: center; gap: .75rem; border: 1px solid transparent; border-radius: 3px; padding: .7rem 1rem; min-height: 2.75rem; max-width: 100%; overflow-wrap: anywhere; font-size: .875rem; font-weight: 500; line-height: 1.3; text-decoration: none;}.ds-secondary{color: var(--ink); border-color: var(--control-line); background: var(--white);}.ds-secondary:hover{background: var(--mist);}.ds-secondary:active{background: var(--line);}.ds-secondary:focus-visible{outline:2px solid var(--accent,#365b78);outline-offset:3px;}button:disabled{cursor:default;color:var(--muted,#5e6b74);border-color:var(--line,#dce1e5);background:var(--mist,#eef1f3);}"
     },
     {
       "name": "Entrega da prova",
       "kind": "button",
-      "refersTo": "button-finish",
-      "description": "O contorno vinho identifica a entrega junto ao aviso de encerramento da edição e de questões em branco.",
-      "html": "<button class=\"ds-text-button\" type=\"button\">Entregar prova <svg class=\"ds-arrow\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 20 20\"><path d=\"M3 10h13m-5.5-5.5L16 10l-5.5 5.5\"/></svg></button>",
-      "css": ".ds-text-button { display: inline-flex; align-items: center; justify-content: center; gap: 1rem; border: 1px solid transparent; border-radius: 0; padding: .7rem 1rem; min-height: 2.8rem; font-size: .89rem; font-weight: 550; line-height: 1.2; text-decoration: none; font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); cursor: pointer; color: var(--wine, #911a46); background: transparent; border-color: currentColor; }\n.ds-text-button:hover { background: var(--rose, #f7e9ed); }\n.ds-text-button:focus-visible { outline: 2px solid var(--wine, #911a46); outline-offset: 4px; }\n.ds-text-button:disabled { cursor: default; color: var(--muted, #525e65); border-color: var(--line, #c6ccce); background: var(--mist, #e9edef); }\n.ds-arrow { width: 1.12rem; height: 1.12rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.45; }"
+      "refersTo": "button-text",
+      "description": "Entregar prova.",
+      "html": "<button class=\"ds-text\" type=\"button\">Entregar prova <svg class=\"ds-arrow\" aria-hidden=\"true\" focusable=\"false\" viewBox=\"0 0 20 20\"><path d=\"M3 10h13m-5.5-5.5L16 10l-5.5 5.5\"/></svg></button>",
+      "css": ".ds-arrow,.ds-text{font-family:var(--sans,Arial,sans-serif);}.ds-arrow{width: 1.05rem; height: 1.05rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.6;}.ds-text{display: inline-flex; align-items: center; justify-content: center; gap: .75rem; border: 1px solid transparent; border-radius: 3px; padding: .7rem 1rem; min-height: 2.75rem; max-width: 100%; overflow-wrap: anywhere; font-size: .875rem; font-weight: 500; line-height: 1.3; text-decoration: none;}.ds-text{color: var(--muted); background: transparent;}.ds-text:hover{color: var(--ink); background: var(--mist);}.ds-text:active{background: var(--line);}[data-previous] .ds-arrow{transform: rotate(180deg);}.ds-arrow:focus-visible,.ds-text:focus-visible{outline:2px solid var(--accent,#365b78);outline-offset:3px;}button:disabled{cursor:default;color:var(--muted,#5e6b74);border-color:var(--line,#dce1e5);background:var(--mist,#eef1f3);}"
     },
     {
-      "name": "Ajuda do cabeçalho",
-      "kind": "link",
-      "refersTo": "header-help",
-      "description": "O link abre a ajuda offline; a marca retorna ao índice de provas.",
-      "html": "<a class=\"ds-header-help\" href=\"#uso-offline\">Uso offline</a>",
-      "css": ".ds-header-help { display: inline-flex; align-items: center; min-height: 2.75rem; padding-block: .25rem; font: .83rem/1.5 var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); color: var(--muted, #525e65); text-decoration: none; }\n.ds-header-help:hover { color: var(--wine, #911a46); text-decoration: underline; }\n.ds-header-help:focus-visible { outline: 2px solid var(--wine, #911a46); outline-offset: 4px; }"
-    },
-    {
-      "name": "Alternativa da prova",
+      "name": "Alternativas de resposta",
       "kind": "input",
       "refersTo": "answer-option",
-      "description": "Cada linha aciona o rádio e destaca a letra escolhida.",
-      "html": "<label class=\"ds-option\"><input type=\"radio\" name=\"resposta\" value=\"A\"><span class=\"ds-letter\">A</span><span>Primeira alternativa</span></label><label class=\"ds-option\"><input type=\"radio\" name=\"resposta\" value=\"B\" checked><span class=\"ds-letter\">B</span><span>Segunda alternativa</span></label>",
-      "css": ".ds-option { display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: .85rem; align-items: baseline; padding: .9rem .7rem; border-top: 1px solid var(--line, #c6ccce); cursor: pointer; position: relative; font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); font-size: 1rem; line-height: 1.5; color: var(--ink, #262933); }\n.ds-option:last-child { border-bottom: 1px solid var(--line, #c6ccce); }\n.ds-option:hover { background: var(--mist, #e9edef); }\n.ds-option input { width: 1px; height: 1px; opacity: 0; position: absolute; }\n.ds-letter { display: grid; place-items: center; align-self: start; width: 1.8rem; height: 1.8rem; border: 1px solid #859197; font-size: .88rem; }\n.ds-option:has(:checked) { background: var(--rose, #f7e9ed); }\n.ds-option input:checked + .ds-letter { color: white; background: var(--wine, #911a46); border-color: var(--wine, #911a46); }\n.ds-option:has(:focus-visible) { outline: 2px solid var(--wine, #911a46); outline-offset: -2px; }\n@media (forced-colors: active) { .ds-option input:checked + .ds-letter { outline: 2px solid Highlight; } }"
+      "description": "Rádio de linha inteira; azul indica somente escolha, antes da correção.",
+      "html": "<div role=\"group\" aria-label=\"Escolha uma alternativa\"><label class=\"ds-alternative\"><input type=\"radio\" name=\"ds-choice\" value=\"A\"><span class=\"ds-letter\">A</span><span class=\"ds-option-text\">Primeira alternativa.</span></label><label class=\"ds-alternative\"><input type=\"radio\" name=\"ds-choice\" value=\"B\" checked><span class=\"ds-letter\">B</span><span class=\"ds-option-text\">Alternativa escolhida.</span></label><label class=\"ds-alternative ds-discarded\"><input type=\"radio\" name=\"ds-choice\" value=\"C\" aria-label=\"C, descartada\"><span class=\"ds-letter\">C</span><span class=\"ds-option-text\">Alternativa descartada.</span></label></div>",
+      "css": ".ds-alternative,.ds-letter,.ds-option-text{font-family:var(--sans,Arial,sans-serif);}.ds-alternative{display: grid; grid-template-columns: 1.75rem minmax(0, 1fr); gap: .75rem; align-items: start; padding: .875rem .5rem; border: 1px solid transparent; font-size: .9375rem; line-height: 1.65;}.ds-alternative + .ds-alternative{border-top-color: var(--line);}.ds-alternative{cursor: pointer; position: relative; touch-action: manipulation;}.ds-option-text{overflow-wrap: anywhere;}.ds-alternative:has(input:enabled):hover{background: var(--mist);}.ds-alternative input{width: 1px; height: 1px; opacity: 0; position: absolute;}.ds-letter{display: grid; place-items: center; width: 1.65rem; height: 1.65rem; border: 1px solid var(--control-line); border-radius: 50%; color: var(--muted); font-size: .8125rem; line-height: 1;}.ds-alternative:has(:checked){background: var(--selected);}.ds-alternative:has(:checked):hover{background: var(--selected);}.ds-alternative input:checked + .ds-letter{color: var(--white); background: var(--accent); border-color: var(--accent);}.ds-alternative:has(:focus-visible){outline: 2px solid var(--accent); outline-offset: 2px;}.ds-alternative.ds-discarded{color: var(--muted);}.ds-alternative.ds-discarded .ds-option-text,.ds-alternative.ds-discarded .ds-letter{text-decoration: line-through;}fieldset:disabled .ds-alternative{cursor: default;}.ds-alternative:focus-visible,.ds-letter:focus-visible,.ds-option-text:focus-visible{outline:2px solid var(--accent,#365b78);outline-offset:3px;}"
     },
     {
       "name": "Mapa de questões",
       "kind": "nav",
       "refersTo": "map-item",
-      "description": "A grade oferece alvos de pelo menos 44px e distingue questões respondidas e a posição atual.",
-      "html": "<nav class=\"ds-map\" aria-label=\"Mapa de questões\"><a class=\"ds-cell ds-answered\" href=\"#questao-1\" aria-label=\"Questão 1, respondida\">1</a><a class=\"ds-cell ds-current\" aria-current=\"step\" href=\"#questao-2\" aria-label=\"Questão 2, em branco\">2</a><a class=\"ds-cell\" href=\"#questao-3\" aria-label=\"Questão 3, em branco\">3</a></nav>",
-      "css": ".ds-map { display: grid; grid-template-columns: repeat(auto-fill,minmax(2.75rem,1fr)); gap: .25rem; padding: .375rem; max-height: min(45vh, 25rem); overflow: auto; scrollbar-color: var(--muted, #525e65) var(--mist, #e9edef); font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); max-width: 8rem; }\n.ds-cell { display: grid; place-items: center; min-height: 2.75rem; font-size: .79rem; text-decoration: none; background: var(--white, #fff); border: 1px solid var(--line, #c6ccce); color: var(--ink, #262933); font-variant-numeric: tabular-nums; }\n.ds-answered { background: var(--mist, #e9edef); border-color: #839398; font-weight: 700; }\n.ds-current, .ds-cell:hover { border-color: var(--wine, #911a46); color: var(--wine, #911a46); }\n.ds-current { background: var(--rose, #f7e9ed); font-weight: 700; box-shadow: inset 0 0 0 1px var(--wine, #911a46); }\n.ds-cell:focus-visible { outline: 2px solid var(--wine, #911a46); outline-offset: 2px; }\n@media (forced-colors: active) { .ds-current { outline: 2px solid Highlight; } }"
+      "description": "Questões em branco, respondidas e atual, sem antecipar correção.",
+      "html": "<nav class=\"ds-map\" aria-label=\"Mapa de questões\"><a class=\"ds-map-item ds-answered\" href=\"#questao-1\" aria-label=\"Questão 1, respondida\">1</a><a class=\"ds-map-item ds-current\" href=\"#questao-2\" aria-current=\"step\" aria-label=\"Questão 2, em branco\">2</a><a class=\"ds-map-item\" href=\"#questao-3\" aria-label=\"Questão 3, em branco\">3</a></nav>",
+      "css": ".ds-map,.ds-map-item{font-family:var(--sans,Arial,sans-serif);}.ds-map-item{font-variant-numeric: tabular-nums;}.ds-map{display: grid; grid-template-columns: repeat(auto-fill,minmax(2.75rem,1fr)); gap: .3rem; padding: .35rem; max-height: min(45vh, 25rem); overflow: auto; scrollbar-color: var(--control-line) var(--paper);}.ds-map-item{display: grid; place-items: center; min-height: 2.75rem; font-size: .75rem; text-decoration: none; border: 1px solid transparent;}.ds-map-item:focus-visible{outline-offset: 2px;}.ds-map-item.ds-answered{background: var(--mist); font-weight: 650;}.ds-map-item:hover{color: var(--accent); background: var(--mist); text-decoration: underline;}.ds-map-item.ds-current{color: var(--accent); background: var(--selected); font-weight: 700; border-color: var(--accent);}.ds-map:focus-visible,.ds-map-item:focus-visible{outline:2px solid var(--accent,#365b78);outline-offset:3px;}"
     },
     {
-      "name": "Ficha da prova",
-      "kind": "custom",
-      "refersTo": "exam-details",
-      "description": "O nome do arquivo acompanha o controle de expansão dos metadados.",
-      "html": "<details class=\"ds-file\"><summary>Ficha da prova <span class=\"ds-filename\">option-one.json</span></summary><dl><div><dt>Formato</dt><dd>80 gerais e 100 específicas</dd></div></dl></details>",
-      "css": ".ds-file { margin-top: .55rem; font-size: .8rem; font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); color: var(--ink, #262933); line-height: 1.5; }\n.ds-file summary { width: fit-content; color: var(--ink, #262933); min-height: 2.75rem; padding-block: .65rem; cursor: pointer; }\n.ds-file summary:hover { color: var(--wine, #911a46); }\n.ds-file summary:focus-visible { outline: 2px solid var(--wine, #911a46); outline-offset: 4px; }\n.ds-filename { color: var(--muted, #525e65); margin-left: .45rem; overflow-wrap: anywhere; font-family: ui-monospace, monospace; font-size: .76rem; }\n.ds-file dl { margin: .4rem 0 0; }\n.ds-file dl div { display: grid; grid-template-columns: 6rem minmax(0,1fr); gap: .45rem; padding-block: .3rem; }\n.ds-file dt { color: var(--muted, #525e65); }\n.ds-file dd { margin: 0; }\n@media (max-width: 44rem) { .ds-filename { display: block; margin: .2rem 0 0 1rem; } .ds-file dl div { grid-template-columns: minmax(0,1fr); gap: .1rem; padding-block: .45rem; } }"
-    },
-    {
-      "name": "Nota padronizada",
+      "name": "Lista de provas",
       "kind": "card",
-      "refersTo": "score-note-panel",
-      "description": "O painel reúne o valor e as condições da estimativa, quando disponível.",
-      "html": "<div class=\"ds-panel\"><div><span>Nota padronizada estimada</span><strong>—</strong><small>Estimativa, não oficial</small></div><p>Calculada apenas quando há dados de grupo suficientes.</p></div>",
-      "css": ".ds-panel { display: flex; flex-wrap: wrap; align-items: baseline; gap: 1rem 2rem; padding: 1.4rem; background: var(--mist, #e9edef); font-family: var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); line-height: 1.5; color: var(--ink, #262933); }\n.ds-panel > div:first-child { display: grid; gap: .3rem; }\n.ds-panel span, .ds-panel small { font-size: .86rem; }\n.ds-panel strong { font: 400 2.1rem/1.1 var(--serif, Baskervville, Georgia, serif); }\n.ds-panel p { flex: 1 1 25rem; max-width: 70ch; color: var(--muted, #525e65); margin: 0; }"
+      "refersTo": "catalog",
+      "description": "Identificação e detalhes de cada prova em uma lista branca dividida por bordas.",
+      "html": "<ol class=\"ds-catalog\"><li class=\"ds-exam\"><span class=\"ds-index\" aria-hidden=\"true\">01</span><div><h2 class=\"ds-exam-title\">SEFAZ-SC 2026</h2><p class=\"ds-exam-subtitle\">Auditor Estadual de Finanças Públicas · Ciências da Computação</p><details class=\"ds-exam-details\"><summary>Detalhes da prova <span class=\"ds-file\">option-two.json</span></summary><p>80 questões gerais e 100 específicas</p></details></div><span class=\"ds-duration\">180 questões<br>540 min sugeridos</span></li></ol>",
+      "css": ".ds-catalog,.ds-duration,.ds-exam,.ds-exam-details,.ds-exam-subtitle,.ds-exam-title,.ds-file,.ds-index{font-family:var(--sans,Arial,sans-serif);}.ds-index{font-variant-numeric: tabular-nums;}.ds-catalog{list-style: none; padding: 0; border-bottom: 1px solid var(--line);}.ds-exam{display: grid; grid-template-columns: 1.5rem minmax(0, 1fr) auto; gap: 1rem; align-items: start; padding-block: 1.35rem; border-top: 1px solid var(--line);}.ds-index{font-size: .8125rem; padding-top: .2rem; color: var(--muted);}.ds-exam-title{font-size: 1.125rem; font-weight: 500; letter-spacing: -.01em;}.ds-exam-subtitle{margin-top: .4rem; line-height: 1.6; max-width: 65ch;}.ds-exam-subtitle{color: var(--muted); font-size: .875rem;}.ds-duration{color: var(--muted); font-size: .8125rem; text-align: right;}.ds-exam-details{margin-top: .45rem; font-size: .8125rem;}.ds-exam-details summary{color: var(--muted);}.ds-exam-details summary:hover{color: var(--accent);}.ds-file{color: var(--muted); margin-left: .45rem; overflow-wrap: anywhere; font-family: ui-monospace, monospace; font-size: .75rem;}.ds-exam-details dl{margin-top: .35rem; padding-top: .6rem; border-top: 1px solid var(--line);}.ds-exam-details dl div{display: grid; grid-template-columns: 7rem minmax(0,1fr); gap: .75rem; padding-block: .3rem;}.ds-exam-details dt{color: var(--muted);}.ds-catalog:focus-visible,.ds-duration:focus-visible,.ds-exam:focus-visible,.ds-exam-details:focus-visible,.ds-exam-subtitle:focus-visible,.ds-exam-title:focus-visible,.ds-file:focus-visible,.ds-index:focus-visible{outline:2px solid var(--accent,#365b78);outline-offset:3px;}.ds-exam-title,.ds-exam-subtitle{margin:0}.ds-exam-subtitle{margin-top:.4rem}.ds-duration{color:var(--muted,#5e6b74);font-size:.8125rem;text-align:right;}"
     },
     {
-      "name": "Nota indisponível",
+      "name": "Retomar uma prova",
+      "kind": "nav",
+      "refersTo": "local-attempt",
+      "description": "Link em duas linhas separa a identificação do estado de gravação.",
+      "html": "<a class=\"ds-resume\" href=\"#tentativa\"><span class=\"ds-resume-title\">Simulado SEFAZ-SC 2026</span><span class=\"ds-resume-state\">Salvo neste aparelho · aguardando envio</span></a>",
+      "css": ".ds-resume,.ds-resume-state,.ds-resume-title{font-family:var(--sans,Arial,sans-serif);}.ds-resume{display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: baseline; gap: 1rem; color: var(--accent); padding-block: .85rem; border-bottom: 1px solid var(--line); text-decoration: none;}.ds-resume:hover .ds-resume-title{text-decoration: underline;}.ds-resume-title{font-size: .875rem; overflow-wrap: anywhere;}.ds-resume-state{font-size: .8125rem;}.ds-resume:focus-visible,.ds-resume-state:focus-visible,.ds-resume-title:focus-visible{outline:2px solid var(--accent,#365b78);outline-offset:3px;}"
+    },
+    {
+      "name": "Pontuação",
+      "kind": "card",
+      "refersTo": "score-panel",
+      "description": "Medidas da prova entregues em células brancas com números tabulares.",
+      "html": "<dl class=\"ds-score\"><div><dt>Pontos ponderados</dt><dd>210<small> / 280</small></dd><dd class=\"ds-note\">75% do total</dd></div><div><dt>Acertos</dt><dd>135<small> / 180</small></dd><dd class=\"ds-note\">180 respostas marcadas</dd></div><div><dt>Conhecimentos gerais</dt><dd>60<small> / 80</small></dd><dd class=\"ds-note\">Peso 1</dd></div><div><dt>Conhecimentos específicos</dt><dd>75<small> / 100</small></dd><dd class=\"ds-note\">Peso 2</dd></div></dl>",
+      "css": ".ds-note,.ds-score{font-family:var(--sans,Arial,sans-serif);}.ds-score dd{font-variant-numeric: tabular-nums;}.ds-score{display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 1.5rem;}.ds-score > div{display: flex; flex-direction: column; align-items: flex-start; padding-block: .85rem; border-top: 1px solid var(--line);}.ds-score dt{flex: 1;}.ds-score dt,.ds-score .ds-note{font-size: .8125rem; line-height: 1.5; color: var(--muted);}.ds-score dd:not(.ds-note){margin-block: .6rem .3rem; font-size: 1.75rem; font-weight: 500; line-height: 1.2; letter-spacing: -.025em;}.ds-score > div:first-child dd:not(.ds-note){color: var(--accent);}.ds-score small{font-size: .9375rem; font-weight: 400; color: var(--muted); letter-spacing: 0; white-space: nowrap;}.ds-note:focus-visible,.ds-score:focus-visible{outline:2px solid var(--accent,#365b78);outline-offset:3px;}.ds-score{margin:0}.ds-score dd{margin-inline:0;}"
+    },
+    {
+      "name": "Correção de alternativas",
       "kind": "custom",
-      "refersTo": "score-explanation",
-      "description": "A indisponibilidade fica visível; o cálculo e suas condições aparecem ao expandir.",
-      "html": "<details class=\"ds-score-explanation\"><summary>Nota padronizada indisponível</summary><p>Para estimar a nota padronizada, é preciso ter ao menos duas tentativas concluídas desta prova e variação nos acertos dos dois blocos: conhecimentos gerais e conhecimentos específicos.</p></details>",
-      "css": ".ds-score-explanation { border-top: 1px solid var(--line, #c6ccce); font: 1rem/1.5 var(--sans, \"Helvetica Neue\", Helvetica, Arial, sans-serif); }\n.ds-score-explanation summary { min-height: 2.75rem; padding-block: .65rem; font-size: .9rem; color: var(--ink, #262933); cursor: pointer; }\n.ds-score-explanation summary:hover { color: var(--wine, #911a46); }\n.ds-score-explanation summary:focus-visible { outline: 2px solid var(--wine, #911a46); outline-offset: 4px; }\n.ds-score-explanation p { max-width: 70ch; margin: .6rem 0 0; color: var(--muted, #525e65); }"
+      "refersTo": "review-correct",
+      "description": "Verde e terracota aparecem com os rótulos depois da entrega.",
+      "html": "<div class=\"ds-correction\"><div class=\"ds-result-option ds-correct\"><span class=\"ds-review-letter\">A</span><span>Alternativa correta.</span><strong>Gabarito</strong></div><div class=\"ds-result-option ds-wrong\"><span class=\"ds-review-letter\">B</span><span>Alternativa escolhida incorreta.</span><strong>Sua resposta</strong></div></div>",
+      "css": ".ds-correction,.ds-result-option,.ds-review-letter{font-family:var(--sans,Arial,sans-serif);}.ds-result-option{display: grid; grid-template-columns: 1.75rem minmax(0, 1fr); gap: .75rem; align-items: start; padding: .875rem .5rem; border: 1px solid transparent; font-size: .9375rem; line-height: 1.65;}.ds-result-option + .ds-result-option{border-top-color: var(--line);}.ds-result-option > span:nth-child(2){overflow-wrap: anywhere;}.ds-review-letter{display: grid; place-items: center; width: 1.65rem; height: 1.65rem; border: 1px solid var(--control-line); border-radius: 50%; color: var(--muted); font-size: .8125rem; line-height: 1;}.ds-result-option strong{grid-column: 2; font-size: .75rem;}.ds-correct{background: var(--correct-wash); color: var(--correct);}.ds-wrong{background: var(--incorrect-wash); color: var(--incorrect);}.ds-correct .ds-review-letter{color: var(--correct); border-color: var(--correct);}.ds-wrong .ds-review-letter{color: var(--incorrect); border-color: var(--incorrect);}.ds-correction:focus-visible,.ds-result-option:focus-visible,.ds-review-letter:focus-visible{outline:2px solid var(--accent,#365b78);outline-offset:3px;}"
+    },
+    {
+      "name": "Cabeçalho e ajuda",
+      "kind": "nav",
+      "description": "Identificação funcional e acesso às orientações offline.",
+      "html": "<header class=\"ds-header\"><div class=\"ds-header-inner\"><a class=\"ds-home\" href=\"#provas\">Questões de concurso</a><nav aria-label=\"Ajuda\"><a class=\"ds-help\" href=\"#uso-offline\">Uso offline</a></nav></div></header>",
+      "css": ".ds-header,.ds-header-inner,.ds-help,.ds-home{font-family:var(--sans,Arial,sans-serif);}.ds-header-inner{width: min(100%, var(--frame)); margin-inline: auto; padding-inline: var(--gutter);}.ds-header{background: var(--white); border-bottom: 1px solid var(--line);}.ds-header-inner{min-height: 4rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem;}.ds-home{display: inline-flex; align-items: center; min-height: 2.75rem; font-size: 1rem; font-weight: 650; letter-spacing: -.02em; text-decoration: none;}.ds-home:hover{color: var(--accent);}.ds-help{display: flex; align-items: center; min-height: 2.75rem; color: var(--muted); text-decoration: none; font-size: .8125rem;}.ds-help:hover{color: var(--accent); text-decoration: underline;}.ds-header:focus-visible,.ds-header-inner:focus-visible,.ds-help:focus-visible,.ds-home:focus-visible{outline:2px solid var(--accent,#365b78);outline-offset:3px;}"
     }
   ],
   "narrative": {
-    "northStar": "Caderno de provas",
-    "overview": "O Caderno, da Computadora, organiza provas como folhas de uma mesma publicação. A linha horizontal separa registros, a serifa dá espaço ao enunciado e a numeração orienta quem vai e volta entre questões.\n\nA referência Mecha aparece no papel de tom frio, no contraste entre serifa e grotesca e no desenho técnico da encadernação. A ilustração acompanha a leitura do índice. Já a prova e o resultado dão o espaço central às perguntas, às alternativas e aos números.",
+    "northStar": "Responder questões com clareza",
+    "overview": "A interface prioriza a leitura e a resolução de questões. “Questões de concurso” descreve a função do aplicativo. Os controles usam texto direto, tipografia do sistema e cores discretas.\n\nA página é branca e o conteúdo é organizado por alinhamento, espaço e divisórias finas. Azul identifica avanço, foco e escolhas; verde e terracota aparecem na correção após a entrega. Não há caixas envolvendo catálogo, questão ou resultado, nem ilustração decorativa ou assinatura de marca.",
     "keyCharacteristics": [
-      "Superfícies claras com filetes que alinham e separam registros.",
-      "Baskervville para conteúdo de leitura e grotesca para controles e metadados.",
-      "Vinho para ação e escolha, verde para correção.",
-      "Ícone de folhas sobrepostas ao lado de Caderno e da assinatura Computadora."
+      "Tipografia sem serifa, com enunciados de entrelinha aberta.",
+      "Leitura direta sobre fundo branco, com divisórias no lugar de caixas.",
+      "Estados de escolha, gravação e correção identificados também por texto."
     ],
-    "rules": [
-      {
-        "name": "Regra da correção",
-        "body": "Reserve o verde dos acertos para a prova entregue. Durante a tentativa, a letra preenchida em vinho confirma apenas a escolha.",
-        "section": "colors"
-      }
-    ],
+    "rules": [],
     "dos": [
-      "Mantenha o nome do arquivo legível com a ficha fechada.",
-      "Preserve o alinhamento entre número, título e ação quando a linha quebrar.",
-      "Acompanhe as cores de correção com os rótulos de gabarito e resposta escolhida."
+      "Do manter “prova”, “questão”, “resposta”, “gabarito” e “resultado” nos controles de estudo.",
+      "Do acompanhar os estados de correção com os rótulos “Sua resposta”, “Gabarito”, “Acertou”, “Errou” ou “Em branco”.",
+      "Do preservar foco visível, alvos de pelo menos 44px e a leitura das alternativas em telas estreitas.",
+      "Do distinguir gravação local, sincronização e disponibilidade offline nas mensagens."
     ],
     "donts": [
-      "Evite dar pistas de acerto ao destacar a alternativa durante a prova.",
-      "Evite usar o espaço do enunciado para instruções secundárias quando elas cabem no texto-base expansível ou no mapa."
+      "Don't reintroduzir o nome rejeitado, vinho, ilustrações de encadernação ou outra metáfora de marca.",
+      "Don't indicar acerto, erro ou gabarito antes da entrega.",
+      "Don't usar a cor como única identificação de uma escolha ou de um resultado.",
+      "Don't apresentar uma estimativa de nota como resultado oficial ou confirmar gravação sem sucesso comprovado."
     ]
   }
 }

@@ -6,23 +6,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Provas para estudo individual. Responda no seu ritmo e confira o gabarito depois da entrega.">
-  <meta name="theme-color" content="#f9faf9">
-  <title>{{.Title}} · Caderno</title>
-  <link rel="icon" href="/static/favicon.svg?v=2" type="image/svg+xml">
-  <link rel="stylesheet" href="/static/app.css?v=8">
-  <script type="module" src="/static/app.js?v=9"></script>
+  <meta name="theme-color" content="#ffffff">
+  <title>{{.Title}}</title>
+  <link rel="icon" href="/static/favicon.svg?v=3" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/app.css?v=11">
+  <script type="module" src="/static/app.js?v=10"></script>
 </head>
 <body>
   <a class="skip" href="#app">Pular para o conteúdo</a>
   <header class="masthead">
-    <a class="brand" href="/" aria-label="Caderno, da Computadora. Página inicial"><img src="/static/favicon.svg?v=2" alt="" width="35" height="35"><span class="brand-type">Caderno<small>Computadora</small></span></a>
-    <nav class="mast-nav" aria-label="Ajuda">
-      <a href="#uso-offline">Uso offline</a>
-    </nav>
+    <div class="masthead-inner">
+      <a class="home-link" href="/">Questões de concurso</a>
+      <nav class="mast-nav" aria-label="Ajuda">
+        <a href="#uso-offline">Uso offline</a>
+      </nav>
+    </div>
   </header>
   <main id="app" tabindex="-1">{{template "content" .}}</main>
   <footer class="site-footer">
-    <div class="footer-name">Computadora <span>/ Caderno</span></div>
     <details class="offline-help" id="uso-offline">
       <summary>Como usar offline</summary>
       <p>Abra a prova com conexão e aguarde “Disponível offline”. Depois, você pode fechar a aba e retomar em “Provas neste aparelho”, no mesmo navegador.</p>

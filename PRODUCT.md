@@ -8,11 +8,11 @@ web
 
 ## Users
 
-O proprietário usa o Caderno para estudar para vários concursos. Faz simulados completos em sessões que pode interromper e retomar, inclusive no celular sem conexão.
+O proprietário usa o aplicativo para estudar para vários concursos. Faz simulados completos em sessões que pode interromper e retomar, inclusive no celular sem conexão.
 
 ## Product Purpose
 
-Caderno é o aplicativo de simulados pessoais da marca Computadora. O usuário escolhe uma prova, responde ou pula questões na ordem que preferir e pode voltar às respostas antes de entregar. Depois da correção, confere o gabarito, a pontuação e o desempenho por disciplina.
+O aplicativo serve para responder questões de concurso. O usuário escolhe uma prova, responde ou pula questões na ordem que preferir e pode voltar às respostas antes de entregar. Depois da correção, confere o gabarito, a pontuação e o desempenho por disciplina.
 
 O sucesso do produto significa conseguir fazer e revisar as provas com continuidade, sem pistas prematuras e sem depender de uma plataforma comercial de concursos.
 
@@ -43,7 +43,8 @@ O produto transforma arquivos JSON versionados em Git em provas completas e reto
 
 ## Brand Commitments
 
-- **Computadora** é a marca. O proprietário já possui o domínio correspondente. **Caderno** é o nome do aplicativo.
+- O proprietário rejeitou o nome **Caderno**, o vinho e a identidade construída em torno de um caderno físico. A interface não deve exibir esse nome, a assinatura de marca ou ilustrações de encadernação. “Questões de concurso” descreve a função, sem criar uma nova marca.
+- Priorizar uma interface agradável, simples e voltada a responder questões: tipografia legível, cores discretas e controles familiares. Evitar metáforas de marca, títulos decorativos e alternativas visuais que mudem apenas a paleta.
 - A identificação pública do aplicativo deve servir a diferentes concursos. A diretriz de marca é manter as referências à SEFAZ fora dos textos gerais da interface. Para as ações de estudo, usar “prova”, “questão”, “resposta”, “gabarito” e “resultado”.
 
 ## Evidence on Hand

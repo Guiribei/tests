@@ -163,7 +163,7 @@ function render(row) {
   const count = Object.keys(choices).length;
   const total = row.questions.length;
   const locked = row.finishing || row.finished;
-  document.title = "Questão " + number + " · Caderno";
+  document.title = "Questão " + number + " · Prova";
   $(".sidebar-title h2").textContent = row.title;
   $(".progress-copy strong").textContent = count + " de " + total;
   $(".progress-copy span").textContent = count === 1 ? "respondida" : "respondidas";

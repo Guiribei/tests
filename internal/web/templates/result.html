@@ -1,6 +1,6 @@
 {{define "content"}}
 <section class="result-hero shell" data-result-attempt="{{.Attempt.ID}}">
-  <a class="back-link" href="/">{{template "arrow"}} Índice de provas</a>
+  <a class="back-link" href="/">{{template "arrow"}} Todas as provas</a>
   <h1>Resultado da prova</h1>
   <p class="exam-subtitle">{{.Exam.Document.Metadata.Title}}</p>
   <nav class="result-nav" aria-label="Seções do resultado"><a href="#disciplinas">Acertos por disciplina</a><a href="#revisao">Correção por questão</a></nav>
@@ -50,7 +50,7 @@
   </div>
   <div class="review-list">
     {{range .Results}}
-    <article class="review-card {{if .Correct}}is-correct{{else}}is-wrong{{end}}">
+    <article class="review-card {{if .Correct}}is-correct{{else if .Blank}}is-blank{{else}}is-wrong{{end}}">
       <div class="review-meta">
         <span>Questão {{.Number}}</span><span>{{.Discipline}}</span>
         <strong>{{if .Correct}}Acertou{{else if .Blank}}Em branco{{else}}Errou{{end}}</strong>

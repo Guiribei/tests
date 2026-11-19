@@ -2,7 +2,7 @@
 {{if not .Attempt.ID}}{{template "local-attempts" .}}{{end}}
 <div class="exam-layout" data-attempt="{{.Attempt.ID}}" data-revision="{{.Attempt.Revision}}" {{if not .Attempt.ID}}hidden{{end}}>
   <aside class="question-sidebar">
-    <a class="back-link" href="/">{{template "arrow"}} Índice de provas</a>
+    <a class="back-link" href="/">{{template "arrow"}} Todas as provas</a>
     <div class="sidebar-title">
       <h2>{{.Exam.Document.Metadata.Title}}</h2>
     </div>

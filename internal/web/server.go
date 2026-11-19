@@ -145,6 +145,7 @@ func New(config Config) (*Server, error) {
 	mux.HandleFunc("GET /tentativas/{id}/pacote", server.packet)
 	mux.HandleFunc("POST /tentativas/{id}/sincronizar", server.syncAnswers)
 	mux.HandleFunc("GET /healthz", func(w http.ResponseWriter, _ *http.Request) { w.WriteHeader(http.StatusNoContent) })
+	mux.HandleFunc("GET /", server.notFound)
 	server.handler = server.recoverer(server.securityHeaders(mux))
 	return server, nil
 }
@@ -207,7 +208,7 @@ func (s *Server) render(w http.ResponseWriter, r *http.Request, name string, sta
 
 func (s *Server) home(w http.ResponseWriter, r *http.Request) {
 	s.sessionID(w, r)
-	data := pageData{Title: "Índice de provas"}
+	data := pageData{Title: "Provas disponíveis"}
 	for index, item := range s.catalog.All() {
 		card := examCard{
 			Number: index + 1, TotalQuestions: len(item.Questions),
@@ -435,7 +436,7 @@ func randomID() string {
 }
 
 func (s *Server) notFound(w http.ResponseWriter, r *http.Request) {
-	s.render(w, r, "error", http.StatusNotFound, pageData{Title: "Página não encontrada", ErrorMessage: "Não encontramos esta página ou prova. Volte ao índice e escolha uma prova disponível."})
+	s.render(w, r, "error", http.StatusNotFound, pageData{Title: "Página não encontrada", ErrorMessage: "Não encontramos esta página ou prova. Volte à lista e escolha uma prova disponível."})
 }
 
 func (s *Server) internalError(w http.ResponseWriter, r *http.Request, err error) {

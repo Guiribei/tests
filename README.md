@@ -1,4 +1,4 @@
-# Caderno — simulados Vibecoded
+# Simulados de concurso
 
 Aplicação de simulados feita com Go, JavaScript e SQLite. O navegador baixa uma tentativa para responder offline. O Go calcula a nota após receber a entrega.
 

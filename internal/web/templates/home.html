@@ -2,19 +2,19 @@
 <div class="catalog-layout">
   <section class="catalog" aria-labelledby="catalog-title">
     <div class="catalog-heading">
-      <h1 id="catalog-title">Índice de provas</h1>
+      <h1 id="catalog-title">Provas disponíveis</h1>
+      <span class="catalog-count">{{len .Exams}} {{if eq (len .Exams) 1}}prova{{else}}provas{{end}}</span>
     </div>
     {{template "local-attempts" .}}
-    <div class="list-heading"><h2>Provas disponíveis</h2><span>{{printf "%02d" (len .Exams)}}</span></div>
     <ol class="exam-index">
       {{range .Exams}}
       <li class="exam-row">
         <span class="index-number" aria-hidden="true">{{printf "%02d" .Number}}</span>
         <div class="exam-info">
-          <h3>{{.DisplayTitle}}</h3>
+          <h2>{{.DisplayTitle}}</h2>
           {{if .Subtitle}}<p class="exam-subtitle">{{.Subtitle}}</p>{{end}}
           <details class="exam-details">
-            <summary>Ficha da prova <span class="source-file">{{.SourceFile}}</span></summary>
+            <summary>Detalhes da prova <span class="source-file">{{.SourceFile}}</span></summary>
             <dl>
               <div><dt>Título original</dt><dd>{{.Title}}</dd></div>
               <div><dt>Versão do arquivo</dt><dd>{{.Hash}}</dd></div>
@@ -25,8 +25,8 @@
           </details>
         </div>
         <div class="exam-entry">
-          <span>{{.TotalQuestions}} questões · {{.TotalMinutes}} min sugeridos</span>
-          <form method="post" action="/provas/{{.Slug}}/iniciar"><button class="primary-button" type="submit" aria-label="Abrir prova {{.Number}}: {{.Title}}">Abrir prova {{template "arrow"}}</button></form>
+          <span>{{.TotalQuestions}} questões<span class="exam-duration">{{.TotalMinutes}} min sugeridos</span></span>
+          <form method="post" action="/provas/{{.Slug}}/iniciar"><button class="secondary-button" type="submit" aria-label="Abrir prova {{.Number}}: {{.Title}}">Abrir prova {{template "arrow"}}</button></form>
         </div>
       </li>
       {{else}}
@@ -34,12 +34,5 @@
       {{end}}
     </ol>
   </section>
-  <aside class="catalog-plate" aria-label="Orientações da prova">
-    <div class="plate-art" aria-hidden="true"></div>
-    <div class="plate-notes">
-      <h2>Durante a prova</h2>
-      <p>Use o mapa para pular questões ou voltar às suas respostas. O gabarito aparece depois da entrega.</p>
-    </div>
-  </aside>
 </div>
 {{end}}
